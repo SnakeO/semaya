@@ -1,0 +1,25 @@
+.mcp.json
+.idea
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+
+# Claude Code
+.claude/
