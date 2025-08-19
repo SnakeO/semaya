@@ -3,51 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaya Beach Resort Review</title>
+    <title>Semaya Beach Resort - Honest Review</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            text-align: center;
-        }
-        h1 {
+            background: #f5f5f5;
             color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #666;
             line-height: 1.6;
         }
-        .status {
-            background: #f0f0f0;
-            padding: 10px 20px;
-            border-radius: 10px;
+        
+        header {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .warning-badge {
             display: inline-block;
+            background: #fbbf24;
+            color: #713f12;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
             margin-top: 20px;
-            color: #667eea;
-            font-weight: 600;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .section h2 {
+            color: #dc2626;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #fee2e2;
+        }
+        
+        .section h3 {
+            color: #7c2d12;
+            font-size: 1.3rem;
+            margin: 20px 0 10px 0;
+        }
+        
+        .issue-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .issue-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .issue-list li:before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+        }
+        
+        .sub-issue {
+            margin-left: 20px;
+            padding: 5px 0;
+            color: #666;
+            list-style-type: disc;
+        }
+        
+        .critical {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .critical strong {
+            color: #dc2626;
+        }
+        
+        .photo-placeholder {
+            background: #f3f4f6;
+            border: 2px dashed #9ca3af;
+            padding: 40px;
+            text-align: center;
+            color: #6b7280;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        
+        .health-warning {
+            background: #fef2f2;
+            border: 2px solid #dc2626;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .health-warning h4 {
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            background: #e5e7eb;
+        }
+        
+        .rating {
+            font-size: 2rem;
+            color: #dc2626;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .section h2 {
+                font-size: 1.4rem;
+            }
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Semaya Beach Resort Review</h1>
+        <p class="subtitle">An Honest Guest Experience</p>
+        <div class="warning-badge">⚠️ Health & Safety Concerns</div>
+    </header>
+    
     <div class="container">
-        <h1>🌴 Semaya Beach Resort Review</h1>
-        <p>Welcome to Semaya Beach Resort Review - your comprehensive guide to paradise!</p>
-        <p>This site is currently under construction. Check back soon for detailed reviews, photos, and insider tips.</p>
-        <div class="status">Coming Soon</div>
+        <div class="section">
+            <h2>🍽️ Restaurant - Food Safety Crisis</h2>
+            
+            <div class="critical">
+                <strong>CRITICAL INCIDENT:</strong> Raw chicken served instead of ordered rare beef
+            </div>
+            
+            <ul class="issue-list">
+                <li>Only discovered after tasting - texture and flavor completely unlike beef</li>
+                <li>Management insisted it was steak despite obvious evidence</li>
+            </ul>
+            
+            <div class="health-warning">
+                <h4>Health Consequences (2 diners affected):</h4>
+                <ul class="sub-issue">
+                    <li>Guest 1: Severe stomach cramps same evening</li>
+                    <li>Guest 2: Gastrointestinal distress 48 hours later</li>
+                </ul>
+            </div>
+            
+            <div class="photo-placeholder">
+                [Photo: Original meal showing raw poultry]
+            </div>
+            
+            <h3>Follow-up Investigation</h3>
+            <ul class="issue-list">
+                <li>Management prepared "same meat" 2 days later</li>
+                <li>New preparation tasted exactly like beef</li>
+                <li>Management maintained both were identical product</li>
+            </ul>
+            
+            <div class="photo-placeholder">
+                [Photo: Replacement meal - actual beef]
+            </div>
+            
+            <div class="photo-placeholder">
+                [Photo: Side-by-side comparison - original vs replacement]
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>🚿 Bathroom Conditions</h2>
+            
+            <h3>Water Quality Issues</h3>
+            <ul class="issue-list">
+                <li>Faucet dispensing yellow-tinted water</li>
+            </ul>
+            
+            <h3>Sanitation Concerns</h3>
+            <ul class="issue-list">
+                <li>Open-air toilet system with inadequate ventilation</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🧹 Housekeeping Standards</h2>
+            
+            <ul class="issue-list">
+                <li>Staff wearing outdoor shoes while cleaning inside rooms</li>
+                <li>Cross-contamination risk from outdoor to indoor surfaces</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>🚴 Bicycle Rental Safety Hazards</h2>
+            
+            <div class="critical">
+                <strong>SAFETY ALERT:</strong> Equipment poses serious risk to guests
+            </div>
+            
+            <h3>Equipment Condition</h3>
+            <ul class="issue-list">
+                <li>Aged bicycles with multiple maintenance issues</li>
+                <li>Flat tires on multiple units</li>
+                <li>Broken kickstands causing bikes to fall</li>
+            </ul>
+            
+            <h3>Critical Safety Failures</h3>
+            <ul class="issue-list">
+                <li>Brake systems squealing and ineffective - <strong>dangerous</strong></li>
+                <li>No lights provided for night riding - <strong>dangerous</strong></li>
+                <li>No helmets available for guest protection - <strong>dangerous</strong></li>
+                <li>Local roads completely unlit after dark</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>💪 Fitness Facilities</h2>
+            
+            <h3>Equipment Limitations</h3>
+            <ul class="issue-list">
+                <li>Single unstable multi-station machine</li>
+                <li>Extremely limited weight capacity</li>
+                <li>Plastic "dumbbells" with minimal resistance</li>
+                <li>Unsuitable for any serious fitness routine</li>
+            </ul>
+        </div>
+        
+        <div class="section" style="text-align: center;">
+            <h2>Overall Rating</h2>
+            <div class="rating">⭐ 1/5</div>
+            <p><strong>Not Recommended</strong></p>
+            <p>Serious health, safety, and hygiene concerns throughout the property</p>
+        </div>
     </div>
+    
+    <footer>
+        <p>Review based on actual guest experience</p>
+        <p>Last updated: 2025</p>
+    </footer>
 </body>
 </html>
