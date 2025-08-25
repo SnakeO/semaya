@@ -6,6 +6,10 @@
     <title>Semaya Beach Resort Bali Review - Honest Guest Experience | Nusa Penida Hotels</title>
     <meta name="description" content="Honest review of Semaya Beach Resort in Nusa Penida, Bali. Located near Crystal Bay, Kelingking Beach, and Angel's Billabong. Read before booking this Nusa Penida accommodation.">
     <meta name="keywords" content="Semaya Beach Resort, Nusa Penida hotels, Bali resort review, Crystal Bay accommodation, Nusa Penida accommodation, Kelingking Beach hotels, Angel's Billabong resort, Nusa Penida tourism, Bali island hotels, Indonesia beach resort">
+    
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet">
+    
     <style>
         * {
             margin: 0;
@@ -211,6 +215,8 @@
     </style>
 </head>
 <body>
+    <!-- Video.js JavaScript -->
+    <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
     <script>
         // Lazy loading for images and videos
         document.addEventListener('DOMContentLoaded', function() {
@@ -261,6 +267,35 @@
                     source.dataset.src = source.src;
                     source.removeAttribute('src');
                     videoObserver.observe(video);
+                }
+            });
+            
+            // Initialize Video.js for all videos after lazy loading
+            videos.forEach(video => {
+                video.classList.add('video-js', 'vjs-default-skin', 'vjs-big-play-centered');
+                video.setAttribute('data-setup', '{}');
+                
+                // When video is loaded, initialize Video.js
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                        if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
+                            const source = video.querySelector('source');
+                            if (source && source.src) {
+                                videojs(video, {
+                                    controls: true,
+                                    preload: 'auto',
+                                    fluid: true,
+                                    playbackRates: [0.5, 1, 1.5, 2]
+                                });
+                                observer.disconnect();
+                            }
+                        }
+                    });
+                });
+                
+                const source = video.querySelector('source');
+                if (source) {
+                    observer.observe(source, { attributes: true });
                 }
             });
         });
@@ -336,20 +371,19 @@
                 When we complained, Restaurant Manager <span class="manager-name">Andika Putra</span> came to our table. Despite both of us arguing that this was clearly not steak, he insisted multiple times that it was beef. He claimed it was just "a bad batch" - as if that somehow made serving raw mystery meat acceptable.
             </p>
             
-            <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager Andika Putra" style="max-width: 300px; border-radius: 8px; margin: 20px auto; display: block;">
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager Andika Putra" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
+                <p style="margin-top: 10px; font-style: italic; color: #666;">Restaurant Manager Andika Putra</p>
+            </div>
             
             <div class="health-warning">
                 <h4>What Happened Next</h4>
-                <p style="margin: 10px 0;">Two people ate the mystery meat. One of us got severe stomach cramps that same evening. The other suffered serious gastrointestinal illness 48 hours later.</p>
+                <p style="margin: 10px 0;">One of us got severe stomach cramps that same evening. The other suffered serious gastrointestinal illness 48 hours later.</p>
             </div>
             
             <img src="assets/images/rare-meat.jpg" alt="Raw meat served as 'rare beef'" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
             
             <img src="assets/images/rare-meat-zoom.jpg" alt="Close-up of meat texture - clearly not beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                I posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
-            </p>
             
             <h3>Seeking External Verification</h3>
             <p style="margin-bottom: 15px;">
@@ -360,6 +394,10 @@
                 <img src="assets/images/ask-chef-orig-thai.jpg" alt="Message to chef friend (Thai)" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
                 <img src="assets/images/ask-chef-translated-eng.jpg" alt="Chef's response translated" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
             </div>
+            
+            <p style="margin-bottom: 15px;">
+                I posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
+            </p>
             
             <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
                 <img src="assets/images/reddit-post-1.jpg" alt="Reddit responses part 1" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
@@ -376,7 +414,7 @@
                 </div>
                 
                 <div class="timeline-item">
-                    <strong>Days 1-2:</strong> Since we didn't know if it was raw chicken or pork, we found some anti-parasite medication and took it as a precaution. Each type of meat carries different parasitic risks.
+                    <strong>Days 1-2:</strong> Since we didn't know if it was raw chicken or pork, we found some anti-parasite medication and took it as a precaution. Each type of meat carries different parasitic or bacterial risks.
                 </div>
                 
                 <img src="assets/images/anti-parasite-meds.jpg" alt="Anti-parasite medication taken as precaution" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
@@ -385,21 +423,24 @@
                     <strong>Day 3:</strong> Finally, I had an in-person meeting with Resort Operations Manager <span class="manager-name">Sindra Sindrawan</span>. He took one look at the photo and immediately agreed with me - it was NOT beef. He promised he would identify the meat and get back to me.
                 </div>
                 
-                <img src="assets/images/sindra-sindrawan.jpg" alt="Operations Manager Sindra Sindrawan" style="max-width: 300px; border-radius: 8px; margin: 20px auto; display: block;">
+                <div style="text-align: center; margin: 20px 0;">
+                    <img src="assets/images/sindra-sindrawan.jpg" alt="Operations Manager Sindra Sindrawan" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
+                    <p style="margin-top: 10px; font-style: italic; color: #666;">Operations Manager Sindra Sindrawan</p>
+                </div>
                 
                 <div class="timeline-item">
                     <strong>Day 3 (hours later):</strong> A few hours passed before our second meeting. Sindra sat down and, after "talking with the staff," now claimed it was beef. He showed me a photo of beef packaging as "proof." I said, "Fine, let's go to the kitchen right now and cook it up."
                 </div>
             </div>
             
-            <img src="assets/images/beef-packaging.jpeg" alt="Beef packaging shown as 'proof'" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <img src="assets/images/beef-packaging.jpeg" alt="Beef packaging shown as 'proof'" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
             
             <h3>The Kitchen Test</h3>
             <p style="margin-bottom: 15px;">
                 We went to the kitchen where management cooked up what they claimed was the same meat. This time, it looked and tasted exactly like beef - proper beef. Yet they still insisted this was identical to what they'd served me two days earlier.
             </p>
             
-            <img src="assets/images/cooked-beef.jpeg" alt="Actually cooked beef - looks completely different" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <img src="assets/images/cooked-beef.jpeg" alt="Actually cooked beef - looks completely different" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
             
             <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 250px; text-align: center;">
