@@ -9,609 +9,622 @@
     
     
     <style>
+        :root {
+            --ig-purple: #833AB4;
+            --ig-pink: #F56040;
+            --ig-orange: #FCAF45;
+            --ig-blue: #405DE6;
+            --ig-black: #262626;
+            --ig-gray: #8E8E8E;
+            --ig-light-gray: #FAFAFA;
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+            user-select: none;
+            height: 100vh;
         }
         
-        header {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
+        /* Phone Frame */
+        .phone-frame {
+            width: 375px;
+            height: 812px;
+            margin: 20px auto;
+            background: #000;
+            border-radius: 40px;
+            padding: 8px;
+            box-shadow: 0 0 50px rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
         }
         
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
-        
-        .warning-badge {
-            display: inline-block;
-            background: #fbbf24;
-            color: #713f12;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        
-        .section h2 {
-            color: #dc2626;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #fee2e2;
-        }
-        
-        .section h3 {
-            color: #7c2d12;
-            font-size: 1.3rem;
-            margin: 20px 0 10px 0;
-        }
-        
-        .issue-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .issue-list li {
-            padding: 10px 0;
-            padding-left: 30px;
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 32px;
+            overflow: hidden;
             position: relative;
         }
         
-        .issue-list li:before {
-            content: "⚠️";
+        /* Progress bars at top */
+        .story-progress {
+            display: flex;
+            gap: 2px;
+            padding: 12px 16px 8px;
             position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+        
+        .progress-bar {
+            height: 2px;
+            flex: 1;
+            background: rgba(255,255,255,0.3);
+            border-radius: 1px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: #fff;
+            border-radius: 1px;
+            animation: fillProgress 5s linear forwards;
+        }
+        
+        @keyframes fillProgress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        
+        /* Story Header */
+        .story-header {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            z-index: 99;
+        }
+        
+        .profile-pic {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-right: 8px;
+            background: linear-gradient(45deg, var(--ig-purple), var(--ig-pink));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .story-user-info {
+            flex: 1;
+        }
+        
+        .username {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+        
+        .location {
+            font-size: 12px;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .story-actions {
+            display: flex;
+            gap: 16px;
+            color: #fff;
+        }
+        
+        /* Story Content */
+        .story-container {
+            position: relative;
+            height: 100%;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+        
+        .story-slide {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 80px 20px 100px;
+            position: relative;
+            text-align: center;
+        }
+        
+        /* Different gradient backgrounds */
+        .gradient-1 {
+            background: linear-gradient(135deg, var(--ig-purple) 0%, var(--ig-pink) 100%);
+        }
+        
+        .gradient-2 {
+            background: linear-gradient(135deg, #FF6B6B 0%, #FF8E8E 100%);
+        }
+        
+        .gradient-3 {
+            background: linear-gradient(135deg, #4ECDC4 0%, #45B7B8 100%);
+        }
+        
+        .gradient-4 {
+            background: linear-gradient(135deg, #FFA726 0%, #FFB74D 100%);
+        }
+        
+        .gradient-5 {
+            background: linear-gradient(135deg, #E91E63 0%, #F06292 100%);
+        }
+        
+        .gradient-6 {
+            background: linear-gradient(135deg, #673AB7 0%, #9C27B0 100%);
+        }
+        
+        .gradient-7 {
+            background: linear-gradient(135deg, #FF5722 0%, #FF7043 100%);
+        }
+        
+        /* Instagram Text Styles */
+        .story-title {
+            font-size: 32px;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+        
+        .story-subtitle {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 24px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+        }
+        
+        .story-text {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+            max-width: 280px;
+        }
+        
+        /* Instagram Stickers */
+        .sticker {
+            position: absolute;
+            background: rgba(255,255,255,0.95);
+            padding: 8px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--ig-black);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: rotate(-8deg);
+        }
+        
+        .sticker.warning {
+            background: #FF4444;
+            color: #fff;
+            animation: shake 0.5s ease-in-out infinite alternate;
+        }
+        
+        .sticker.poll {
+            background: linear-gradient(45deg, var(--ig-purple), var(--ig-pink));
+            color: #fff;
+            border-radius: 20px;
+            padding: 12px 16px;
+        }
+        
+        .sticker.question {
+            background: linear-gradient(45deg, var(--ig-blue), var(--ig-purple));
+            color: #fff;
+            border-radius: 20px;
+            padding: 12px 16px;
+        }
+        
+        @keyframes shake {
+            0% { transform: rotate(-8deg) translateX(0); }
+            100% { transform: rotate(-6deg) translateX(2px); }
+        }
+        
+        /* Positioning for stickers */
+        .top-left { top: 120px; left: 20px; }
+        .top-right { top: 140px; right: 20px; }
+        .middle-left { top: 50%; left: 20px; transform: translateY(-50%) rotate(-8deg); }
+        .middle-right { top: 45%; right: 20px; transform: translateY(-50%) rotate(8deg); }
+        .bottom-left { bottom: 120px; left: 20px; }
+        .bottom-right { bottom: 140px; right: 20px; }
+        
+        /* Emoji reactions */
+        .emoji-reaction {
+            position: absolute;
+            font-size: 24px;
+            animation: float 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-10px); }
+        }
+        
+        /* See More prompt */
+        .see-more {
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.6);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            animation: bounce 1s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0px); }
+            50% { transform: translateX(-50%) translateY(-5px); }
+        }
+        
+        /* DM reactions at bottom */
+        .dm-reactions {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            padding: 0 16px;
+            z-index: 99;
+        }
+        
+        .dm-bar {
+            background: rgba(0,0,0,0.6);
+            border-radius: 20px;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(10px);
+        }
+        
+        .dm-input {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+            flex: 1;
+        }
+        
+        .dm-input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .reaction-emojis {
+            display: flex;
+            gap: 8px;
+            font-size: 20px;
+        }
+        
+        /* Story navigation */
+        .story-nav {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            z-index: 50;
+            cursor: pointer;
+        }
+        
+        .story-nav.prev {
             left: 0;
         }
         
-        .sub-issue {
-            margin-left: 20px;
-            padding: 5px 0;
-            color: #666;
-            list-style-type: disc;
+        .story-nav.next {
+            right: 0;
         }
         
-        .critical {
-            background: #fee2e2;
-            border-left: 4px solid #dc2626;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
+        /* Highlights preview */
+        .highlights-preview {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 40px 16px 20px;
         }
         
-        .critical strong {
-            color: #dc2626;
+        .highlight-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
-        .photo-placeholder {
-            background: #f3f4f6;
-            border: 2px dashed #9ca3af;
-            padding: 40px;
-            text-align: center;
-            color: #6b7280;
-            margin: 20px 0;
-            border-radius: 8px;
-            font-style: italic;
+        .highlight-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
         }
         
-        .health-warning {
-            background: #fef2f2;
-            border: 2px solid #dc2626;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+        /* Media content */
+        .story-media {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 12px;
+            margin: 16px 0;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
         }
         
-        .health-warning h4 {
-            color: #dc2626;
-            margin-bottom: 10px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            background: #e5e7eb;
-        }
-        
-        .rating {
-            font-size: 2rem;
-            color: #dc2626;
-            margin: 20px 0;
-        }
-        
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
+        /* Mobile responsiveness */
+        @media (max-width: 400px) {
+            .phone-frame {
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                border-radius: 0;
+                padding: 0;
             }
-            .section h2 {
-                font-size: 1.4rem;
+            
+            .phone-screen {
+                border-radius: 0;
             }
-        }
-        
-        .info-box {
-            background: #eff6ff;
-            border: 2px solid #3b82f6;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        
-        .info-box h3 {
-            color: #1e40af;
-            margin-bottom: 15px;
-        }
-        
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .info-item {
-            padding: 5px 0;
-        }
-        
-        .info-item strong {
-            color: #1e40af;
-        }
-        
-        .manager-name {
-            background: #fef3c7;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: bold;
-            color: #92400e;
-        }
-        
-        .timeline {
-            background: #f9fafb;
-            border-left: 3px solid #dc2626;
-            padding: 15px;
-            margin: 20px 0;
-        }
-        
-        .timeline-item {
-            margin-bottom: 15px;
-            padding-left: 15px;
-        }
-        
-        .timeline-item strong {
-            color: #dc2626;
         }
     </style>
 </head>
 <body>
     <script>
-        // Lazy loading for images and videos
+        // Instagram Stories Navigation
+        let currentStory = 0;
+        const stories = document.querySelectorAll('.story-slide');
+        const progressBars = document.querySelectorAll('.progress-fill');
+        
+        function showStory(index) {
+            // Hide all stories
+            stories.forEach(story => story.style.display = 'none');
+            
+            // Show current story
+            if (stories[index]) {
+                stories[index].style.display = 'flex';
+                
+                // Update progress bars
+                progressBars.forEach((bar, i) => {
+                    if (i < index) {
+                        bar.style.width = '100%';
+                        bar.style.animation = 'none';
+                    } else if (i === index) {
+                        bar.style.width = '0%';
+                        bar.style.animation = 'fillProgress 5s linear forwards';
+                    } else {
+                        bar.style.width = '0%';
+                        bar.style.animation = 'none';
+                    }
+                });
+            }
+        }
+        
+        function nextStory() {
+            if (currentStory < stories.length - 1) {
+                currentStory++;
+                showStory(currentStory);
+            }
+        }
+        
+        function prevStory() {
+            if (currentStory > 0) {
+                currentStory--;
+                showStory(currentStory);
+            }
+        }
+        
         document.addEventListener('DOMContentLoaded', function() {
-            // Lazy load images
-            const images = document.querySelectorAll('img');
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        if (img.dataset.src) {
-                            img.src = img.dataset.src;
-                            img.removeAttribute('data-src');
-                        }
-                        observer.unobserve(img);
-                    }
-                });
+            // Initialize first story
+            showStory(0);
+            
+            // Auto advance stories
+            setInterval(() => {
+                if (currentStory < stories.length - 1) {
+                    nextStory();
+                } else {
+                    currentStory = 0;
+                    showStory(0);
+                }
+            }, 5000);
+            
+            // Touch navigation
+            let touchStartX = 0;
+            document.addEventListener('touchstart', (e) => {
+                touchStartX = e.touches[0].clientX;
             });
             
-            images.forEach(img => {
-                if (img.src) {
-                    // Store original src as data-src and clear src for lazy loading
-                    img.dataset.src = img.src;
-                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect width="400" height="300" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="sans-serif" font-size="16"%3ELoading...%3C/text%3E%3C/svg%3E';
-                    imageObserver.observe(img);
+            document.addEventListener('touchend', (e) => {
+                const touchEndX = e.changedTouches[0].clientX;
+                const diff = touchStartX - touchEndX;
+                
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) {
+                        nextStory();
+                    } else {
+                        prevStory();
+                    }
                 }
             });
             
-            // Lazy load videos
-            const videos = document.querySelectorAll('video');
-            const videoObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const video = entry.target;
-                        const source = video.querySelector('source');
-                        if (source && source.dataset.src) {
-                            source.src = source.dataset.src;
-                            source.removeAttribute('data-src');
-                            video.load();
-                        }
-                        observer.unobserve(video);
-                    }
-                });
-            });
-            
-            videos.forEach(video => {
-                const source = video.querySelector('source');
-                if (source && source.src) {
-                    source.dataset.src = source.src;
-                    source.removeAttribute('src');
-                    videoObserver.observe(video);
+            // Click navigation
+            document.addEventListener('click', (e) => {
+                const rect = document.documentElement.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const screenWidth = window.innerWidth;
+                
+                if (x < screenWidth / 2) {
+                    prevStory();
+                } else {
+                    nextStory();
                 }
             });
-            
         });
     </script>
-    <header>
-        <h1>Semaya Beach Resort Review</h1>
-        <p class="subtitle">An Honest Guest Experience - Nusa Penida, Bali</p>
-        <div class="warning-badge">⚠️ Health & Safety Concerns</div>
-    </header>
-    
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>📍 Resort Information & Location</h3>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <strong>Resort:</strong> Semaya Beach Resort
+    <!-- Instagram Phone Frame -->
+    <div class="phone-frame">
+        <div class="phone-screen">
+            <!-- Story Progress Bars -->
+            <div class="story-progress">
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
+            
+            <!-- Story Header -->
+            <div class="story-header">
+                <div class="profile-pic">⚠️</div>
+                <div class="story-user-info">
+                    <div class="username">travel_nightmare_official</div>
+                    <div class="location">📍 Semaya Beach Resort, Nusa Penida</div>
+                </div>
+                <div class="story-actions">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            
+            <!-- Story Container -->
+            <div class="story-container">
+                
+                <!-- Story 1: Warning -->
+                <div class="story-slide gradient-1">
+                    <div class="story-title">🚨 VIRAL ALERT</div>
+                    <div class="story-subtitle">This "5-star" resort served me RAW CHICKEN</div>
+                    <div class="story-text">Swipe up for the most INSANE hotel experience that went viral on Reddit</div>
+                    
+                    <div class="sticker warning top-right">HEALTH VIOLATION</div>
+                    <div class="sticker poll bottom-left">Should I sue? 🤔</div>
+                    <div class="emoji-reaction" style="top: 200px; left: 50px;">😱</div>
+                    <div class="emoji-reaction" style="top: 250px; right: 60px;">🤮</div>
+                    
+                    <div class="see-more">
+                        <i class="fas fa-chevron-up"></i> See More
                     </div>
-                    <div class="info-item">
-                        <strong>Location:</strong> Nusa Penida Island, Bali, Indonesia
+                </div>
+                
+                <!-- Story 2: Arrival Problem -->
+                <div class="story-slide gradient-2">
+                    <div class="story-title">💸 $10 WATER?!</div>
+                    <div class="story-text">They charged me $10 for water bottles then replaced them with DIRTY refillable containers</div>
+                    <img src="assets/images/refillable-water-bottle.jpg" class="story-media" alt="Dirty water containers">
+                    
+                    <div class="sticker warning middle-right">SCAM ALERT</div>
+                    <div class="emoji-reaction" style="top: 300px; left: 40px;">💰</div>
+                    <div class="emoji-reaction" style="bottom: 200px; right: 30px;">🤢</div>
+                </div>
+                
+                <!-- Story 3: Raw Chicken Drama -->
+                <div class="story-slide gradient-3">
+                    <div class="story-title">🍗 NOT STEAK!</div>
+                    <div class="story-text">I ordered rare BEEF... they served me RAW CHICKEN! The manager LIED to my face!</div>
+                    <img src="assets/images/rare-meat.jpg" class="story-media" alt="Raw mystery meat">
+                    
+                    <div class="sticker warning top-left">FOOD POISONING</div>
+                    <div class="sticker question bottom-right">What meat is this? 🤔</div>
+                    <div class="emoji-reaction" style="top: 180px; right: 20px;">🤥</div>
+                </div>
+                
+                <!-- Story 4: Manager Confrontation -->
+                <div class="story-slide gradient-4">
+                    <div class="story-title">🗣️ MANAGER LIES</div>
+                    <div class="story-text">Manager Andika Putra insisted it was "just bad beef" - Even after we got SICK!</div>
+                    <img src="assets/images/andika-putra.jpg" class="story-media" alt="Lying manager">
+                    
+                    <div class="sticker warning middle-left">GASLIGHTING</div>
+                    <div class="emoji-reaction" style="top: 350px; right: 80px;">🤥</div>
+                    <div class="emoji-reaction" style="bottom: 150px; left: 50px;">😡</div>
+                </div>
+                
+                <!-- Story 5: Evidence -->
+                <div class="story-slide gradient-5">
+                    <div class="story-title">📱 REDDIT PROOF</div>
+                    <div class="story-text">Posted on r/steak and got BANNED because it wasn't even beef! ChatGPT confirmed it!</div>
+                    <img src="assets/images/reddit-ban.jpg" class="story-media" alt="Reddit ban proof">
+                    
+                    <div class="sticker poll top-right">VIRAL ON REDDIT</div>
+                    <div class="emoji-reaction" style="top: 400px; left: 30px;">🔥</div>
+                    <div class="emoji-reaction" style="bottom: 180px; right: 40px;">💯</div>
+                </div>
+                
+                <!-- Story 6: Bathroom Horror -->
+                <div class="story-slide gradient-6">
+                    <div class="story-title">💛 YELLOW WATER</div>
+                    <div class="story-text">The water was YELLOW and I had food poisoning with ZERO bathroom privacy!</div>
+                    <video class="story-media" controls>
+                        <source src="assets/video/yellow-water-from-faucet-compressed.mp4" type="video/mp4">
+                    </video>
+                    
+                    <div class="sticker warning bottom-left">DISGUSTING</div>
+                    <div class="emoji-reaction" style="top: 250px; right: 30px;">🤮</div>
+                </div>
+                
+                <!-- Story 7: Final Rating -->
+                <div class="story-slide gradient-7">
+                    <div class="story-title">⭐ 1/5 STARS</div>
+                    <div class="story-subtitle">NIGHTMARE RESORT</div>
+                    <div class="story-text">Save your money! This place is a HEALTH HAZARD disguised as luxury!</div>
+                    
+                    <div class="sticker warning top-left">AVOID AT ALL COSTS</div>
+                    <div class="sticker poll bottom-right">Share this story! 📢</div>
+                    <div class="emoji-reaction" style="top: 300px; left: 60px;">❌</div>
+                    <div class="emoji-reaction" style="bottom: 250px; right: 50px;">🏃</div>
+                    
+                    <!-- Highlights Preview -->
+                    <div class="highlights-preview">
+                        <div class="highlight-title">Story Highlights</div>
+                        <div class="highlight-name">NIGHTMARE RESORT</div>
                     </div>
-                    <div class="info-item">
-                        <strong>Address:</strong> Jl. Raya Batukandik, Nusa Penida, Klungkung Regency, Bali 80771
+                </div>
+                
+            </div>
+            
+            <!-- DM Reactions Bar -->
+            <div class="dm-reactions">
+                <div class="dm-bar">
+                    <input type="text" class="dm-input" placeholder="Reply to travel_nightmare_official...">
+                    <div class="reaction-emojis">
+                        <span>❤️</span>
+                        <span>😂</span>
+                        <span>😱</span>
+                        <span>😡</span>
                     </div>
-                    <div class="info-item">
-                        <strong>Near:</strong> Crystal Bay Beach (5 min)
-                    </div>
                 </div>
             </div>
             
-        </div>
-        
-        <div class="section">
-            <h2>👋 My Arrival</h2>
-            
-            <p style="margin-bottom: 20px;">
-                When I arrived at Semaya Beach Resort, the location near Crystal Bay looked promising. But problems started immediately.
-            </p>
-            
-            <h3>No Drinking Water Provided</h3>
-            <p style="margin-bottom: 15px;">
-                After settling in, I looked for complimentary water bottles - standard in most hotels. There were none. I called the front desk to request some. They sent up two sealed bottles with a bill for <strong>160,000 Indonesian Rupees</strong> (approximately $10 USD).
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                When I complained about both the lack of complimentary water and the outrageous charge, management admitted they "should have" provided water in the room. But here's where it gets worse - they took away the sealed bottles I had ordered and replaced them with <strong>refillable containers</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                In Indonesia, a 5-star resort should not be providing water in refillable, unsealed containers. Are the containers clean? Is the water properly filtered? Are the people handling it following proper hygiene protocols? All of these worries would be completely avoidable if they just provided complimentary sealed water in the first place, like every other 5-star resort does.
-            </p>
-            
-            <img src="assets/images/refillable-water-bottle.jpg" alt="Refillable water bottles provided by resort" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Not the best start to a supposedly 5-star experience.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🍽️ Restaurant - The Raw Chicken Incident</h2>
-            
-            <div class="critical">
-                <strong>CRITICAL FOOD SAFETY VIOLATION:</strong> Raw chicken served instead of ordered rare beef
-            </div>
-            
-            <h3>The Night It Happened</h3>
-            <p style="margin-bottom: 15px;">
-                My date and I ordered rare beef for dinner. What arrived at our table looked wrong from the start, but we only realized the full horror after taking a bite. The texture and flavor were completely unlike any beef we'd ever tasted.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                When we complained, Restaurant Manager <span class="manager-name">Andika Putra</span> came to our table. Despite both of us arguing that this was clearly not steak, he insisted multiple times that it was beef. He claimed it was just "a bad batch" - as if that somehow made serving raw mystery meat acceptable.
-            </p>
-            
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager Andika Putra" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                <p style="margin-top: 10px; font-style: italic; color: #666;">Restaurant Manager Andika Putra</p>
-            </div>
-            
-            <div class="health-warning">
-                <h4>What Happened Next</h4>
-                <p style="margin: 10px 0;">One of us got severe stomach cramps that same evening. The other suffered serious gastrointestinal illness 48 hours later.</p>
-            </div>
-            
-            <img src="assets/images/rare-meat.jpg" alt="Raw meat served as 'rare beef'" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <img src="assets/images/rare-meat-zoom.jpg" alt="Close-up of meat texture - clearly not beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Seeking External Verification</h3>
-            <p style="margin-bottom: 15px;">
-                Doubting my own senses, I reached out to my friend who's a professional chef. Their response told me it definitely was not steak.
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/ask-chef-orig-thai.jpg" alt="Message to chef friend (Thai)" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/ask-chef-translated-eng.jpg" alt="Chef's response translated" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                I posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/reddit-post-1.jpg" alt="Reddit responses part 1" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/reddit-post-2.jpg" alt="Reddit responses part 2" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <img src="assets/images/reddit-ban.jpg" alt="Banned from steak forum for posting non-steak" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Management Response Timeline</h3>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <strong>Day 1 Morning:</strong> The next morning, I asked to speak with upper management about the incident. None were available. The only manager on site was the same restaurant manager who had lied to us the night before. What kind of "5-star" resort has no senior management present?
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Days 1-2:</strong> Since we didn't know if it was raw chicken or pork, we found some anti-parasite medication and took it as a precaution. Each type of meat carries different parasitic or bacterial risks.
-                </div>
-                
-                <img src="assets/images/anti-parasite-meds.jpg" alt="Anti-parasite medication taken as precaution" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                
-                <div class="timeline-item">
-                    <strong>Day 3:</strong> Finally, I had an in-person meeting with Resort Operations Manager <span class="manager-name">Sindra Sindrawan</span>. He took one look at the photo and immediately agreed with me - it was NOT beef. He promised he would identify the meat and get back to me.
-                </div>
-                
-                <div style="text-align: center; margin: 20px 0;">
-                    <img src="assets/images/sindra-sindrawan.jpg" alt="Operations Manager Sindra Sindrawan" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                    <p style="margin-top: 10px; font-style: italic; color: #666;">Operations Manager Sindra Sindrawan</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Day 3 (hours later):</strong> A few hours passed before our second meeting. Sindra sat down and, after "talking with the staff," now claimed it was beef. He showed me a photo of beef packaging as "proof." I said, "Fine, let's go to the kitchen right now and cook it up."
-                </div>
-            </div>
-            
-            <img src="assets/images/beef-packaging.jpeg" alt="Beef packaging shown as 'proof'" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <h3>The Kitchen Test</h3>
-            <p style="margin-bottom: 15px;">
-                We went to the kitchen where management cooked up what they claimed was the same meat. This time, it looked and tasted exactly like beef - proper beef. Yet they still insisted this was identical to what they'd served me two days earlier.
-            </p>
-            
-            <img src="assets/images/cooked-beef.jpeg" alt="Actually cooked beef - looks completely different" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/cooked-beef.jpeg" alt="Real beef" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">Real beef (Day 3)</p>
-                </div>
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/rare-meat.jpg" alt="Mystery meat served" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">What I was served (Day 1)</p>
-                </div>
-            </div>
-            
-            <h3>AI Analysis Proves the Truth</h3>
-            <p style="margin-bottom: 15px;">
-                Standing there in the kitchen, I opened ChatGPT and took a photo of the freshly cooked meat. The AI immediately confirmed it was definitely beef.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="ChatGPT confirms the newly cooked meat is beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                I then uploaded the photo of my original meal from two days prior. ChatGPT initially thought it was Ahi Tuna. When I clarified it was meat, not fish, the AI concluded it couldn't be beef due to the incorrect color and texture. It added that chicken or pork would NEVER be served raw by a reputable resort.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="ChatGPT says original meal cannot be beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Medical Consequences & Resort's Refusal</h3>
-            <p style="margin-bottom: 15px;">
-                I told them firmly: "I will not be gaslighted into thinking I ate steak. I've been eating steak for 40 years."
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                The meat was either chicken or pork, each carrying different health risks when consumed raw. Since I didn't know which it was, I had to visit a doctor for stool testing to check for parasites. The worst part? <strong>The resort refused to pay for the medical visit</strong>, even though they were the ones who served me raw meat.
-            </p>
-            
-            <img src="assets/images/dr-visit.jpg" alt="Doctor's receipt for parasite testing" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-        </div>
-        
-        <div class="section">
-            <h2>🚿 Bathroom Conditions</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The bathroom problems started the moment I turned on the faucet. Yellow water came pouring out - not slightly discolored, but distinctly yellow.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/yellow-water-from-faucet-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p style="margin-bottom: 15px;">
-                The shower was equally disappointing. The "hot" water was warm at best and ran out completely after about 15 minutes. I prefer long, relaxing showers on vacation - that was impossible here.
-            </p>
-            
-            <h3>The Open-Air Nightmare</h3>
-            <p style="margin-bottom: 15px;">
-                The toilet had an open-air design with zero sound privacy. This wouldn't normally be a huge issue, but when you're suffering from severe stomach problems after eating raw chicken, it becomes a nightmare. My neighbors could hear every embarrassing sound, and I could hear them conversing from my bathroom.
-            </p>
-            
-            <img src="assets/images/open-air-bathroom.jpg" alt="Open-air bathroom with no privacy" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                To make matters worse, they placed smoking and non-smoking rooms directly next to each other. Thanks to the open-air design, cigarette smoke constantly wafted into our non-smoking room.
-            </p>
-            
-            <img src="assets/images/smoking.jpg" alt="Neighbors smoking visible from non-smoking room" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-        </div>
-        
-        <div class="section">
-            <h2>🧹 Housekeeping Standards</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The housekeeping staff, while friendly, had one major hygiene issue - they cleaned the rooms while wearing their outdoor shoes. 
-            </p>
-            
-            <img src="assets/images/staff-with-shoes.jpg" alt="Housekeeping staff cleaning with outdoor shoes on" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Why would staff wear shoes inside while cleaning? These are the same shoes they wear outside, walking on streets and sidewalks. They then track all that dirt and contamination into our room while "cleaning" it. Basic hygiene standards completely ignored.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🚴 Bicycle Rental Safety Hazards</h2>
-            
-            <div class="critical">
-                <strong>SAFETY ALERT:</strong> Equipment poses serious risk to guests
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                The resort offered bicycle rentals, but the bikes were death traps. They were old with flat tires and broken kickstands that caused them to fall over constantly.
-            </p>
-            
-            <img src="assets/images/bike-flat-tire.jpg" alt="Rental bikes with flat tires" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                The real danger came from the brakes - they squealed loudly and barely worked. No lights or helmets were provided, which is especially dangerous since the local roads have no lighting at night.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/broken-bike-480p-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p style="margin-bottom: 10px; font-weight: bold;">See for yourself:</p>
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/driving-at-night-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <div class="section">
-            <h2>💪 Fitness Facilities</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The "gym" was laughable. It consisted of a tiny, unstable single-machine with extremely low weight capacity and a few plastic "dumbbells" that felt like toys. Completely unsuitable for any real fitness routine.
-            </p>
-            
-            <img src="assets/images/terrible-gym.jpg" alt="Inadequate gym equipment" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/terrible-gym-480p-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <div class="section">
-            <h2>✋ Final Insult: The Broken Comb</h2>
-            
-            <p style="margin-bottom: 15px;">
-                Just before checking out, I used a wooden comb provided by the resort. It <strong>broke in half</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                Having spent time in Thailand, I knew this was a terrible omen. In Thai culture, a broken comb during use is a serious bad omen - a warning of misfortune. The superstition says it must be thrown away immediately or the bad luck will manifest.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                This perfectly encapsulated the entire stay - even the resort's combs were cursed.
-            </p>
-            
-            <img src="assets/images/broken-comb.jpg" alt="Wooden comb broken in half" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <div class="info-box" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong style="color: #92400e;">Cultural Note:</strong> In Thai tradition, when a comb breaks while brushing hair, it's considered a bad omen that brings misfortune if kept. The immediate disposal of the broken comb is believed to prevent bad luck from manifesting. This belief is part of Thailand's extensive superstition framework that governs daily life.
-            </div>
-            
-            <p style="margin-bottom: 15px; font-style: italic;">
-                The resort couldn't even provide functioning combs or safe bicycles, let alone safe food, clean water, or adequate gym equipment.
-            </p>
-        </div>
-        
-        <div class="section" style="text-align: center;">
-            <h2>Overall Rating</h2>
-            <div class="rating">⭐ 1/5</div>
-            <p><strong>ABSOLUTELY NOT RECOMMENDED</strong></p>
-            <p style="font-size: 1.2rem; color: #dc2626; margin: 20px 0;">By the end, I couldn't wait to leave this 1-star joke of a resort.</p>
-            
-            <div class="critical" style="margin: 30px 0;">
-                <h3 style="color: #dc2626; margin-bottom: 15px;">The Real Problem: Management</h3>
-                <p style="text-align: left; line-height: 1.8;">
-                    The only saving grace is that the service staff were kind. This is a <strong>1-star resort as a direct result of 1-star management</strong>.
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    <strong>Management Failures:</strong><br>
-                    • Restaurant Manager <span class="manager-name">Andika Putra</span> - Lied directly to guests about raw chicken<br>
-                    • Operations Manager <span class="manager-name">Sindra Sindrawan</span> - Initially honest, then backtracked under pressure<br>
-                    • No senior management available on-site during crisis<br>
-                    • Attempted to gaslight guests about food safety incident<br>
-                    • Zero accountability for health violations<br>
-                    • Complete failure in basic hospitality standards
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    This resort represents everything wrong with hospitality management - prioritizing face-saving over guest safety, lying instead of taking responsibility, and operating with standards that wouldn't be acceptable at a roadside motel, let alone a resort claiming to offer a premium experience.
-                </p>
-            </div>
         </div>
     </div>
     
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>🏝️ Popular Nusa Penida Attractions Nearby</h3>
-                <div class="info-grid">
-                    <div class="info-item">• <strong>Crystal Bay</strong> - Snorkeling & Diving</div>
-                    <div class="info-item">• <strong>Kelingking Beach</strong> - T-Rex Cliff Viewpoint</div>
-                    <div class="info-item">• <strong>Angel's Billabong</strong> - Natural Infinity Pool</div>
-                    <div class="info-item">• <strong>Broken Beach</strong> - Pasih Uug Arch</div>
-                    <div class="info-item">• <strong>Diamond Beach</strong> - White Sand Paradise</div>
-                    <div class="info-item">• <strong>Atuh Beach</strong> - Secluded Bay</div>
-                    <div class="info-item">• <strong>Manta Point</strong> - Manta Ray Diving</div>
-                    <div class="info-item">• <strong>Peguyangan Waterfall</strong> - Sacred Blue Stairs</div>
-                </div>
-            </div>
-            
-            <p style="text-align: center; margin-top: 20px; font-style: italic;">
-                While Nusa Penida offers incredible natural beauty and world-class diving, this resort fails to meet basic hospitality standards.
-            </p>
-        </div>
-    </div>
-    
-    <footer>
-        <p>Review based on actual guest experience</p>
-        <p>Last updated: 2025</p>
-    </footer>
 </body>
 </html>
