@@ -211,6 +211,60 @@
     </style>
 </head>
 <body>
+    <script>
+        // Lazy loading for images and videos
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lazy load images
+            const images = document.querySelectorAll('img');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            images.forEach(img => {
+                if (img.src) {
+                    // Store original src as data-src and clear src for lazy loading
+                    img.dataset.src = img.src;
+                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect width="400" height="300" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="sans-serif" font-size="16"%3ELoading...%3C/text%3E%3C/svg%3E';
+                    imageObserver.observe(img);
+                }
+            });
+            
+            // Lazy load videos
+            const videos = document.querySelectorAll('video');
+            const videoObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const video = entry.target;
+                        const source = video.querySelector('source');
+                        if (source && source.dataset.src) {
+                            source.src = source.dataset.src;
+                            source.removeAttribute('data-src');
+                            video.load();
+                        }
+                        observer.unobserve(video);
+                    }
+                });
+            });
+            
+            videos.forEach(video => {
+                const source = video.querySelector('source');
+                if (source && source.src) {
+                    source.dataset.src = source.src;
+                    source.removeAttribute('src');
+                    videoObserver.observe(video);
+                }
+            });
+        });
+    </script>
     <header>
         <h1>Semaya Beach Resort Review</h1>
         <p class="subtitle">An Honest Guest Experience - Nusa Penida, Bali</p>
@@ -252,11 +306,11 @@
             </p>
             
             <p style="margin-bottom: 15px;">
-                When I complained about both the lack of complimentary water and the outrageous charge, management sheepishly admitted they "should have" provided water in the room. But here's where it gets worse - they took away the sealed bottles I had ordered and replaced them with <strong>refillable water bottles</strong>.
+                When I complained about both the lack of complimentary water and the outrageous charge, management admitted they "should have" provided water in the room. But here's where it gets worse - they took away the sealed bottles I had ordered and replaced them with <strong>refillable containers</strong>.
             </p>
             
             <p style="margin-bottom: 15px;">
-                In Indonesia, a 5-star resort should not be providing unsealed water in refillable containers. Are the containers clean? Is the water properly filtered? Are the people handling it following proper hygiene protocols? All of these worries would be completely avoidable if they just provided complimentary sealed water in the first place, like every other 5-star resort does.
+                In Indonesia, a 5-star resort should not be providing water in refillable, unsealed containers. Are the containers clean? Is the water properly filtered? Are the people handling it following proper hygiene protocols? All of these worries would be completely avoidable if they just provided complimentary sealed water in the first place, like every other 5-star resort does.
             </p>
             
             <img src="assets/images/refillable-water-bottle.jpg" alt="Refillable water bottles provided by resort" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
@@ -275,7 +329,7 @@
             
             <h3>The Night It Happened</h3>
             <p style="margin-bottom: 15px;">
-                I ordered rare beef for dinner. What arrived at my table looked wrong from the start, but I only realized the full horror after taking a bite. The texture and flavor were completely unlike any beef I'd ever tasted.
+                My date and I ordered rare beef for dinner. What arrived at our table looked wrong from the start, but we only realized the full horror after taking a bite. The texture and flavor were completely unlike any beef we'd ever tasted.
             </p>
             
             <p style="margin-bottom: 15px;">
@@ -285,24 +339,21 @@
             <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager Andika Putra" style="max-width: 300px; border-radius: 8px; margin: 20px auto; display: block;">
             
             <div class="health-warning">
-                <h4>Health Consequences (2 diners affected):</h4>
-                <ul class="sub-issue">
-                    <li>Guest 1: Severe stomach cramps same evening</li>
-                    <li>Guest 2: Serious gastrointestinal illness 48 hours later</li>
-                </ul>
+                <h4>What Happened Next</h4>
+                <p style="margin: 10px 0;">Two people ate the mystery meat. One of us got severe stomach cramps that same evening. The other suffered serious gastrointestinal illness 48 hours later.</p>
             </div>
             
             <img src="assets/images/rare-meat.jpg" alt="Raw meat served as 'rare beef'" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
             
             <img src="assets/images/rare-meat-zoom.jpg" alt="Close-up of meat texture - clearly not beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
             
-            <h3>Seeking External Verification</h3>
             <p style="margin-bottom: 15px;">
-                Doubting my own senses, I reached out to my friend who's a professional chef. Their response was immediate and unequivocal: "That is NOT steak."
+                I posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
             </p>
             
+            <h3>Seeking External Verification</h3>
             <p style="margin-bottom: 15px;">
-                I then posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
+                Doubting my own senses, I reached out to my friend who's a professional chef. Their response told me it definitely was not steak.
             </p>
             
             <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
@@ -363,14 +414,14 @@
             
             <h3>AI Analysis Proves the Truth</h3>
             <p style="margin-bottom: 15px;">
-                Standing there in the kitchen, I opened ChatGPT and took a photo of the freshly cooked meat. The AI immediately confirmed: "This is definitely beef."
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                I then uploaded the photo of my original meal from two days prior. ChatGPT initially thought it was Ahi Tuna. When I clarified it was meat, not fish, the AI concluded it couldn't be beef due to the incorrect color and texture. It added that chicken or pork "would NEVER be served raw by a reputable resort."
+                Standing there in the kitchen, I opened ChatGPT and took a photo of the freshly cooked meat. The AI immediately confirmed it was definitely beef.
             </p>
             
             <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="ChatGPT confirms the newly cooked meat is beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <p style="margin-bottom: 15px;">
+                I then uploaded the photo of my original meal from two days prior. ChatGPT initially thought it was Ahi Tuna. When I clarified it was meat, not fish, the AI concluded it couldn't be beef due to the incorrect color and texture. It added that chicken or pork would NEVER be served raw by a reputable resort.
+            </p>
             
             <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="ChatGPT says original meal cannot be beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
             
@@ -404,7 +455,7 @@
             
             <h3>The Open-Air Nightmare</h3>
             <p style="margin-bottom: 15px;">
-                The toilet had an open-air design with zero sound privacy. This wouldn't normally be a huge issue, but when you're suffering from severe stomach problems after eating raw chicken, it becomes a nightmare. My neighbors could hear every embarrassing sound, while I could hear their conversations from my bathroom.
+                The toilet had an open-air design with zero sound privacy. This wouldn't normally be a huge issue, but when you're suffering from severe stomach problems after eating raw chicken, it becomes a nightmare. My neighbors could hear every embarrassing sound, and I could hear them conversing from my bathroom.
             </p>
             
             <img src="assets/images/open-air-bathroom.jpg" alt="Open-air bathroom with no privacy" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
@@ -444,11 +495,17 @@
             <img src="assets/images/bike-flat-tire.jpg" alt="Rental bikes with flat tires" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
             
             <p style="margin-bottom: 15px;">
-                The real danger came from the brakes - they squealed loudly and barely worked. No lights or helmets were provided, which is especially dangerous since the local roads have no lighting at night. I genuinely feared for my safety every time I rode one.
+                The real danger came from the brakes - they squealed loudly and barely worked. No lights or helmets were provided, which is especially dangerous since the local roads have no lighting at night.
             </p>
             
             <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
                 <source src="assets/video/broken-bike-480p.mov" type="video/quicktime">
+                Your browser does not support the video tag.
+            </video>
+            
+            <p style="margin-bottom: 10px; font-weight: bold;">See for yourself:</p>
+            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+                <source src="assets/video/driving-at-night.mov" type="video/quicktime">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -490,7 +547,7 @@
             </div>
             
             <p style="margin-bottom: 15px; font-style: italic;">
-                The resort couldn't even provide functioning combs, let alone safe food or clean water.
+                The resort couldn't even provide functioning combs or safe bicycles, let alone safe food, clean water, or adequate gym equipment.
             </p>
         </div>
         
