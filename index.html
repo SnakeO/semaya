@@ -7,8 +7,6 @@
     <meta name="description" content="Honest review of Semaya Beach Resort in Nusa Penida, Bali. Located near Crystal Bay, Kelingking Beach, and Angel's Billabong. Read before booking this Nusa Penida accommodation.">
     <meta name="keywords" content="Semaya Beach Resort, Nusa Penida hotels, Bali resort review, Crystal Bay accommodation, Nusa Penida accommodation, Kelingking Beach hotels, Angel's Billabong resort, Nusa Penida tourism, Bali island hotels, Indonesia beach resort">
     
-    <!-- Video.js CSS -->
-    <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet">
     
     <style>
         * {
@@ -215,8 +213,6 @@
     </style>
 </head>
 <body>
-    <!-- Video.js JavaScript -->
-    <script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
     <script>
         // Lazy loading for images and videos
         document.addEventListener('DOMContentLoaded', function() {
@@ -270,34 +266,6 @@
                 }
             });
             
-            // Initialize Video.js for all videos after lazy loading
-            videos.forEach(video => {
-                video.classList.add('video-js', 'vjs-default-skin', 'vjs-big-play-centered');
-                video.setAttribute('data-setup', '{}');
-                
-                // When video is loaded, initialize Video.js
-                const observer = new MutationObserver((mutations) => {
-                    mutations.forEach((mutation) => {
-                        if (mutation.type === 'attributes' && mutation.attributeName === 'src') {
-                            const source = video.querySelector('source');
-                            if (source && source.src) {
-                                videojs(video, {
-                                    controls: true,
-                                    preload: 'auto',
-                                    fluid: true,
-                                    playbackRates: [0.5, 1, 1.5, 2]
-                                });
-                                observer.disconnect();
-                            }
-                        }
-                    });
-                });
-                
-                const source = video.querySelector('source');
-                if (source) {
-                    observer.observe(source, { attributes: true });
-                }
-            });
         });
     </script>
     <header>
@@ -486,7 +454,7 @@
             </p>
             
             <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/yellow-water-from-faucet.mov" type="video/quicktime">
+                <source src="assets/video/yellow-water-from-faucet.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             
@@ -540,13 +508,13 @@
             </p>
             
             <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/broken-bike-480p.mov" type="video/quicktime">
+                <source src="assets/video/broken-bike-480p.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             
             <p style="margin-bottom: 10px; font-weight: bold;">See for yourself:</p>
             <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/driving-at-night.mov" type="video/quicktime">
+                <source src="assets/video/driving-at-night.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -561,7 +529,7 @@
             <img src="assets/images/terrible-gym.jpg" alt="Inadequate gym equipment" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
             
             <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/terrible-gym-480p.mov" type="video/quicktime">
+                <source src="assets/video/terrible-gym-480p.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
