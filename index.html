@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaya Beach Resort Bali Review - Honest Guest Experience | Nusa Penida Hotels</title>
-    <meta name="description" content="Honest review of Semaya Beach Resort in Nusa Penida, Bali. Located near Crystal Bay, Kelingking Beach, and Angel's Billabong. Read before booking this Nusa Penida accommodation.">
-    <meta name="keywords" content="Semaya Beach Resort, Nusa Penida hotels, Bali resort review, Crystal Bay accommodation, Nusa Penida accommodation, Kelingking Beach hotels, Angel's Billabong resort, Nusa Penida tourism, Bali island hotels, Indonesia beach resort">
-    
+    <title>[CLASSIFIED] Operation SEMAYA BEACH - Intelligence Dossier</title>
+    <meta name="description" content="[CLASSIFIED] Intelligence file on Semaya Beach Resort operational security failures. For authorized personnel only.">
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&family=JetBrains+Mono:wght@400;700&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -16,209 +16,845 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
-        
-        .warning-badge {
-            display: inline-block;
-            background: #fbbf24;
-            color: #713f12;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        
-        .section h2 {
-            color: #dc2626;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #fee2e2;
-        }
-        
-        .section h3 {
-            color: #7c2d12;
-            font-size: 1.3rem;
-            margin: 20px 0 10px 0;
-        }
-        
-        .issue-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .issue-list li {
-            padding: 10px 0;
-            padding-left: 30px;
+            font-family: 'Courier Prime', monospace;
+            background: 
+                radial-gradient(circle at 20px 50px, #333 2px, transparent 2px),
+                radial-gradient(circle at 70px 80px, #444 1px, transparent 1px),
+                linear-gradient(45deg, #2d2d2d 0%, #3a3a3a 100%);
+            background-size: 100px 100px, 60px 60px, 100% 100%;
+            color: #e8e8e8;
+            line-height: 1.4;
+            min-height: 100vh;
             position: relative;
         }
         
-        .issue-list li:before {
-            content: "⚠️";
-            position: absolute;
+        /* Paper texture overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
             left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
         }
         
-        .sub-issue {
-            margin-left: 20px;
-            padding: 5px 0;
-            color: #666;
-            list-style-type: disc;
-        }
-        
-        .critical {
-            background: #fee2e2;
-            border-left: 4px solid #dc2626;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
-        }
-        
-        .critical strong {
-            color: #dc2626;
-        }
-        
-        .photo-placeholder {
-            background: #f3f4f6;
-            border: 2px dashed #9ca3af;
-            padding: 40px;
-            text-align: center;
-            color: #6b7280;
-            margin: 20px 0;
-            border-radius: 8px;
-            font-style: italic;
-        }
-        
-        .health-warning {
-            background: #fef2f2;
-            border: 2px solid #dc2626;
+        .dossier-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
             padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
         }
         
-        .health-warning h4 {
-            color: #dc2626;
-            margin-bottom: 10px;
-        }
-        
-        footer {
+        /* File folder header */
+        .classified-header {
+            background: 
+                linear-gradient(135deg, #8B0000 0%, #A0522D 50%, #8B0000 100%);
+            color: #FFD700;
             text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            background: #e5e7eb;
+            padding: 30px 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border: 3px solid #FFD700;
         }
         
-        .rating {
-            font-size: 2rem;
-            color: #dc2626;
-            margin: 20px 0;
-        }
-        
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            .section h2 {
-                font-size: 1.4rem;
-            }
-        }
-        
-        .info-box {
-            background: #eff6ff;
-            border: 2px solid #3b82f6;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        
-        .info-box h3 {
-            color: #1e40af;
-            margin-bottom: 15px;
-        }
-        
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .info-item {
-            padding: 5px 0;
-        }
-        
-        .info-item strong {
-            color: #1e40af;
-        }
-        
-        .manager-name {
-            background: #fef3c7;
-            padding: 2px 6px;
-            border-radius: 4px;
+        .classified-header::before {
+            content: 'TOP SECRET';
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: #FF0000;
+            color: white;
+            padding: 5px 15px;
             font-weight: bold;
-            color: #92400e;
+            transform: rotate(15deg);
+            border: 2px solid #FFD700;
+            font-size: 12px;
         }
         
-        .timeline {
-            background: #f9fafb;
-            border-left: 3px solid #dc2626;
+        .classified-header::after {
+            content: 'CLASSIFIED';
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            background: #FF0000;
+            color: white;
+            padding: 5px 15px;
+            font-weight: bold;
+            transform: rotate(-15deg);
+            border: 2px solid #FFD700;
+            font-size: 12px;
+        }
+        
+        .operation-title {
+            font-family: 'Special Elite', cursive;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        
+        .case-number {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            opacity: 0.9;
+            letter-spacing: 2px;
+        }
+        
+        .threat-level {
+            display: inline-block;
+            background: #FF4444;
+            color: white;
+            padding: 8px 16px;
+            margin: 15px 0;
+            font-weight: bold;
+            border: 2px solid #FFD700;
+            animation: blink 2s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.7; }
+        }
+        
+        /* File folder tabs */
+        .file-tabs {
+            display: flex;
+            margin-bottom: -1px;
+            z-index: 10;
+            position: relative;
+        }
+        
+        .file-tab {
+            background: #8B4513;
+            color: #FFD700;
+            padding: 10px 20px;
+            margin-right: 5px;
+            border: 2px solid #FFD700;
+            border-bottom: none;
+            font-family: 'Special Elite', cursive;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .file-tab.active {
+            background: #A0522D;
+            transform: translateY(-3px);
+        }
+        
+        .file-tab::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 10px;
+            height: 10px;
+            background: #CD853F;
+            border: 1px solid #8B4513;
+            border-radius: 50%;
+        }
+        
+        /* Document sections */
+        .document {
+            background: 
+                linear-gradient(45deg, 
+                    #F5F5DC 0%, 
+                    #F0E68C 25%, 
+                    #F5F5DC 50%, 
+                    #F0E68C 75%, 
+                    #F5F5DC 100%);
+            color: #2F2F2F;
+            padding: 40px;
+            margin-bottom: 20px;
+            border: 3px solid #8B4513;
+            position: relative;
+            box-shadow: 
+                0 0 10px rgba(0,0,0,0.3),
+                inset 0 0 50px rgba(139, 69, 19, 0.1);
+        }
+        
+        /* Coffee stains */
+        .document::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: 
+                radial-gradient(circle, 
+                    rgba(101, 67, 33, 0.4) 0%, 
+                    rgba(101, 67, 33, 0.2) 40%, 
+                    transparent 70%);
+            border-radius: 50%;
+            transform: rotate(25deg);
+        }
+        
+        /* Paper clips */
+        .document::after {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 40px;
+            width: 30px;
+            height: 80px;
+            background: 
+                linear-gradient(90deg, 
+                    #C0C0C0 0%, 
+                    #E8E8E8 50%, 
+                    #C0C0C0 100%);
+            border-radius: 15px;
+            border: 2px solid #A0A0A0;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+        }
+        
+        .document h2 {
+            font-family: 'Special Elite', cursive;
+            color: #8B0000;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            position: relative;
+        }
+        
+        .document h3 {
+            font-family: 'Courier Prime', monospace;
+            color: #2F2F2F;
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+            font-weight: bold;
+        }
+        
+        /* Stamp effects */
+        .stamp {
+            position: absolute;
+            background: #FF0000;
+            color: white;
+            padding: 10px 20px;
+            font-family: 'Special Elite', cursive;
+            font-weight: bold;
+            border: 3px solid #FF0000;
+            transform: rotate(-15deg);
+            font-size: 14px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+        
+        .stamp.declassified {
+            background: #008000;
+            border-color: #008000;
+            box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+        }
+        
+        /* Evidence tags */
+        .evidence-tag {
+            background: #FFD700;
+            color: #8B0000;
+            padding: 5px 10px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            position: relative;
+            display: inline-block;
+            margin: 10px 0;
+            border: 1px solid #8B0000;
+        }
+        
+        .evidence-tag::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #FFD700;
+        }
+        
+        /* Surveillance photos */
+        .surveillance-photo {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
             padding: 15px;
+            background: white;
+            border: 3px solid #8B4513;
+            box-shadow: 
+                0 4px 8px rgba(0,0,0,0.3),
+                inset 0 0 0 2px #FFD700;
+            transform: rotate(-2deg);
+        }
+        
+        .surveillance-photo img {
+            max-width: 100%;
+            border: 1px solid #ccc;
+        }
+        
+        .surveillance-photo::before {
+            content: attr(data-timestamp);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #FF0000;
+            color: white;
+            padding: 3px 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            border: 1px solid #FFD700;
+        }
+        
+        /* Redacted sections */
+        .redacted {
+            background: #000000;
+            color: transparent;
+            user-select: none;
+            position: relative;
+            display: inline-block;
+            min-width: 100px;
+            height: 1.2em;
+            margin: 0 5px;
+        }
+        
+        .redacted::before {
+            content: '[REDACTED]';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #333;
+            font-size: 8px;
+            opacity: 0.5;
+        }
+        
+        /* Target profiles */
+        .target-profile {
+            background: 
+                linear-gradient(45deg, #2F2F2F 0%, #3A3A3A 100%);
+            color: #00FF00;
+            padding: 20px;
             margin: 20px 0;
+            border: 2px solid #00FF00;
+            font-family: 'JetBrains Mono', monospace;
+            position: relative;
+        }
+        
+        .target-profile::before {
+            content: 'TARGET PROFILE';
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #2F2F2F;
+            color: #00FF00;
+            padding: 0 10px;
+            font-size: 12px;
+            border: 1px solid #00FF00;
+        }
+        
+        .target-name {
+            background: #FF4444;
+            color: white;
+            padding: 3px 8px;
+            font-weight: bold;
+            border: 1px solid #FFD700;
+        }
+        
+        /* Operational timeline */
+        .timeline {
+            background: 
+                linear-gradient(90deg, 
+                    transparent 0%, 
+                    rgba(139, 69, 19, 0.1) 2px, 
+                    transparent 2px);
+            border-left: 4px solid #8B0000;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
         }
         
         .timeline-item {
-            margin-bottom: 15px;
-            padding-left: 15px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
         }
         
-        .timeline-item strong {
-            color: #dc2626;
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            background: #8B0000;
+            border: 2px solid #FFD700;
+            border-radius: 50%;
+        }
+        
+        .timestamp {
+            color: #8B0000;
+            font-weight: bold;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        /* Mission briefing */
+        .mission-briefing {
+            background: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 24px,
+                    rgba(139, 69, 19, 0.1) 24px,
+                    rgba(139, 69, 19, 0.1) 25px
+                );
+            padding: 30px;
+            margin: 20px 0;
+            border: 3px double #8B0000;
+            position: relative;
+        }
+        
+        .mission-briefing::before {
+            content: 'MISSION BRIEFING';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #F5F5DC;
+            color: #8B0000;
+            padding: 5px 15px;
+            font-family: 'Special Elite', cursive;
+            font-weight: bold;
+            border: 2px solid #8B0000;
+        }
+        
+        /* Field notes */
+        .field-notes {
+            font-family: 'Special Elite', cursive;
+            background: 
+                linear-gradient(45deg, 
+                    #F5F5DC 0%, 
+                    #FFFAF0 100%);
+            padding: 25px;
+            margin: 20px 0;
+            border: 2px solid #8B4513;
+            position: relative;
+            transform: rotate(-1deg);
+        }
+        
+        .field-notes::before {
+            content: 'FIELD AGENT NOTES';
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #F5F5DC;
+            color: #8B0000;
+            padding: 0 10px;
+            font-size: 12px;
+            border: 1px solid #8B4513;
+        }
+        
+        /* Conspiracy board style connections */
+        .red-string {
+            position: absolute;
+            width: 2px;
+            background: #FF0000;
+            transform-origin: top;
+            z-index: 5;
+            opacity: 0.7;
+        }
+        
+        /* Watermark */
+        .confidential-watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 6rem;
+            color: rgba(139, 0, 0, 0.05);
+            font-family: 'Special Elite', cursive;
+            font-weight: bold;
+            z-index: 1;
+            pointer-events: none;
+            user-select: none;
+        }
+        
+        /* Threat assessment */
+        .threat-assessment {
+            background: 
+                linear-gradient(135deg, #FF4444 0%, #8B0000 100%);
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border: 3px solid #FFD700;
+            text-align: center;
+            position: relative;
+        }
+        
+        .threat-assessment::before {
+            content: 'THREAT ASSESSMENT';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #FF4444;
+            color: white;
+            padding: 5px 15px;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: bold;
+            border: 2px solid #FFD700;
+            font-size: 12px;
+        }
+        
+        .rating-box {
+            font-size: 3rem;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .operation-title {
+                font-size: 1.5rem;
+            }
+            
+            .document {
+                padding: 20px;
+            }
+            
+            .file-tabs {
+                flex-wrap: wrap;
+            }
+            
+            .surveillance-photo {
+                margin: 10px;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="confidential-watermark">CONFIDENTIAL</div>
+    
+    <div class="dossier-container">
+        <!-- Header -->
+        <div class="classified-header">
+            <div class="operation-title">OPERATION SEMAYA BEACH</div>
+            <div class="case-number">CASE FILE: SB-2025-HOSTILE</div>
+            <div class="threat-level">⚠️ CRITICAL THREAT LEVEL: MAXIMUM ⚠️</div>
+        </div>
+
+        <!-- File Tabs -->
+        <div class="file-tabs">
+            <div class="file-tab active">INTELLIGENCE SUMMARY</div>
+            <div class="file-tab">SURVEILLANCE REPORTS</div>
+            <div class="file-tab">CLASSIFIED</div>
+        </div>
+
+        <!-- Mission Briefing -->
+        <div class="document">
+            <div class="stamp" style="top: 20px; right: 50px;">URGENT</div>
+            
+            <div class="mission-briefing">
+                <h2>MISSION BRIEFING - OPERATION SEMAYA BEACH</h2>
+                <div class="evidence-tag">EVIDENCE-001: LOCATION INTEL</div>
+                
+                <p><strong>TARGET FACILITY:</strong> Semaya Beach Resort</p>
+                <p><strong>COORDINATES:</strong> Jl. Raya Batukandik, Nusa Penida, Klungkung Regency, Bali 80771</p>
+                <p><strong>OPERATIONAL ZONE:</strong> 5 minutes from Crystal Bay Beach</p>
+                <p><strong>THREAT ASSESSMENT:</strong> Hostile environment with multiple security failures</p>
+                <p><strong>MISSION STATUS:</strong> <span style="color: #FF0000; font-weight: bold;">INFILTRATION COMPLETED - EXTRACTION SUCCESSFUL</span></p>
+                
+                <div class="field-notes">
+                    <p><strong>FIELD AGENT INITIAL ASSESSMENT:</strong></p>
+                    <p>Subject facility presents immediate security risks to operatives. Initial reconnaissance revealed critical vulnerabilities in water supply, food safety protocols, and basic operational security. Recommend extreme caution for any future operations in this sector.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Intelligence Reports -->
+        <div class="document">
+            <div class="stamp declassified" style="top: 30px; left: 30px;">DECLASSIFIED</div>
+            
+            <h2>INCIDENT REPORT 001: WATER SUPPLY COMPROMISE</h2>
+            <div class="evidence-tag">EVIDENCE-002: WATER CONTAMINATION</div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 01 - 1800 HOURS:</span> Agent arrived at target facility. Immediately identified lack of sealed water provisions - standard protocol violation.
+                </div>
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 01 - 1830 HOURS:</span> Requested water supplies. Target facility demanded payment of <strong>160,000 Indonesian Rupees</strong> ($10 USD) for basic hydration needs.
+                </div>
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 01 - 1900 HOURS:</span> After complaint, facility replaced sealed containers with <span class="redacted">UNSECURED REFILLABLE UNITS</span>. Contamination risk: CRITICAL.
+                </div>
+            </div>
+
+            <div class="surveillance-photo" data-timestamp="PHOTO-001: 1900H">
+                <img src="assets/images/refillable-water-bottle.jpg" alt="Evidence of compromised water supply" style="max-width: 300px;">
+            </div>
+            
+            <div class="field-notes">
+                <strong>AGENT FIELD NOTES:</strong> Water supply security compromised. Unknown filtration status. Personnel hygiene protocols unverified. Risk assessment: UNACCEPTABLE for operational standards.
+            </div>
+        </div>
+
+        <!-- Critical Food Safety Incident -->
+        <div class="document">
+            <div class="stamp" style="bottom: 50px; right: 40px; transform: rotate(25deg);">TOP SECRET</div>
+            
+            <h2>INCIDENT REPORT 002: BIOLOGICAL WARFARE ATTEMPT</h2>
+            <div class="evidence-tag">EVIDENCE-003: FOOD POISONING WEAPON</div>
+            
+            <div class="threat-assessment">
+                <p><strong>BIOHAZARD ALERT</strong></p>
+                <p>Hostile forces served agent <span class="redacted">RAW CHICKEN</span> disguised as beef steak</p>
+                <p>IMMEDIATE MEDICAL COUNTERMEASURES REQUIRED</p>
+            </div>
+
+            <div class="target-profile">
+                <p><strong>HOSTILE OPERATIVE IDENTIFIED:</strong></p>
+                <p>NAME: <span class="target-name">ANDIKA PUTRA</span></p>
+                <p>POSITION: Restaurant Manager (Cover Identity)</p>
+                <p>THREAT LEVEL: HIGH - CONFIRMED LIAR</p>
+                <p>MODUS OPERANDI: Gaslighting, evidence denial, serving biological hazards</p>
+            </div>
+
+            <div class="surveillance-photo" data-timestamp="PHOTO-002: DAY-1-2000H">
+                <img src="assets/images/andika-putra.jpg" alt="Target: Andika Putra" style="max-width: 250px;">
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 01 - 2000 HOURS:</span> Agent ordered beef steak. Received unknown biological substance.
+                </div>
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 01 - 2015 HOURS:</span> Confronted Target ANDIKA PUTRA. Subject insisted substance was "beef" despite clear evidence to contrary.
+                </div>
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 01 - 2200 HOURS:</span> Agent experienced immediate biological reaction. Stomach cramps initiated.
+                </div>
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 03 - 0800 HOURS:</span> Secondary agent developed severe gastrointestinal symptoms.
+                </div>
+            </div>
+
+            <div class="surveillance-photo" data-timestamp="EVIDENCE-PHOTO-003">
+                <img src="assets/images/rare-meat.jpg" alt="Biological weapon disguised as food" style="max-width: 300px;">
+            </div>
+
+            <div class="field-notes">
+                <strong>EXTERNAL VERIFICATION OBTAINED:</strong> Professional culinary operative confirmed substance was NOT BEEF. Social media intelligence platform banned agent for posting non-steak imagery - confirming our analysis.
+            </div>
+
+            <div class="surveillance-photo" data-timestamp="INTEL-CONFIRMATION">
+                <img src="assets/images/reddit-ban.jpg" alt="Social media intelligence confirmation" style="max-width: 400px;">
+            </div>
+        </div>
+
+        <!-- Management Cover-Up -->
+        <div class="document">
+            <div class="stamp" style="top: 40px; left: 50px; transform: rotate(-20deg);">EYES ONLY</div>
+            
+            <h2>INCIDENT REPORT 003: MANAGEMENT CONSPIRACY</h2>
+            <div class="evidence-tag">EVIDENCE-004: COVER-UP OPERATION</div>
+
+            <div class="target-profile">
+                <p><strong>SECONDARY HOSTILE IDENTIFIED:</strong></p>
+                <p>NAME: <span class="target-name">SINDRA SINDRAWAN</span></p>
+                <p>POSITION: Operations Manager (Command Structure)</p>
+                <p>THREAT LEVEL: MEDIUM - COMPROMISED BY PRESSURE</p>
+                <p>BEHAVIOR: Initially cooperative, then turned hostile under organizational pressure</p>
+            </div>
+
+            <div class="surveillance-photo" data-timestamp="PHOTO-004: DAY-3-1400H">
+                <img src="assets/images/sindra-sindrawan.jpg" alt="Target: Sindra Sindrawan" style="max-width: 250px;">
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 03 - 1000 HOURS:</span> Agent demanded meeting with command structure. Target SINDRA agreed substance was not beef.
+                </div>
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 03 - 1400 HOURS:</span> After consultation with <span class="redacted">UNKNOWN SUPERIORS</span>, Target SINDRA reversed position. Attempted gaslighting operation.
+                </div>
+                <div class="timeline-item">
+                    <span class="timestamp">DAY 03 - 1500 HOURS:</span> Kitchen test conducted. Actual beef provided as "proof" - clearly different substance from original biological weapon.
+                </div>
+            </div>
+
+            <div class="field-notes">
+                <strong>AI ANALYSIS CONFIRMATION:</strong> ChatGPT intelligence system confirmed kitchen test substance was legitimate beef, while original substance could not be identified as beef due to incorrect texture and coloration.
+            </div>
+
+            <div class="surveillance-photo" data-timestamp="AI-ANALYSIS-001">
+                <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="AI intelligence analysis" style="max-width: 400px;">
+            </div>
+        </div>
+
+        <!-- Infrastructure Failures -->
+        <div class="document">
+            <h2>INFRASTRUCTURE ANALYSIS: FACILITY FAILURES</h2>
+            <div class="evidence-tag">EVIDENCE-005: STRUCTURAL DEFECTS</div>
+
+            <h3>WATER SYSTEM CONTAMINATION</h3>
+            <p>Primary water delivery systems compromised. Yellow-colored liquid observed from all faucets.</p>
+            
+            <div class="surveillance-photo" data-timestamp="VIDEO-EVIDENCE-001">
+                <video controls style="max-width: 400px; border: 3px solid #8B4513;">
+                    <source src="assets/video/yellow-water-from-faucet-compressed.mp4" type="video/mp4">
+                    Surveillance video unavailable
+                </video>
+            </div>
+
+            <h3>PRIVACY BREACH: ACOUSTIC SURVEILLANCE</h3>
+            <p>Bathroom facilities designed with <span class="redacted">ZERO ACOUSTIC SHIELDING</span>. All conversations and activities audible to adjacent rooms. Operational security: COMPROMISED.</p>
+
+            <div class="surveillance-photo" data-timestamp="PHOTO-005: PRIVACY-BREACH">
+                <img src="assets/images/open-air-bathroom.jpg" alt="Privacy breach in facility design" style="max-width: 300px;">
+            </div>
+
+            <h3>CONTAMINATION PROTOCOL VIOLATIONS</h3>
+            <p>Cleaning operatives observed wearing outdoor footwear inside rooms, tracking external contaminants.</p>
+
+            <div class="surveillance-photo" data-timestamp="PHOTO-006: CONTAMINATION">
+                <img src="assets/images/staff-with-shoes.jpg" alt="Contamination protocol violation" style="max-width: 300px;">
+            </div>
+        </div>
+
+        <!-- Equipment Failures -->
+        <div class="document">
+            <h2>EQUIPMENT ASSESSMENT: SAFETY HAZARDS</h2>
+            <div class="evidence-tag">EVIDENCE-006: EQUIPMENT FAILURES</div>
+
+            <h3>TRANSPORTATION DEATH TRAPS</h3>
+            <p>Bicycle units provided for reconnaissance completely non-operational. Brake systems failed, tires deflated, structural integrity compromised.</p>
+
+            <div class="surveillance-photo" data-timestamp="PHOTO-007: DEATH-TRAP">
+                <img src="assets/images/bike-flat-tire.jpg" alt="Non-operational transport equipment" style="max-width: 300px;">
+            </div>
+
+            <div class="surveillance-photo" data-timestamp="VIDEO-EVIDENCE-002">
+                <video controls style="max-width: 400px; border: 3px solid #8B4513;">
+                    <source src="assets/video/broken-bike-480p-compressed.mp4" type="video/mp4">
+                    Equipment failure documentation unavailable
+                </video>
+            </div>
+
+            <h3>FITNESS FACILITY: INADEQUATE</h3>
+            <p>Physical conditioning equipment unsuitable for operational readiness. Single unstable machine with toy-grade supplementary equipment.</p>
+
+            <div class="surveillance-photo" data-timestamp="PHOTO-008: FITNESS-FAIL">
+                <img src="assets/images/terrible-gym.jpg" alt="Inadequate fitness facilities" style="max-width: 300px;">
+            </div>
+        </div>
+
+        <!-- Final Assessment -->
+        <div class="document">
+            <div class="stamp declassified" style="bottom: 30px; left: 50px; transform: rotate(-10deg);">MISSION COMPLETE</div>
+            
+            <h2>FINAL ASSESSMENT: THE BROKEN COMB OMEN</h2>
+            <div class="evidence-tag">EVIDENCE-007: BAD OMEN CONFIRMED</div>
+
+            <div class="field-notes">
+                <strong>SUPERNATURAL INTELLIGENCE ALERT:</strong> During final equipment check, standard-issue wooden comb spontaneously fractured during use. According to Thai cultural intelligence, this constitutes a severe omen of misfortune.
+                
+                <p style="margin-top: 15px;">The facility's cursed nature extends even to basic grooming equipment. Immediate disposal of fractured implement completed per cultural protocols to prevent manifestation of predicted misfortune.</p>
+            </div>
+
+            <div class="surveillance-photo" data-timestamp="PHOTO-009: CURSED-EQUIPMENT">
+                <img src="assets/images/broken-comb.jpg" alt="Ominous equipment failure" style="max-width: 300px;">
+            </div>
+        </div>
+
+        <!-- Threat Assessment Summary -->
+        <div class="document">
+            <div class="threat-assessment">
+                <h2 style="color: white; text-decoration: none;">FINAL THREAT ASSESSMENT</h2>
+                
+                <div class="rating-box">⚠️ THREAT LEVEL: MAXIMUM ⚠️</div>
+                
+                <div style="background: rgba(0,0,0,0.3); padding: 20px; margin: 20px 0; border: 2px solid #FFD700;">
+                    <h3 style="color: #FFD700; margin-bottom: 15px;">MANAGEMENT HOSTILE OPERATIVES</h3>
+                    <p style="text-align: left;">• <span class="target-name">ANDIKA PUTRA</span> - Restaurant Manager - CONFIRMED HOSTILE</p>
+                    <p style="text-align: left;">• <span class="target-name">SINDRA SINDRAWAN</span> - Operations Manager - COMPROMISED</p>
+                    <p style="text-align: left;">• Senior command structure: ABSENT DURING CRISIS</p>
+                    <p style="text-align: left;">• Operational philosophy: Deception over safety</p>
+                </div>
+                
+                <p><strong style="font-size: 1.5rem;">RECOMMENDATION: AVOID AT ALL COSTS</strong></p>
+                <p>Facility represents clear and present danger to operative safety and mission success</p>
+            </div>
+        </div>
+
+        <!-- Declassified Information -->
+        <div class="document" style="margin-bottom: 50px;">
+            <div class="stamp declassified" style="top: 20px; right: 30px;">DECLASSIFIED</div>
+            
+            <h2>DECLASSIFIED: NUSA PENIDA OPERATIONAL ZONES</h2>
+            <div class="evidence-tag">REFERENCE-001: SAFE ZONES</div>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0;">
+                <div style="padding: 10px; background: rgba(139, 69, 19, 0.1); border: 1px solid #8B4513;">
+                    <strong>Crystal Bay</strong><br>Snorkeling & Diving Operations
+                </div>
+                <div style="padding: 10px; background: rgba(139, 69, 19, 0.1); border: 1px solid #8B4513;">
+                    <strong>Kelingking Beach</strong><br>T-Rex Cliff Surveillance Point
+                </div>
+                <div style="padding: 10px; background: rgba(139, 69, 19, 0.1); border: 1px solid #8B4513;">
+                    <strong>Angel's Billabong</strong><br>Natural Infinity Pool
+                </div>
+                <div style="padding: 10px; background: rgba(139, 69, 19, 0.1); border: 1px solid #8B4513;">
+                    <strong>Diamond Beach</strong><br>White Sand Paradise
+                </div>
+            </div>
+            
+            <p style="text-align: center; font-style: italic; margin-top: 20px;">
+                While the operational zone offers world-class reconnaissance opportunities, 
+                the target facility fails all basic security standards.
+            </p>
+        </div>
+    </div>
+
     <script>
-        // Lazy loading for images and videos
+        // Lazy loading for images and videos with spy theme
         document.addEventListener('DOMContentLoaded', function() {
-            // Lazy load images
+            // Add typing effect to operation title
+            const title = document.querySelector('.operation-title');
+            const text = title.textContent;
+            title.textContent = '';
+            let i = 0;
+            
+            function typeWriter() {
+                if (i < text.length) {
+                    title.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+            
+            setTimeout(typeWriter, 500);
+
+            // Add some dynamic "declassified" stamps
+            setTimeout(() => {
+                const stamps = document.querySelectorAll('.stamp:not(.declassified)');
+                stamps.forEach((stamp, index) => {
+                    setTimeout(() => {
+                        if (Math.random() > 0.7) {
+                            stamp.textContent = 'DECLASSIFIED';
+                            stamp.classList.add('declassified');
+                        }
+                    }, (index + 1) * 2000);
+                });
+            }, 3000);
+
+            // Lazy load images with spy loading message
             const images = document.querySelectorAll('img');
-            const imageObserver = new IntersectionObserver((entries, observer) => {
+            const imageObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const img = entry.target;
@@ -226,23 +862,22 @@
                             img.src = img.dataset.src;
                             img.removeAttribute('data-src');
                         }
-                        observer.unobserve(img);
+                        imageObserver.unobserve(img);
                     }
                 });
             });
             
             images.forEach(img => {
                 if (img.src) {
-                    // Store original src as data-src and clear src for lazy loading
                     img.dataset.src = img.src;
-                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect width="400" height="300" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="sans-serif" font-size="16"%3ELoading...%3C/text%3E%3C/svg%3E';
+                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect width="400" height="300" fill="%23333"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23FFD700" font-family="monospace" font-size="14"%3E[DECRYPTING...]%3C/text%3E%3C/svg%3E';
                     imageObserver.observe(img);
                 }
             });
-            
+
             // Lazy load videos
             const videos = document.querySelectorAll('video');
-            const videoObserver = new IntersectionObserver((entries, observer) => {
+            const videoObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         const video = entry.target;
@@ -252,7 +887,7 @@
                             source.removeAttribute('data-src');
                             video.load();
                         }
-                        observer.unobserve(video);
+                        videoObserver.unobserve(video);
                     }
                 });
             });
@@ -265,353 +900,7 @@
                     videoObserver.observe(video);
                 }
             });
-            
         });
     </script>
-    <header>
-        <h1>Semaya Beach Resort Review</h1>
-        <p class="subtitle">An Honest Guest Experience - Nusa Penida, Bali</p>
-        <div class="warning-badge">⚠️ Health & Safety Concerns</div>
-    </header>
-    
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>📍 Resort Information & Location</h3>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <strong>Resort:</strong> Semaya Beach Resort
-                    </div>
-                    <div class="info-item">
-                        <strong>Location:</strong> Nusa Penida Island, Bali, Indonesia
-                    </div>
-                    <div class="info-item">
-                        <strong>Address:</strong> Jl. Raya Batukandik, Nusa Penida, Klungkung Regency, Bali 80771
-                    </div>
-                    <div class="info-item">
-                        <strong>Near:</strong> Crystal Bay Beach (5 min)
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
-        <div class="section">
-            <h2>👋 My Arrival</h2>
-            
-            <p style="margin-bottom: 20px;">
-                When I arrived at Semaya Beach Resort, the location near Crystal Bay looked promising. But problems started immediately.
-            </p>
-            
-            <h3>No Drinking Water Provided</h3>
-            <p style="margin-bottom: 15px;">
-                After settling in, I looked for complimentary water bottles - standard in most hotels. There were none. I called the front desk to request some. They sent up two sealed bottles with a bill for <strong>160,000 Indonesian Rupees</strong> (approximately $10 USD).
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                When I complained about both the lack of complimentary water and the outrageous charge, management admitted they "should have" provided water in the room. But here's where it gets worse - they took away the sealed bottles I had ordered and replaced them with <strong>refillable containers</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                In Indonesia, a 5-star resort should not be providing water in refillable, unsealed containers. Are the containers clean? Is the water properly filtered? Are the people handling it following proper hygiene protocols? All of these worries would be completely avoidable if they just provided complimentary sealed water in the first place, like every other 5-star resort does.
-            </p>
-            
-            <img src="assets/images/refillable-water-bottle.jpg" alt="Refillable water bottles provided by resort" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Not the best start to a supposedly 5-star experience.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🍽️ Restaurant - The Raw Chicken Incident</h2>
-            
-            <div class="critical">
-                <strong>CRITICAL FOOD SAFETY VIOLATION:</strong> Raw chicken served instead of ordered rare beef
-            </div>
-            
-            <h3>The Night It Happened</h3>
-            <p style="margin-bottom: 15px;">
-                My date and I ordered rare beef for dinner. What arrived at our table looked wrong from the start, but we only realized the full horror after taking a bite. The texture and flavor were completely unlike any beef we'd ever tasted.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                When we complained, Restaurant Manager <span class="manager-name">Andika Putra</span> came to our table. Despite both of us arguing that this was clearly not steak, he insisted multiple times that it was beef. He claimed it was just "a bad batch" - as if that somehow made serving raw mystery meat acceptable.
-            </p>
-            
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager Andika Putra" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                <p style="margin-top: 10px; font-style: italic; color: #666;">Restaurant Manager Andika Putra</p>
-            </div>
-            
-            <div class="health-warning">
-                <h4>What Happened Next</h4>
-                <p style="margin: 10px 0;">One of us got severe stomach cramps that same evening. The other suffered serious gastrointestinal illness 48 hours later.</p>
-            </div>
-            
-            <img src="assets/images/rare-meat.jpg" alt="Raw meat served as 'rare beef'" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <img src="assets/images/rare-meat-zoom.jpg" alt="Close-up of meat texture - clearly not beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Seeking External Verification</h3>
-            <p style="margin-bottom: 15px;">
-                Doubting my own senses, I reached out to my friend who's a professional chef. Their response told me it definitely was not steak.
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/ask-chef-orig-thai.jpg" alt="Message to chef friend (Thai)" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/ask-chef-translated-eng.jpg" alt="Chef's response translated" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                I posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/reddit-post-1.jpg" alt="Reddit responses part 1" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/reddit-post-2.jpg" alt="Reddit responses part 2" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <img src="assets/images/reddit-ban.jpg" alt="Banned from steak forum for posting non-steak" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Management Response Timeline</h3>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <strong>Day 1 Morning:</strong> The next morning, I asked to speak with upper management about the incident. None were available. The only manager on site was the same restaurant manager who had lied to us the night before. What kind of "5-star" resort has no senior management present?
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Days 1-2:</strong> Since we didn't know if it was raw chicken or pork, we found some anti-parasite medication and took it as a precaution. Each type of meat carries different parasitic or bacterial risks.
-                </div>
-                
-                <img src="assets/images/anti-parasite-meds.jpg" alt="Anti-parasite medication taken as precaution" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                
-                <div class="timeline-item">
-                    <strong>Day 3:</strong> Finally, I had an in-person meeting with Resort Operations Manager <span class="manager-name">Sindra Sindrawan</span>. He took one look at the photo and immediately agreed with me - it was NOT beef. He promised he would identify the meat and get back to me.
-                </div>
-                
-                <div style="text-align: center; margin: 20px 0;">
-                    <img src="assets/images/sindra-sindrawan.jpg" alt="Operations Manager Sindra Sindrawan" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                    <p style="margin-top: 10px; font-style: italic; color: #666;">Operations Manager Sindra Sindrawan</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Day 3 (hours later):</strong> A few hours passed before our second meeting. Sindra sat down and, after "talking with the staff," now claimed it was beef. He showed me a photo of beef packaging as "proof." I said, "Fine, let's go to the kitchen right now and cook it up."
-                </div>
-            </div>
-            
-            <img src="assets/images/beef-packaging.jpeg" alt="Beef packaging shown as 'proof'" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <h3>The Kitchen Test</h3>
-            <p style="margin-bottom: 15px;">
-                We went to the kitchen where management cooked up what they claimed was the same meat. This time, it looked and tasted exactly like beef - proper beef. Yet they still insisted this was identical to what they'd served me two days earlier.
-            </p>
-            
-            <img src="assets/images/cooked-beef.jpeg" alt="Actually cooked beef - looks completely different" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/cooked-beef.jpeg" alt="Real beef" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">Real beef (Day 3)</p>
-                </div>
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/rare-meat.jpg" alt="Mystery meat served" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">What I was served (Day 1)</p>
-                </div>
-            </div>
-            
-            <h3>AI Analysis Proves the Truth</h3>
-            <p style="margin-bottom: 15px;">
-                Standing there in the kitchen, I opened ChatGPT and took a photo of the freshly cooked meat. The AI immediately confirmed it was definitely beef.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="ChatGPT confirms the newly cooked meat is beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                I then uploaded the photo of my original meal from two days prior. ChatGPT initially thought it was Ahi Tuna. When I clarified it was meat, not fish, the AI concluded it couldn't be beef due to the incorrect color and texture. It added that chicken or pork would NEVER be served raw by a reputable resort.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="ChatGPT says original meal cannot be beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Medical Consequences & Resort's Refusal</h3>
-            <p style="margin-bottom: 15px;">
-                I told them firmly: "I will not be gaslighted into thinking I ate steak. I've been eating steak for 40 years."
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                The meat was either chicken or pork, each carrying different health risks when consumed raw. Since I didn't know which it was, I had to visit a doctor for stool testing to check for parasites. The worst part? <strong>The resort refused to pay for the medical visit</strong>, even though they were the ones who served me raw meat.
-            </p>
-            
-            <img src="assets/images/dr-visit.jpg" alt="Doctor's receipt for parasite testing" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-        </div>
-        
-        <div class="section">
-            <h2>🚿 Bathroom Conditions</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The bathroom problems started the moment I turned on the faucet. Yellow water came pouring out - not slightly discolored, but distinctly yellow.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/yellow-water-from-faucet-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p style="margin-bottom: 15px;">
-                The shower was equally disappointing. The "hot" water was warm at best and ran out completely after about 15 minutes. I prefer long, relaxing showers on vacation - that was impossible here.
-            </p>
-            
-            <h3>The Open-Air Nightmare</h3>
-            <p style="margin-bottom: 15px;">
-                The toilet had an open-air design with zero sound privacy. This wouldn't normally be a huge issue, but when you're suffering from severe stomach problems after eating raw chicken, it becomes a nightmare. My neighbors could hear every embarrassing sound, and I could hear them conversing from my bathroom.
-            </p>
-            
-            <img src="assets/images/open-air-bathroom.jpg" alt="Open-air bathroom with no privacy" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                To make matters worse, they placed smoking and non-smoking rooms directly next to each other. Thanks to the open-air design, cigarette smoke constantly wafted into our non-smoking room.
-            </p>
-            
-            <img src="assets/images/smoking.jpg" alt="Neighbors smoking visible from non-smoking room" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-        </div>
-        
-        <div class="section">
-            <h2>🧹 Housekeeping Standards</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The housekeeping staff, while friendly, had one major hygiene issue - they cleaned the rooms while wearing their outdoor shoes. 
-            </p>
-            
-            <img src="assets/images/staff-with-shoes.jpg" alt="Housekeeping staff cleaning with outdoor shoes on" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Why would staff wear shoes inside while cleaning? These are the same shoes they wear outside, walking on streets and sidewalks. They then track all that dirt and contamination into our room while "cleaning" it. Basic hygiene standards completely ignored.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🚴 Bicycle Rental Safety Hazards</h2>
-            
-            <div class="critical">
-                <strong>SAFETY ALERT:</strong> Equipment poses serious risk to guests
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                The resort offered bicycle rentals, but the bikes were death traps. They were old with flat tires and broken kickstands that caused them to fall over constantly.
-            </p>
-            
-            <img src="assets/images/bike-flat-tire.jpg" alt="Rental bikes with flat tires" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                The real danger came from the brakes - they squealed loudly and barely worked. No lights or helmets were provided, which is especially dangerous since the local roads have no lighting at night.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/broken-bike-480p-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p style="margin-bottom: 10px; font-weight: bold;">See for yourself:</p>
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/driving-at-night-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <div class="section">
-            <h2>💪 Fitness Facilities</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The "gym" was laughable. It consisted of a tiny, unstable single-machine with extremely low weight capacity and a few plastic "dumbbells" that felt like toys. Completely unsuitable for any real fitness routine.
-            </p>
-            
-            <img src="assets/images/terrible-gym.jpg" alt="Inadequate gym equipment" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/terrible-gym-480p-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <div class="section">
-            <h2>✋ Final Insult: The Broken Comb</h2>
-            
-            <p style="margin-bottom: 15px;">
-                Just before checking out, I used a wooden comb provided by the resort. It <strong>broke in half</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                Having spent time in Thailand, I knew this was a terrible omen. In Thai culture, a broken comb during use is a serious bad omen - a warning of misfortune. The superstition says it must be thrown away immediately or the bad luck will manifest.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                This perfectly encapsulated the entire stay - even the resort's combs were cursed.
-            </p>
-            
-            <img src="assets/images/broken-comb.jpg" alt="Wooden comb broken in half" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <div class="info-box" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong style="color: #92400e;">Cultural Note:</strong> In Thai tradition, when a comb breaks while brushing hair, it's considered a bad omen that brings misfortune if kept. The immediate disposal of the broken comb is believed to prevent bad luck from manifesting. This belief is part of Thailand's extensive superstition framework that governs daily life.
-            </div>
-            
-            <p style="margin-bottom: 15px; font-style: italic;">
-                The resort couldn't even provide functioning combs or safe bicycles, let alone safe food, clean water, or adequate gym equipment.
-            </p>
-        </div>
-        
-        <div class="section" style="text-align: center;">
-            <h2>Overall Rating</h2>
-            <div class="rating">⭐ 1/5</div>
-            <p><strong>ABSOLUTELY NOT RECOMMENDED</strong></p>
-            <p style="font-size: 1.2rem; color: #dc2626; margin: 20px 0;">By the end, I couldn't wait to leave this 1-star joke of a resort.</p>
-            
-            <div class="critical" style="margin: 30px 0;">
-                <h3 style="color: #dc2626; margin-bottom: 15px;">The Real Problem: Management</h3>
-                <p style="text-align: left; line-height: 1.8;">
-                    The only saving grace is that the service staff were kind. This is a <strong>1-star resort as a direct result of 1-star management</strong>.
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    <strong>Management Failures:</strong><br>
-                    • Restaurant Manager <span class="manager-name">Andika Putra</span> - Lied directly to guests about raw chicken<br>
-                    • Operations Manager <span class="manager-name">Sindra Sindrawan</span> - Initially honest, then backtracked under pressure<br>
-                    • No senior management available on-site during crisis<br>
-                    • Attempted to gaslight guests about food safety incident<br>
-                    • Zero accountability for health violations<br>
-                    • Complete failure in basic hospitality standards
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    This resort represents everything wrong with hospitality management - prioritizing face-saving over guest safety, lying instead of taking responsibility, and operating with standards that wouldn't be acceptable at a roadside motel, let alone a resort claiming to offer a premium experience.
-                </p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>🏝️ Popular Nusa Penida Attractions Nearby</h3>
-                <div class="info-grid">
-                    <div class="info-item">• <strong>Crystal Bay</strong> - Snorkeling & Diving</div>
-                    <div class="info-item">• <strong>Kelingking Beach</strong> - T-Rex Cliff Viewpoint</div>
-                    <div class="info-item">• <strong>Angel's Billabong</strong> - Natural Infinity Pool</div>
-                    <div class="info-item">• <strong>Broken Beach</strong> - Pasih Uug Arch</div>
-                    <div class="info-item">• <strong>Diamond Beach</strong> - White Sand Paradise</div>
-                    <div class="info-item">• <strong>Atuh Beach</strong> - Secluded Bay</div>
-                    <div class="info-item">• <strong>Manta Point</strong> - Manta Ray Diving</div>
-                    <div class="info-item">• <strong>Peguyangan Waterfall</strong> - Sacred Blue Stairs</div>
-                </div>
-            </div>
-            
-            <p style="text-align: center; margin-top: 20px; font-style: italic;">
-                While Nusa Penida offers incredible natural beauty and world-class diving, this resort fails to meet basic hospitality standards.
-            </p>
-        </div>
-    </div>
-    
-    <footer>
-        <p>Review based on actual guest experience</p>
-        <p>Last updated: 2025</p>
-    </footer>
 </body>
 </html>
