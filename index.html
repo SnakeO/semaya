@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaya Beach Resort Bali Review - Honest Guest Experience | Nusa Penida Hotels</title>
-    <meta name="description" content="Honest review of Semaya Beach Resort in Nusa Penida, Bali. Located near Crystal Bay, Kelingking Beach, and Angel's Billabong. Read before booking this Nusa Penida accommodation.">
-    <meta name="keywords" content="Semaya Beach Resort, Nusa Penida hotels, Bali resort review, Crystal Bay accommodation, Nusa Penida accommodation, Kelingking Beach hotels, Angel's Billabong resort, Nusa Penida tourism, Bali island hotels, Indonesia beach resort">
-    
+    <title>The Resort Nightmare - A Graphic Novel | Semaya Beach Resort Horror Story</title>
+    <meta name="description" content="Experience the shocking true story of Semaya Beach Resort through a graphic novel adventure. Raw chicken, yellow water, and management villains await!">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers:wght@400&family=Comic+Neue:wght@400;700&family=Creepster&family=Permanent+Marker&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -16,602 +15,857 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Comic Neue', cursive;
+            background: #ffd700;
+            background-image: 
+                radial-gradient(circle at 25% 25%, #ff6b6b 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, #4ecdc4 2px, transparent 2px),
+                radial-gradient(circle at 25% 75%, #95e1d3 2px, transparent 2px),
+                radial-gradient(circle at 75% 25%, #f9ca24 2px, transparent 2px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px, 0 10px, 10px 0;
+            color: #2c3e50;
+            line-height: 1.4;
+            overflow-x: hidden;
         }
         
-        header {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-            color: white;
-            padding: 60px 20px;
+        /* Comic Book Cover */
+        .comic-cover {
+            background: linear-gradient(45deg, #ff4757, #ff6348);
+            border: 8px solid #2f3640;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+            padding: 40px;
             text-align: center;
         }
         
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+        .comic-title {
+            font-family: 'Bangers', cursive;
+            font-size: 3.5rem;
+            color: #fff;
+            text-shadow: 
+                4px 4px 0px #000,
+                8px 8px 0px #ff6b6b;
+            transform: rotate(-2deg);
+            margin-bottom: 20px;
         }
         
-        .subtitle {
+        .comic-subtitle {
+            font-family: 'Bangers', cursive;
+            font-size: 1.8rem;
+            color: #ffd700;
+            text-shadow: 2px 2px 0px #000;
+            transform: rotate(1deg);
+            margin-bottom: 30px;
+        }
+        
+        .issue-number {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #fff;
+            color: #000;
+            padding: 10px 15px;
+            border-radius: 50%;
+            font-family: 'Bangers', cursive;
             font-size: 1.2rem;
-            opacity: 0.95;
+            border: 3px solid #000;
         }
         
-        .warning-badge {
-            display: inline-block;
-            background: #fbbf24;
-            color: #713f12;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
+        .cover-warning {
+            background: #ffd700;
+            color: #000;
+            padding: 15px;
+            border: 3px solid #000;
+            border-radius: 15px;
+            font-family: 'Bangers', cursive;
+            font-size: 1.2rem;
+            transform: rotate(-1deg);
             margin-top: 20px;
         }
         
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        
-        .section h2 {
-            color: #dc2626;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #fee2e2;
-        }
-        
-        .section h3 {
-            color: #7c2d12;
-            font-size: 1.3rem;
-            margin: 20px 0 10px 0;
-        }
-        
-        .issue-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .issue-list li {
-            padding: 10px 0;
-            padding-left: 30px;
+        /* Comic Panel Layout */
+        .comic-page {
+            background: #fff;
+            border: 8px solid #000;
+            margin: 30px auto;
+            max-width: 1200px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
             position: relative;
+            overflow: hidden;
         }
         
-        .issue-list li:before {
-            content: "⚠️";
+        .page-number {
             position: absolute;
-            left: 0;
-        }
-        
-        .sub-issue {
-            margin-left: 20px;
-            padding: 5px 0;
+            bottom: 10px;
+            right: 20px;
+            font-family: 'Bangers', cursive;
+            font-size: 1.2rem;
             color: #666;
-            list-style-type: disc;
         }
         
-        .critical {
-            background: #fee2e2;
-            border-left: 4px solid #dc2626;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
+        .panel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
         }
         
-        .critical strong {
-            color: #dc2626;
+        .panel {
+            border: 4px solid #000;
+            border-radius: 15px;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+            min-height: 250px;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
         }
         
-        .photo-placeholder {
-            background: #f3f4f6;
-            border: 2px dashed #9ca3af;
-            padding: 40px;
-            text-align: center;
-            color: #6b7280;
-            margin: 20px 0;
-            border-radius: 8px;
+        .panel-large {
+            grid-column: span 2;
+            min-height: 400px;
+        }
+        
+        .panel-content {
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        /* Ben Day Dots Backgrounds */
+        .dots-red {
+            background-image: radial-gradient(circle at 50% 50%, #ff4757 30%, transparent 30%);
+            background-size: 10px 10px;
+        }
+        
+        .dots-blue {
+            background-image: radial-gradient(circle at 50% 50%, #3742fa 30%, transparent 30%);
+            background-size: 10px 10px;
+        }
+        
+        .dots-yellow {
+            background-image: radial-gradient(circle at 50% 50%, #ffa502 30%, transparent 30%);
+            background-size: 10px 10px;
+        }
+        
+        /* Speech Bubbles */
+        .speech-bubble {
+            background: #fff;
+            border: 3px solid #000;
+            border-radius: 20px;
+            padding: 15px 20px;
+            margin: 10px 0;
+            position: relative;
+            font-family: 'Comic Neue', cursive;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        .speech-bubble::before {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 30px;
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #000;
+        }
+        
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 32px;
+            width: 0;
+            height: 0;
+            border-left: 13px solid transparent;
+            border-right: 13px solid transparent;
+            border-top: 13px solid #fff;
+        }
+        
+        .thought-bubble {
+            background: #e8f4fd;
+            border: 3px solid #000;
+            border-radius: 30px;
+            padding: 15px 20px;
+            margin: 10px 0;
+            position: relative;
             font-style: italic;
         }
         
-        .health-warning {
-            background: #fef2f2;
-            border: 2px solid #dc2626;
-            padding: 20px;
-            border-radius: 8px;
+        .thought-bubble::before {
+            content: '○ ○ ○';
+            position: absolute;
+            bottom: -25px;
+            left: 20px;
+            color: #000;
+            font-size: 0.8rem;
+        }
+        
+        /* Sound Effects */
+        .sound-effect {
+            font-family: 'Bangers', cursive;
+            font-size: 2.5rem;
+            color: #ff4757;
+            text-shadow: 
+                3px 3px 0px #000,
+                6px 6px 0px #ff6b6b;
+            transform: rotate(-5deg);
+            text-align: center;
             margin: 20px 0;
         }
         
-        .health-warning h4 {
-            color: #dc2626;
+        .sound-large {
+            font-size: 4rem;
+            transform: rotate(-10deg) scale(1.2);
+        }
+        
+        /* Narrator Boxes */
+        .narrator-box {
+            background: #ffd700;
+            border: 3px solid #000;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .narrator-box::before {
+            content: 'NARRATOR:';
+            position: absolute;
+            top: -15px;
+            left: 10px;
+            background: #000;
+            color: #ffd700;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            font-family: 'Bangers', cursive;
+            border-radius: 5px;
+        }
+        
+        /* Character Placeholders */
+        .character-placeholder {
+            width: 150px;
+            height: 200px;
+            background: linear-gradient(45deg, #ddd, #bbb);
+            border: 3px solid #000;
+            border-radius: 10px;
+            margin: 10px auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bangers', cursive;
+            color: #666;
+        }
+        
+        .hero-placeholder {
+            background: linear-gradient(45deg, #74b9ff, #0984e3);
+            color: #fff;
+        }
+        
+        .villain-placeholder {
+            background: linear-gradient(45deg, #d63031, #74b9ff);
+            color: #fff;
+        }
+        
+        /* Action Lines */
+        .action-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(45deg, transparent 45%, #000 46%, #000 47%, transparent 48%),
+                linear-gradient(-45deg, transparent 45%, #000 46%, #000 47%, transparent 48%);
+            background-size: 20px 20px;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        /* Manager Villain Cards */
+        .villain-card {
+            background: linear-gradient(135deg, #ff4757, #c44569);
+            border: 4px solid #000;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            color: #fff;
+            position: relative;
+        }
+        
+        .villain-name {
+            font-family: 'Creepster', cursive;
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 0px #000;
             margin-bottom: 10px;
         }
         
-        footer {
+        .villain-title {
+            background: #000;
+            color: #ff4757;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-family: 'Bangers', cursive;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        /* Panel Transitions */
+        .transition-arrow {
             text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            background: #e5e7eb;
-        }
-        
-        .rating {
-            font-size: 2rem;
-            color: #dc2626;
+            font-size: 3rem;
             margin: 20px 0;
+            color: #2f3640;
         }
         
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            .section h2 {
-                font-size: 1.4rem;
-            }
+        /* Health Warning Panels */
+        .danger-panel {
+            background: linear-gradient(45deg, #ff4757, #ff3838);
+            color: #fff;
+            border: 6px solid #000;
         }
         
-        .info-box {
-            background: #eff6ff;
-            border: 2px solid #3b82f6;
-            padding: 20px;
-            border-radius: 8px;
+        .warning-text {
+            font-family: 'Bangers', cursive;
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 0px #000;
+        }
+        
+        /* To Be Continued */
+        .to-be-continued {
+            background: #2f3640;
+            color: #ffd700;
+            padding: 40px;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 600px;
+            border: 8px solid #000;
+            border-radius: 20px;
+            position: relative;
+        }
+        
+        .to-be-continued h2 {
+            font-family: 'Bangers', cursive;
+            font-size: 3rem;
+            text-shadow: 3px 3px 0px #000;
             margin-bottom: 20px;
         }
         
-        .info-box h3 {
-            color: #1e40af;
-            margin-bottom: 15px;
+        /* Image Styling */
+        .comic-image {
+            max-width: 100%;
+            border: 3px solid #000;
+            border-radius: 10px;
+            margin: 10px 0;
         }
         
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .info-item {
-            padding: 5px 0;
-        }
-        
-        .info-item strong {
-            color: #1e40af;
-        }
-        
-        .manager-name {
-            background: #fef3c7;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: bold;
-            color: #92400e;
-        }
-        
-        .timeline {
-            background: #f9fafb;
-            border-left: 3px solid #dc2626;
-            padding: 15px;
-            margin: 20px 0;
-        }
-        
-        .timeline-item {
-            margin-bottom: 15px;
-            padding-left: 15px;
-        }
-        
-        .timeline-item strong {
-            color: #dc2626;
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .comic-title {
+                font-size: 2.5rem;
+            }
+            
+            .comic-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .panel-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 15px;
+            }
+            
+            .panel-large {
+                grid-column: span 1;
+            }
+            
+            .sound-effect {
+                font-size: 2rem;
+            }
+            
+            .sound-large {
+                font-size: 3rem;
+            }
         }
     </style>
 </head>
 <body>
-    <script>
-        // Lazy loading for images and videos
-        document.addEventListener('DOMContentLoaded', function() {
-            // Lazy load images
-            const images = document.querySelectorAll('img');
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        if (img.dataset.src) {
-                            img.src = img.dataset.src;
-                            img.removeAttribute('data-src');
-                        }
-                        observer.unobserve(img);
-                    }
-                });
-            });
-            
-            images.forEach(img => {
-                if (img.src) {
-                    // Store original src as data-src and clear src for lazy loading
-                    img.dataset.src = img.src;
-                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect width="400" height="300" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="sans-serif" font-size="16"%3ELoading...%3C/text%3E%3C/svg%3E';
-                    imageObserver.observe(img);
-                }
-            });
-            
-            // Lazy load videos
-            const videos = document.querySelectorAll('video');
-            const videoObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const video = entry.target;
-                        const source = video.querySelector('source');
-                        if (source && source.dataset.src) {
-                            source.src = source.dataset.src;
-                            source.removeAttribute('data-src');
-                            video.load();
-                        }
-                        observer.unobserve(video);
-                    }
-                });
-            });
-            
-            videos.forEach(video => {
-                const source = video.querySelector('source');
-                if (source && source.src) {
-                    source.dataset.src = source.src;
-                    source.removeAttribute('src');
-                    videoObserver.observe(video);
-                }
-            });
-            
-        });
-    </script>
-    <header>
-        <h1>Semaya Beach Resort Review</h1>
-        <p class="subtitle">An Honest Guest Experience - Nusa Penida, Bali</p>
-        <div class="warning-badge">⚠️ Health & Safety Concerns</div>
-    </header>
-    
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>📍 Resort Information & Location</h3>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <strong>Resort:</strong> Semaya Beach Resort
+    <!-- Comic Book Cover -->
+    <div class="comic-cover">
+        <div class="issue-number">#001</div>
+        <h1 class="comic-title">THE RESORT NIGHTMARE</h1>
+        <p class="comic-subtitle">A True Horror Story</p>
+        <div class="cover-warning">⚠️ SHOCKING GUEST EXPERIENCE ⚠️</div>
+    </div>
+
+    <!-- Page 1: The Arrival -->
+    <div class="comic-page">
+        <div class="page-number">Page 1</div>
+        <div class="panel-grid">
+            <div class="panel panel-large">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        Our hero arrives at Semaya Beach Resort in Nusa Penida, Bali, expecting a 5-star paradise...
                     </div>
-                    <div class="info-item">
-                        <strong>Location:</strong> Nusa Penida Island, Bali, Indonesia
+                    <div class="character-placeholder hero-placeholder">
+                        OUR HERO<br>
+                        [Guest]
                     </div>
-                    <div class="info-item">
-                        <strong>Address:</strong> Jl. Raya Batukandik, Nusa Penida, Klungkung Regency, Bali 80771
-                    </div>
-                    <div class="info-item">
-                        <strong>Near:</strong> Crystal Bay Beach (5 min)
+                    <div class="speech-bubble">
+                        "Finally! Time to relax at this beautiful resort near Crystal Bay!"
                     </div>
                 </div>
             </div>
             
-        </div>
-        
-        <div class="section">
-            <h2>👋 My Arrival</h2>
-            
-            <p style="margin-bottom: 20px;">
-                When I arrived at Semaya Beach Resort, the location near Crystal Bay looked promising. But problems started immediately.
-            </p>
-            
-            <h3>No Drinking Water Provided</h3>
-            <p style="margin-bottom: 15px;">
-                After settling in, I looked for complimentary water bottles - standard in most hotels. There were none. I called the front desk to request some. They sent up two sealed bottles with a bill for <strong>160,000 Indonesian Rupees</strong> (approximately $10 USD).
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                When I complained about both the lack of complimentary water and the outrageous charge, management admitted they "should have" provided water in the room. But here's where it gets worse - they took away the sealed bottles I had ordered and replaced them with <strong>refillable containers</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                In Indonesia, a 5-star resort should not be providing water in refillable, unsealed containers. Are the containers clean? Is the water properly filtered? Are the people handling it following proper hygiene protocols? All of these worries would be completely avoidable if they just provided complimentary sealed water in the first place, like every other 5-star resort does.
-            </p>
-            
-            <img src="assets/images/refillable-water-bottle.jpg" alt="Refillable water bottles provided by resort" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Not the best start to a supposedly 5-star experience.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🍽️ Restaurant - The Raw Chicken Incident</h2>
-            
-            <div class="critical">
-                <strong>CRITICAL FOOD SAFETY VIOLATION:</strong> Raw chicken served instead of ordered rare beef
-            </div>
-            
-            <h3>The Night It Happened</h3>
-            <p style="margin-bottom: 15px;">
-                My date and I ordered rare beef for dinner. What arrived at our table looked wrong from the start, but we only realized the full horror after taking a bite. The texture and flavor were completely unlike any beef we'd ever tasted.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                When we complained, Restaurant Manager <span class="manager-name">Andika Putra</span> came to our table. Despite both of us arguing that this was clearly not steak, he insisted multiple times that it was beef. He claimed it was just "a bad batch" - as if that somehow made serving raw mystery meat acceptable.
-            </p>
-            
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager Andika Putra" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                <p style="margin-top: 10px; font-style: italic; color: #666;">Restaurant Manager Andika Putra</p>
-            </div>
-            
-            <div class="health-warning">
-                <h4>What Happened Next</h4>
-                <p style="margin: 10px 0;">One of us got severe stomach cramps that same evening. The other suffered serious gastrointestinal illness 48 hours later.</p>
-            </div>
-            
-            <img src="assets/images/rare-meat.jpg" alt="Raw meat served as 'rare beef'" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <img src="assets/images/rare-meat-zoom.jpg" alt="Close-up of meat texture - clearly not beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Seeking External Verification</h3>
-            <p style="margin-bottom: 15px;">
-                Doubting my own senses, I reached out to my friend who's a professional chef. Their response told me it definitely was not steak.
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/ask-chef-orig-thai.jpg" alt="Message to chef friend (Thai)" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/ask-chef-translated-eng.jpg" alt="Chef's response translated" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                I posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/reddit-post-1.jpg" alt="Reddit responses part 1" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/reddit-post-2.jpg" alt="Reddit responses part 2" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <img src="assets/images/reddit-ban.jpg" alt="Banned from steak forum for posting non-steak" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Management Response Timeline</h3>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <strong>Day 1 Morning:</strong> The next morning, I asked to speak with upper management about the incident. None were available. The only manager on site was the same restaurant manager who had lied to us the night before. What kind of "5-star" resort has no senior management present?
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Days 1-2:</strong> Since we didn't know if it was raw chicken or pork, we found some anti-parasite medication and took it as a precaution. Each type of meat carries different parasitic or bacterial risks.
-                </div>
-                
-                <img src="assets/images/anti-parasite-meds.jpg" alt="Anti-parasite medication taken as precaution" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                
-                <div class="timeline-item">
-                    <strong>Day 3:</strong> Finally, I had an in-person meeting with Resort Operations Manager <span class="manager-name">Sindra Sindrawan</span>. He took one look at the photo and immediately agreed with me - it was NOT beef. He promised he would identify the meat and get back to me.
-                </div>
-                
-                <div style="text-align: center; margin: 20px 0;">
-                    <img src="assets/images/sindra-sindrawan.jpg" alt="Operations Manager Sindra Sindrawan" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                    <p style="margin-top: 10px; font-style: italic; color: #666;">Operations Manager Sindra Sindrawan</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Day 3 (hours later):</strong> A few hours passed before our second meeting. Sindra sat down and, after "talking with the staff," now claimed it was beef. He showed me a photo of beef packaging as "proof." I said, "Fine, let's go to the kitchen right now and cook it up."
+            <div class="panel dots-yellow">
+                <div class="panel-content">
+                    <div class="sound-effect">THUD!</div>
+                    <div class="narrator-box">
+                        But the first red flag appears immediately...
+                    </div>
+                    <div class="speech-bubble">
+                        "Wait... where's the complimentary water? Every hotel provides that!"
+                    </div>
                 </div>
             </div>
             
-            <img src="assets/images/beef-packaging.jpeg" alt="Beef packaging shown as 'proof'" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <h3>The Kitchen Test</h3>
-            <p style="margin-bottom: 15px;">
-                We went to the kitchen where management cooked up what they claimed was the same meat. This time, it looked and tasted exactly like beef - proper beef. Yet they still insisted this was identical to what they'd served me two days earlier.
-            </p>
-            
-            <img src="assets/images/cooked-beef.jpeg" alt="Actually cooked beef - looks completely different" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/cooked-beef.jpeg" alt="Real beef" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">Real beef (Day 3)</p>
+            <div class="panel danger-panel">
+                <div class="panel-content">
+                    <div class="warning-text">WATER SCAM ALERT!</div>
+                    <div class="speech-bubble">
+                        "That'll be 160,000 Rupees ($10 USD) for two bottles of water!"
+                    </div>
+                    <div class="sound-effect">GASP!</div>
                 </div>
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/rare-meat.jpg" alt="Mystery meat served" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">What I was served (Day 1)</p>
-                </div>
-            </div>
-            
-            <h3>AI Analysis Proves the Truth</h3>
-            <p style="margin-bottom: 15px;">
-                Standing there in the kitchen, I opened ChatGPT and took a photo of the freshly cooked meat. The AI immediately confirmed it was definitely beef.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="ChatGPT confirms the newly cooked meat is beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                I then uploaded the photo of my original meal from two days prior. ChatGPT initially thought it was Ahi Tuna. When I clarified it was meat, not fish, the AI concluded it couldn't be beef due to the incorrect color and texture. It added that chicken or pork would NEVER be served raw by a reputable resort.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="ChatGPT says original meal cannot be beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Medical Consequences & Resort's Refusal</h3>
-            <p style="margin-bottom: 15px;">
-                I told them firmly: "I will not be gaslighted into thinking I ate steak. I've been eating steak for 40 years."
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                The meat was either chicken or pork, each carrying different health risks when consumed raw. Since I didn't know which it was, I had to visit a doctor for stool testing to check for parasites. The worst part? <strong>The resort refused to pay for the medical visit</strong>, even though they were the ones who served me raw meat.
-            </p>
-            
-            <img src="assets/images/dr-visit.jpg" alt="Doctor's receipt for parasite testing" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-        </div>
-        
-        <div class="section">
-            <h2>🚿 Bathroom Conditions</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The bathroom problems started the moment I turned on the faucet. Yellow water came pouring out - not slightly discolored, but distinctly yellow.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/yellow-water-from-faucet-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p style="margin-bottom: 15px;">
-                The shower was equally disappointing. The "hot" water was warm at best and ran out completely after about 15 minutes. I prefer long, relaxing showers on vacation - that was impossible here.
-            </p>
-            
-            <h3>The Open-Air Nightmare</h3>
-            <p style="margin-bottom: 15px;">
-                The toilet had an open-air design with zero sound privacy. This wouldn't normally be a huge issue, but when you're suffering from severe stomach problems after eating raw chicken, it becomes a nightmare. My neighbors could hear every embarrassing sound, and I could hear them conversing from my bathroom.
-            </p>
-            
-            <img src="assets/images/open-air-bathroom.jpg" alt="Open-air bathroom with no privacy" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                To make matters worse, they placed smoking and non-smoking rooms directly next to each other. Thanks to the open-air design, cigarette smoke constantly wafted into our non-smoking room.
-            </p>
-            
-            <img src="assets/images/smoking.jpg" alt="Neighbors smoking visible from non-smoking room" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-        </div>
-        
-        <div class="section">
-            <h2>🧹 Housekeeping Standards</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The housekeeping staff, while friendly, had one major hygiene issue - they cleaned the rooms while wearing their outdoor shoes. 
-            </p>
-            
-            <img src="assets/images/staff-with-shoes.jpg" alt="Housekeeping staff cleaning with outdoor shoes on" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Why would staff wear shoes inside while cleaning? These are the same shoes they wear outside, walking on streets and sidewalks. They then track all that dirt and contamination into our room while "cleaning" it. Basic hygiene standards completely ignored.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🚴 Bicycle Rental Safety Hazards</h2>
-            
-            <div class="critical">
-                <strong>SAFETY ALERT:</strong> Equipment poses serious risk to guests
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                The resort offered bicycle rentals, but the bikes were death traps. They were old with flat tires and broken kickstands that caused them to fall over constantly.
-            </p>
-            
-            <img src="assets/images/bike-flat-tire.jpg" alt="Rental bikes with flat tires" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                The real danger came from the brakes - they squealed loudly and barely worked. No lights or helmets were provided, which is especially dangerous since the local roads have no lighting at night.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/broken-bike-480p-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p style="margin-bottom: 10px; font-weight: bold;">See for yourself:</p>
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/driving-at-night-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <div class="section">
-            <h2>💪 Fitness Facilities</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The "gym" was laughable. It consisted of a tiny, unstable single-machine with extremely low weight capacity and a few plastic "dumbbells" that felt like toys. Completely unsuitable for any real fitness routine.
-            </p>
-            
-            <img src="assets/images/terrible-gym.jpg" alt="Inadequate gym equipment" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/terrible-gym-480p-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <div class="section">
-            <h2>✋ Final Insult: The Broken Comb</h2>
-            
-            <p style="margin-bottom: 15px;">
-                Just before checking out, I used a wooden comb provided by the resort. It <strong>broke in half</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                Having spent time in Thailand, I knew this was a terrible omen. In Thai culture, a broken comb during use is a serious bad omen - a warning of misfortune. The superstition says it must be thrown away immediately or the bad luck will manifest.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                This perfectly encapsulated the entire stay - even the resort's combs were cursed.
-            </p>
-            
-            <img src="assets/images/broken-comb.jpg" alt="Wooden comb broken in half" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <div class="info-box" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong style="color: #92400e;">Cultural Note:</strong> In Thai tradition, when a comb breaks while brushing hair, it's considered a bad omen that brings misfortune if kept. The immediate disposal of the broken comb is believed to prevent bad luck from manifesting. This belief is part of Thailand's extensive superstition framework that governs daily life.
-            </div>
-            
-            <p style="margin-bottom: 15px; font-style: italic;">
-                The resort couldn't even provide functioning combs or safe bicycles, let alone safe food, clean water, or adequate gym equipment.
-            </p>
-        </div>
-        
-        <div class="section" style="text-align: center;">
-            <h2>Overall Rating</h2>
-            <div class="rating">⭐ 1/5</div>
-            <p><strong>ABSOLUTELY NOT RECOMMENDED</strong></p>
-            <p style="font-size: 1.2rem; color: #dc2626; margin: 20px 0;">By the end, I couldn't wait to leave this 1-star joke of a resort.</p>
-            
-            <div class="critical" style="margin: 30px 0;">
-                <h3 style="color: #dc2626; margin-bottom: 15px;">The Real Problem: Management</h3>
-                <p style="text-align: left; line-height: 1.8;">
-                    The only saving grace is that the service staff were kind. This is a <strong>1-star resort as a direct result of 1-star management</strong>.
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    <strong>Management Failures:</strong><br>
-                    • Restaurant Manager <span class="manager-name">Andika Putra</span> - Lied directly to guests about raw chicken<br>
-                    • Operations Manager <span class="manager-name">Sindra Sindrawan</span> - Initially honest, then backtracked under pressure<br>
-                    • No senior management available on-site during crisis<br>
-                    • Attempted to gaslight guests about food safety incident<br>
-                    • Zero accountability for health violations<br>
-                    • Complete failure in basic hospitality standards
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    This resort represents everything wrong with hospitality management - prioritizing face-saving over guest safety, lying instead of taking responsibility, and operating with standards that wouldn't be acceptable at a roadside motel, let alone a resort claiming to offer a premium experience.
-                </p>
             </div>
         </div>
     </div>
-    
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>🏝️ Popular Nusa Penida Attractions Nearby</h3>
-                <div class="info-grid">
-                    <div class="info-item">• <strong>Crystal Bay</strong> - Snorkeling & Diving</div>
-                    <div class="info-item">• <strong>Kelingking Beach</strong> - T-Rex Cliff Viewpoint</div>
-                    <div class="info-item">• <strong>Angel's Billabong</strong> - Natural Infinity Pool</div>
-                    <div class="info-item">• <strong>Broken Beach</strong> - Pasih Uug Arch</div>
-                    <div class="info-item">• <strong>Diamond Beach</strong> - White Sand Paradise</div>
-                    <div class="info-item">• <strong>Atuh Beach</strong> - Secluded Bay</div>
-                    <div class="info-item">• <strong>Manta Point</strong> - Manta Ray Diving</div>
-                    <div class="info-item">• <strong>Peguyangan Waterfall</strong> - Sacred Blue Stairs</div>
+
+    <!-- Page 2: The Water Incident -->
+    <div class="comic-page">
+        <div class="page-number">Page 2</div>
+        <div class="panel-grid">
+            <div class="panel">
+                <div class="panel-content">
+                    <div class="speech-bubble">
+                        "This is outrageous! A 5-star resort should provide complimentary water!"
+                    </div>
+                    <div class="thought-bubble">
+                        What kind of place charges $10 for basic water?
+                    </div>
                 </div>
             </div>
             
-            <p style="text-align: center; margin-top: 20px; font-style: italic;">
-                While Nusa Penida offers incredible natural beauty and world-class diving, this resort fails to meet basic hospitality standards.
-            </p>
+            <div class="panel dots-blue">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        Management admits their mistake but makes it WORSE...
+                    </div>
+                    <div class="speech-bubble">
+                        "Oh, we should have provided water. Here, take these refillable containers instead."
+                    </div>
+                    <div class="sound-effect">BLEH!</div>
+                </div>
+            </div>
+            
+            <div class="panel panel-large danger-panel">
+                <div class="panel-content">
+                    <img src="assets/images/refillable-water-bottle.jpg" alt="Sketchy refillable water" class="comic-image">
+                    <div class="warning-text">HYGIENE NIGHTMARE!</div>
+                    <div class="thought-bubble">
+                        Are these containers clean? Is this water filtered? Who's been handling these?!
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <footer>
-        <p>Review based on actual guest experience</p>
-        <p>Last updated: 2025</p>
+
+    <!-- Page 3: The Raw Chicken Catastrophe -->
+    <div class="comic-page">
+        <div class="page-number">Page 3</div>
+        <div class="panel-grid">
+            <div class="panel panel-large dots-red">
+                <div class="action-lines"></div>
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        That evening at the restaurant... our hero orders rare beef for a romantic dinner.
+                    </div>
+                    <div class="speech-bubble">
+                        "Two rare beef steaks, please!"
+                    </div>
+                    <div class="character-placeholder hero-placeholder">
+                        DINNER DATE<br>
+                        [Romantic Evening]
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel danger-panel">
+                <div class="panel-content">
+                    <div class="sound-effect sound-large">HORROR!</div>
+                    <img src="assets/images/rare-meat.jpg" alt="Raw mystery meat" class="comic-image">
+                    <div class="speech-bubble">
+                        "This doesn't look like beef... or taste like beef!"
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-content">
+                    <div class="villain-card">
+                        <div class="villain-name">ANDIKA PUTRA</div>
+                        <div class="villain-title">RESTAURANT MANAGER</div>
+                        <div class="speech-bubble">
+                            "No no, it's definitely beef! Just... a bad batch!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: The Investigation -->
+    <div class="comic-page">
+        <div class="page-number">Page 4</div>
+        <div class="panel-grid">
+            <div class="panel dots-blue">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        Our hero seeks expert opinion from a professional chef friend...
+                    </div>
+                    <img src="assets/images/ask-chef-translated-eng.jpg" alt="Chef's response" class="comic-image">
+                    <div class="sound-effect">SHOCKING!</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        The internet investigation reveals the truth!
+                    </div>
+                    <img src="assets/images/reddit-ban.jpg" alt="Reddit ban" class="comic-image">
+                    <div class="speech-bubble">
+                        "I got BANNED from the steak forum because this ISN'T STEAK!"
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel panel-large danger-panel">
+                <div class="panel-content">
+                    <div class="warning-text">FOOD POISONING STRIKES!</div>
+                    <div class="narrator-box">
+                        The consequences hit within hours...
+                    </div>
+                    <div class="speech-bubble">
+                        "Severe stomach cramps... this is definitely not beef!"
+                    </div>
+                    <div class="sound-effect">AGONY!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: The Management Conspiracy -->
+    <div class="comic-page">
+        <div class="page-number">Page 5</div>
+        <div class="panel-grid">
+            <div class="panel">
+                <div class="panel-content">
+                    <div class="villain-card">
+                        <div class="villain-name">SINDRA SINDRAWAN</div>
+                        <div class="villain-title">OPERATIONS MANAGER</div>
+                        <div class="speech-bubble">
+                            "Looking at this photo... you're right, this is NOT beef!"
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel dots-yellow">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        But hours later, the villain changes his story...
+                    </div>
+                    <div class="speech-bubble">
+                        "After talking to staff... it's definitely beef. Here's proof!"
+                    </div>
+                    <img src="assets/images/beef-packaging.jpeg" alt="Beef packaging" class="comic-image">
+                    <div class="sound-effect">LIES!</div>
+                </div>
+            </div>
+            
+            <div class="panel panel-large">
+                <div class="action-lines"></div>
+                <div class="panel-content">
+                    <div class="speech-bubble">
+                        "Fine! Let's go to the kitchen RIGHT NOW and cook it up!"
+                    </div>
+                    <div class="narrator-box">
+                        Our hero demands a live cooking demonstration...
+                    </div>
+                    <div class="sound-effect">KITCHEN SHOWDOWN!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 6: The AI Reveals All -->
+    <div class="comic-page">
+        <div class="page-number">Page 6</div>
+        <div class="panel-grid">
+            <div class="panel dots-blue">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        In the kitchen, they cook fresh meat that actually LOOKS like beef...
+                    </div>
+                    <img src="assets/images/cooked-beef.jpeg" alt="Real beef" class="comic-image">
+                    <div class="speech-bubble">
+                        "See? Same meat!"
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        Our hero uses AI technology to expose the truth!
+                    </div>
+                    <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="AI confirms real beef" class="comic-image">
+                    <div class="sound-effect">TECH POWER!</div>
+                </div>
+            </div>
+            
+            <div class="panel panel-large danger-panel">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        But when AI analyzes the original meal...
+                    </div>
+                    <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="AI says not beef" class="comic-image">
+                    <div class="warning-text">CAUGHT RED-HANDED!</div>
+                    <div class="speech-bubble">
+                        "The AI confirms: This is NOT BEEF!"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 7: The Health Crisis -->
+    <div class="comic-page">
+        <div class="page-number">Page 7</div>
+        <div class="panel-grid">
+            <div class="panel danger-panel">
+                <div class="panel-content">
+                    <div class="warning-text">MEDICAL EMERGENCY!</div>
+                    <div class="narrator-box">
+                        Raw chicken or pork? Each carries different parasite risks!
+                    </div>
+                    <img src="assets/images/anti-parasite-meds.jpg" alt="Anti-parasite medication" class="comic-image">
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-content">
+                    <div class="speech-bubble">
+                        "I need to see a doctor for stool testing!"
+                    </div>
+                    <img src="assets/images/dr-visit.jpg" alt="Doctor visit receipt" class="comic-image">
+                    <div class="narrator-box">
+                        But the resort REFUSES to pay for medical costs!
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel dots-red">
+                <div class="panel-content">
+                    <div class="speech-bubble">
+                        "I will NOT be gaslighted! I've been eating steak for 40 YEARS!"
+                    </div>
+                    <div class="sound-effect">DEFIANCE!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 8: The Bathroom Horrors -->
+    <div class="comic-page">
+        <div class="page-number">Page 8</div>
+        <div class="panel-grid">
+            <div class="panel dots-yellow">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        Meanwhile, the bathroom reveals more horrors...
+                    </div>
+                    <div class="sound-effect">EWWW!</div>
+                    <div class="speech-bubble">
+                        "The water is YELLOW!"
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-content">
+                    <img src="assets/images/open-air-bathroom.jpg" alt="Open bathroom" class="comic-image">
+                    <div class="narrator-box">
+                        The open-air toilet offers zero privacy during stomach crisis...
+                    </div>
+                    <div class="thought-bubble">
+                        Everyone can hear EVERYTHING!
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel danger-panel">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        Cigarette smoke invades the "non-smoking" room...
+                    </div>
+                    <img src="assets/images/smoking.jpg" alt="Smoking neighbors" class="comic-image">
+                    <div class="sound-effect">COUGH!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 9: More Disasters -->
+    <div class="comic-page">
+        <div class="page-number">Page 9</div>
+        <div class="panel-grid">
+            <div class="panel">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        The housekeeping staff cleans with dirty outdoor shoes...
+                    </div>
+                    <img src="assets/images/staff-with-shoes.jpg" alt="Staff with shoes" class="comic-image">
+                    <div class="sound-effect">GROSS!</div>
+                </div>
+            </div>
+            
+            <div class="panel dots-red">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        The rental bikes are death traps!
+                    </div>
+                    <img src="assets/images/bike-flat-tire.jpg" alt="Broken bike" class="comic-image">
+                    <div class="sound-effect">CRASH!</div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        The "gym" is a joke...
+                    </div>
+                    <img src="assets/images/terrible-gym.jpg" alt="Pathetic gym" class="comic-image">
+                    <div class="speech-bubble">
+                        "These are toy weights!"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 10: The Final Curse -->
+    <div class="comic-page">
+        <div class="page-number">Page 10</div>
+        <div class="panel-grid">
+            <div class="panel panel-large dots-yellow">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        Just before checkout, our hero encounters the final omen...
+                    </div>
+                    <img src="assets/images/broken-comb.jpg" alt="Broken comb" class="comic-image">
+                    <div class="sound-effect sound-large">CRACK!</div>
+                </div>
+            </div>
+            
+            <div class="panel danger-panel">
+                <div class="panel-content">
+                    <div class="warning-text">THE CURSE IS COMPLETE!</div>
+                    <div class="narrator-box">
+                        In Thai culture, a broken comb brings terrible misfortune...
+                    </div>
+                    <div class="thought-bubble">
+                        Even the resort's combs are cursed!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Rating Panel -->
+    <div class="comic-page">
+        <div class="page-number">Page 11</div>
+        <div class="panel-grid">
+            <div class="panel panel-large danger-panel">
+                <div class="action-lines"></div>
+                <div class="panel-content" style="text-align: center;">
+                    <div class="sound-effect sound-large">THE END?</div>
+                    <div style="font-size: 4rem; margin: 20px 0;">⭐ 1/5</div>
+                    <div class="warning-text">ABSOLUTELY NOT RECOMMENDED!</div>
+                    <div class="narrator-box">
+                        The only saving grace: The service staff were kind. This is a 1-star resort thanks to 1-star MANAGEMENT!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="transition-arrow">⬇️⬇️⬇️</div>
+
+    <!-- To Be Continued -->
+    <div class="to-be-continued">
+        <h2>TO BE CONTINUED...</h2>
+        <p style="font-family: 'Comic Neue', cursive; font-size: 1.2rem;">
+            Will our hero find justice? Will the villains face consequences?<br>
+            Find out in the next thrilling episode!
+        </p>
+        <div style="margin-top: 20px; font-family: 'Bangers', cursive; font-size: 1.5rem;">
+            STAY TUNED FOR EPISODE #002:<br>
+            "THE LAWSUIT STRIKES BACK!"
+        </div>
+    </div>
+
+    <!-- Tourist Info Comic Style -->
+    <div class="comic-page" style="margin-top: 40px;">
+        <div class="panel-grid">
+            <div class="panel dots-blue">
+                <div class="panel-content">
+                    <div class="narrator-box">
+                        Despite this resort nightmare, Nusa Penida offers amazing attractions:
+                    </div>
+                    <div style="font-family: 'Comic Neue', cursive; margin: 15px 0;">
+                        🏝️ Crystal Bay - Snorkeling Paradise<br>
+                        🦕 Kelingking Beach - T-Rex Viewpoint<br>
+                        💎 Diamond Beach - White Sand Heaven<br>
+                        🌊 Angel's Billabong - Natural Pool<br>
+                        🐠 Manta Point - Diving with Giants
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comic Footer -->
+    <footer style="background: #2f3640; color: #ffd700; text-align: center; padding: 30px; margin-top: 40px;">
+        <div style="font-family: 'Bangers', cursive; font-size: 1.5rem; margin-bottom: 10px;">
+            THE RESORT NIGHTMARE - ISSUE #001
+        </div>
+        <div style="font-family: 'Comic Neue', cursive;">
+            Based on a true story • Published 2025<br>
+            All events depicted are factual guest experiences
+        </div>
     </footer>
 </body>
 </html>
