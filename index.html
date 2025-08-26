@@ -183,12 +183,29 @@
             margin: 20px 0;
         }
         
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
         @media (max-width: 600px) {
             header h1 {
                 font-size: 1.8rem;
             }
             .section h2 {
                 font-size: 1.4rem;
+            }
+            
+            /* Ensure all images are responsive on mobile */
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+                width: 100% !important;
+            }
+            
+            video {
+                max-width: 100% !important;
+                height: auto !important;
             }
         }
         
