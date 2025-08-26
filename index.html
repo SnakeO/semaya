@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaya Beach Resort Bali Review - Honest Guest Experience | Nusa Penida Hotels</title>
-    <meta name="description" content="Honest review of Semaya Beach Resort in Nusa Penida, Bali. Located near Crystal Bay, Kelingking Beach, and Angel's Billabong. Read before booking this Nusa Penida accommodation.">
-    <meta name="keywords" content="Semaya Beach Resort, Nusa Penida hotels, Bali resort review, Crystal Bay accommodation, Nusa Penida accommodation, Kelingking Beach hotels, Angel's Billabong resort, Nusa Penida tourism, Bali island hotels, Indonesia beach resort">
-    
+    <title>The Semaya Beach Resort - A Horror Story</title>
+    <meta name="description" content="A Stephen King-style horror narrative about a cursed resort experience in Nusa Penida, Bali. A tale of tainted flesh, yellow waters, and malevolent management.">
     
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@400;600&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -16,602 +16,817 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Crimson Text', serif;
+            background: radial-gradient(ellipse at center, #1a0000 0%, #000000 70%);
+            background-attachment: fixed;
+            color: #d4af8c;
+            line-height: 1.8;
+            font-size: 18px;
+            overflow-x: hidden;
         }
         
-        header {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
-            color: white;
-            padding: 60px 20px;
+        /* Book cover header */
+        .book-cover {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            background: linear-gradient(135deg, #4a0e0e 0%, #1a0000 50%, #000000 100%);
+            position: relative;
+            box-shadow: inset 0 0 200px rgba(139, 0, 0, 0.3);
         }
         
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+        .book-cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 20% 50%, transparent 20%, rgba(139, 0, 0, 0.1) 21%, rgba(139, 0, 0, 0.1) 34%, transparent 35%),
+                              linear-gradient(0deg, rgba(0,0,0,0.9) 50%, transparent 50%);
+            pointer-events: none;
         }
         
-        .subtitle {
-            font-size: 1.2rem;
-            opacity: 0.95;
-        }
-        
-        .warning-badge {
-            display: inline-block;
-            background: #fbbf24;
-            color: #713f12;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        
-        .section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
+        .book-title {
+            font-family: 'Cinzel', serif;
+            font-size: 4rem;
+            color: #8b0000;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8), 
+                         0 0 20px rgba(139, 0, 0, 0.7),
+                         0 0 40px rgba(139, 0, 0, 0.5);
             margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            letter-spacing: 3px;
+            z-index: 1;
         }
         
-        .section h2 {
-            color: #dc2626;
+        .book-subtitle {
             font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #fee2e2;
+            color: #cd853f;
+            font-style: italic;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            z-index: 1;
         }
         
-        .section h3 {
-            color: #7c2d12;
-            font-size: 1.3rem;
-            margin: 20px 0 10px 0;
+        .blood-splatter {
+            position: absolute;
+            background: radial-gradient(ellipse at center, #8b0000 0%, transparent 70%);
+            border-radius: 50%;
+            opacity: 0.6;
         }
         
-        .issue-list {
-            list-style: none;
-            padding-left: 0;
+        .blood-1 {
+            width: 80px;
+            height: 60px;
+            top: 20%;
+            left: 10%;
+            transform: rotate(-15deg);
         }
         
-        .issue-list li {
-            padding: 10px 0;
-            padding-left: 30px;
+        .blood-2 {
+            width: 120px;
+            height: 80px;
+            top: 60%;
+            right: 15%;
+            transform: rotate(25deg);
+        }
+        
+        .blood-3 {
+            width: 60px;
+            height: 40px;
+            bottom: 20%;
+            left: 20%;
+            transform: rotate(45deg);
+        }
+        
+        /* Main container with book page aesthetic */
+        .manuscript {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f5f1e8 0%, #e8e0d5 100%);
+            box-shadow: 0 0 50px rgba(0,0,0,0.8),
+                        inset 0 0 20px rgba(139, 0, 0, 0.1);
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .manuscript::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                transparent,
+                transparent 49px,
+                rgba(139, 0, 0, 0.1) 50px
+            );
+            pointer-events: none;
+        }
+        
+        /* Chapter styling */
+        .chapter {
+            padding: 60px 40px;
+            color: #2c1810;
             position: relative;
         }
         
-        .issue-list li:before {
-            content: "⚠️";
-            position: absolute;
-            left: 0;
-        }
-        
-        .sub-issue {
-            margin-left: 20px;
-            padding: 5px 0;
-            color: #666;
-            list-style-type: disc;
-        }
-        
-        .critical {
-            background: #fee2e2;
-            border-left: 4px solid #dc2626;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
-        }
-        
-        .critical strong {
-            color: #dc2626;
-        }
-        
-        .photo-placeholder {
-            background: #f3f4f6;
-            border: 2px dashed #9ca3af;
-            padding: 40px;
+        .chapter-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: #8b0000;
             text-align: center;
-            color: #6b7280;
-            margin: 20px 0;
-            border-radius: 8px;
-            font-style: italic;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            border-bottom: 3px double #8b0000;
+            padding-bottom: 20px;
         }
         
-        .health-warning {
-            background: #fef2f2;
-            border: 2px solid #dc2626;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-        }
-        
-        .health-warning h4 {
-            color: #dc2626;
+        .chapter-number {
+            display: block;
+            font-size: 1.2rem;
+            color: #654321;
             margin-bottom: 10px;
+            letter-spacing: 2px;
         }
         
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            background: #e5e7eb;
-        }
-        
-        .rating {
-            font-size: 2rem;
-            color: #dc2626;
-            margin: 20px 0;
-        }
-        
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            .section h2 {
-                font-size: 1.4rem;
-            }
-        }
-        
-        .info-box {
-            background: #eff6ff;
-            border: 2px solid #3b82f6;
-            padding: 20px;
-            border-radius: 8px;
+        /* Paragraph styling */
+        .manuscript p {
+            text-indent: 40px;
             margin-bottom: 20px;
+            text-align: justify;
+            line-height: 1.9;
         }
         
-        .info-box h3 {
-            color: #1e40af;
-            margin-bottom: 15px;
+        .first-paragraph {
+            text-indent: 0;
         }
         
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
+        .first-paragraph::first-letter {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 4.5rem;
+            line-height: 3.5rem;
+            padding: 8px 8px 0 0;
+            color: #8b0000;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         
-        .info-item {
-            padding: 5px 0;
+        /* Horror emphasis styling */
+        .whisper {
+            font-style: italic;
+            color: #8b0000;
+            font-size: 0.9em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
         
-        .info-item strong {
-            color: #1e40af;
+        .scream {
+            font-weight: bold;
+            color: #8b0000;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         
-        .manager-name {
-            background: #fef3c7;
-            padding: 2px 6px;
+        .flesh-description {
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.1) 0%, rgba(139, 0, 0, 0.2) 100%);
+            border-left: 4px solid #8b0000;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #4a0e0e;
+            position: relative;
+        }
+        
+        .flesh-description::before {
+            content: '☠';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1.5rem;
+            color: #8b0000;
+        }
+        
+        /* Manager names with creepy styling */
+        .cursed-name {
+            background: linear-gradient(135deg, #000000 0%, #4a0e0e 50%, #000000 100%);
+            color: #8b0000;
+            padding: 3px 8px;
             border-radius: 4px;
             font-weight: bold;
-            color: #92400e;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.3);
+            border: 1px solid #8b0000;
+            position: relative;
+            display: inline-block;
         }
         
-        .timeline {
-            background: #f9fafb;
-            border-left: 3px solid #dc2626;
-            padding: 15px;
-            margin: 20px 0;
+        .cursed-name::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent 30%, #8b0000 50%, transparent 70%);
+            z-index: -1;
+            border-radius: 6px;
+            opacity: 0.3;
         }
         
-        .timeline-item {
-            margin-bottom: 15px;
-            padding-left: 15px;
+        /* Image styling with horror effects */
+        .cursed-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            margin: 30px auto;
+            display: block;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6),
+                        inset 0 0 20px rgba(139, 0, 0, 0.2);
+            filter: sepia(30%) contrast(1.2) saturate(0.8);
+            transition: all 0.3s ease;
         }
         
-        .timeline-item strong {
-            color: #dc2626;
+        .cursed-image:hover {
+            filter: sepia(50%) contrast(1.4) saturate(1.2);
+            transform: scale(1.02);
+        }
+        
+        /* Video styling */
+        .haunted-video {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            filter: sepia(20%) contrast(1.1);
+        }
+        
+        /* Special quote styling */
+        .ominous-quote {
+            text-align: center;
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #8b0000;
+            margin: 40px 0;
+            padding: 30px;
+            border: 2px solid #8b0000;
+            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.05) 0%, rgba(139, 0, 0, 0.1) 100%);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .ominous-quote::before,
+        .ominous-quote::after {
+            content: '"';
+            font-size: 4rem;
+            color: #8b0000;
+            position: absolute;
+            opacity: 0.3;
+        }
+        
+        .ominous-quote::before {
+            top: -10px;
+            left: 10px;
+        }
+        
+        .ominous-quote::after {
+            bottom: -40px;
+            right: 10px;
+        }
+        
+        /* Rating section */
+        .final-judgment {
+            text-align: center;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #000000 0%, #4a0e0e 50%, #000000 100%);
+            color: #d4af8c;
+            margin-top: 40px;
+        }
+        
+        .final-judgment h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: #8b0000;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        
+        .skull-rating {
+            font-size: 3rem;
+            margin: 30px 0;
+            filter: drop-shadow(0 0 10px rgba(139, 0, 0, 0.7));
+        }
+        
+        /* Author note styling */
+        .author-note {
+            background: linear-gradient(135deg, #2c1810 0%, #1a0000 100%);
+            color: #cd853f;
+            padding: 40px;
+            margin-top: 40px;
+            text-align: center;
+            border-top: 3px double #8b0000;
+        }
+        
+        .author-signature {
+            font-family: 'Cinzel', serif;
+            font-size: 1.5rem;
+            color: #8b0000;
+            margin-top: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        /* Page turn animation */
+        .page-turn {
+            animation: pageFlip 0.8s ease-in-out;
+        }
+        
+        @keyframes pageFlip {
+            0% {
+                transform: rotateY(0deg);
+            }
+            50% {
+                transform: rotateY(-90deg);
+            }
+            100% {
+                transform: rotateY(0deg);
+            }
+        }
+        
+        /* Blood drip animation */
+        .blood-drip {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .blood-drip::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 0;
+            background: linear-gradient(to bottom, #8b0000, #4a0e0e);
+            animation: drip 3s ease-in-out infinite;
+        }
+        
+        @keyframes drip {
+            0%, 100% {
+                height: 0;
+                opacity: 0;
+            }
+            50% {
+                height: 40px;
+                opacity: 1;
+            }
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .book-title {
+                font-size: 2.5rem;
+            }
+            
+            .book-subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .chapter {
+                padding: 40px 20px;
+            }
+            
+            .chapter-title {
+                font-size: 2rem;
+            }
+            
+            .manuscript {
+                margin: 0 10px;
+            }
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #1a0000;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #4a0e0e, #8b0000);
+            border-radius: 6px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #8b0000, #cd853f);
         }
     </style>
 </head>
 <body>
-    <script>
-        // Lazy loading for images and videos
-        document.addEventListener('DOMContentLoaded', function() {
-            // Lazy load images
-            const images = document.querySelectorAll('img');
-            const imageObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const img = entry.target;
-                        if (img.dataset.src) {
-                            img.src = img.dataset.src;
-                            img.removeAttribute('data-src');
-                        }
-                        observer.unobserve(img);
-                    }
-                });
-            });
-            
-            images.forEach(img => {
-                if (img.src) {
-                    // Store original src as data-src and clear src for lazy loading
-                    img.dataset.src = img.src;
-                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect width="400" height="300" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="sans-serif" font-size="16"%3ELoading...%3C/text%3E%3C/svg%3E';
-                    imageObserver.observe(img);
-                }
-            });
-            
-            // Lazy load videos
-            const videos = document.querySelectorAll('video');
-            const videoObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const video = entry.target;
-                        const source = video.querySelector('source');
-                        if (source && source.dataset.src) {
-                            source.src = source.dataset.src;
-                            source.removeAttribute('data-src');
-                            video.load();
-                        }
-                        observer.unobserve(video);
-                    }
-                });
-            });
-            
-            videos.forEach(video => {
-                const source = video.querySelector('source');
-                if (source && source.src) {
-                    source.dataset.src = source.src;
-                    source.removeAttribute('src');
-                    videoObserver.observe(video);
-                }
-            });
-            
-        });
-    </script>
-    <header>
-        <h1>Semaya Beach Resort Review</h1>
-        <p class="subtitle">An Honest Guest Experience - Nusa Penida, Bali</p>
-        <div class="warning-badge">⚠️ Health & Safety Concerns</div>
-    </header>
+    <!-- Book Cover -->
+    <div class="book-cover">
+        <div class="blood-splatter blood-1"></div>
+        <div class="blood-splatter blood-2"></div>
+        <div class="blood-splatter blood-3"></div>
+        
+        <h1 class="book-title">THE SEMAYA RESORT</h1>
+        <p class="book-subtitle">A Tale of Flesh, Fear, and Festering Waters</p>
+        <p style="color: #8b0000; font-style: italic; font-size: 1.2rem; z-index: 1;">
+            <em>In which a simple vacation becomes a descent into culinary horror</em>
+        </p>
+    </div>
     
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>📍 Resort Information & Location</h3>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <strong>Resort:</strong> Semaya Beach Resort
-                    </div>
-                    <div class="info-item">
-                        <strong>Location:</strong> Nusa Penida Island, Bali, Indonesia
-                    </div>
-                    <div class="info-item">
-                        <strong>Address:</strong> Jl. Raya Batukandik, Nusa Penida, Klungkung Regency, Bali 80771
-                    </div>
-                    <div class="info-item">
-                        <strong>Near:</strong> Crystal Bay Beach (5 min)
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+    <!-- Main Manuscript -->
+    <div class="manuscript">
         
-        <div class="section">
-            <h2>👋 My Arrival</h2>
+        <!-- Prologue -->
+        <div class="chapter">
+            <h2 class="chapter-title blood-drip">
+                <span class="chapter-number">PROLOGUE</span>
+                The Omen
+            </h2>
             
-            <p style="margin-bottom: 20px;">
-                When I arrived at Semaya Beach Resort, the location near Crystal Bay looked promising. But problems started immediately.
+            <p class="first-paragraph">
+                They say that omens come to those who know how to read them. <span class="whisper">The broken comb should have been warning enough.</span> But I'm getting ahead of myself. Let me tell you about the Semaya Beach Resort, and how what began as a simple vacation on the shores of Nusa Penida became something far more sinister—a tale of tainted flesh, corrupted waters, and the kind of hospitality that would make even the dead think twice about checking in.
             </p>
             
-            <h3>No Drinking Water Provided</h3>
-            <p style="margin-bottom: 15px;">
-                After settling in, I looked for complimentary water bottles - standard in most hotels. There were none. I called the front desk to request some. They sent up two sealed bottles with a bill for <strong>160,000 Indonesian Rupees</strong> (approximately $10 USD).
+            <p>
+                This is not merely a story of poor service or disappointing amenities. No, dear reader, this is something altogether more disturbing. This is the account of a place where the very essence of sustenance is perverted, where the line between nourishment and poison blurs into a nightmare of glistening, <span class="scream">raw flesh</span> and the grotesque theater of management's lies.
             </p>
             
-            <p style="margin-bottom: 15px;">
-                When I complained about both the lack of complimentary water and the outrageous charge, management admitted they "should have" provided water in the room. But here's where it gets worse - they took away the sealed bottles I had ordered and replaced them with <strong>refillable containers</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                In Indonesia, a 5-star resort should not be providing water in refillable, unsealed containers. Are the containers clean? Is the water properly filtered? Are the people handling it following proper hygiene protocols? All of these worries would be completely avoidable if they just provided complimentary sealed water in the first place, like every other 5-star resort does.
-            </p>
-            
-            <img src="assets/images/refillable-water-bottle.jpg" alt="Refillable water bottles provided by resort" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Not the best start to a supposedly 5-star experience.
+            <p>
+                <span class="whisper">*The walls have ears, and the meat... the meat has secrets.*</span>
             </p>
         </div>
         
-        <div class="section">
-            <h2>🍽️ Restaurant - The Raw Chicken Incident</h2>
+        <!-- Chapter 1 -->
+        <div class="chapter page-turn">
+            <h2 class="chapter-title">
+                <span class="chapter-number">CHAPTER I</span>
+                The Arrival
+            </h2>
             
-            <div class="critical">
-                <strong>CRITICAL FOOD SAFETY VIOLATION:</strong> Raw chicken served instead of ordered rare beef
+            <p class="first-paragraph">
+                The taxi wound its way through the darkening roads of Nusa Penida, past twisted trees that seemed to reach toward us with gnarled fingers. Crystal Bay beckoned in the distance, its waters deceptively serene in the fading light. I should have known then—should have felt the wrongness in the air, thick and cloying like the scent of meat left too long in the sun.
+            </p>
+            
+            <p>
+                The Semaya Beach Resort rose before us like some fever dream of tropical luxury, its facade hiding secrets that would soon crawl from the shadows like insects drawn to rotting fruit. <span class="whisper">*Something was wrong here. Something had always been wrong here.*</span>
+            </p>
+            
+            <div class="ominous-quote">
+                The most dangerous monsters are those that wear the mask of hospitality.
             </div>
             
-            <h3>The Night It Happened</h3>
-            <p style="margin-bottom: 15px;">
-                My date and I ordered rare beef for dinner. What arrived at our table looked wrong from the start, but we only realized the full horror after taking a bite. The texture and flavor were completely unlike any beef we'd ever tasted.
+            <p>
+                But the first sign of the horror to come was not in the building's bones or the staff's hollow smiles. No, it was in something as simple, as fundamental as water—the very essence of life, corrupted at its source.
             </p>
             
-            <p style="margin-bottom: 15px;">
-                When we complained, Restaurant Manager <span class="manager-name">Andika Putra</span> came to our table. Despite both of us arguing that this was clearly not steak, he insisted multiple times that it was beef. He claimed it was just "a bad batch" - as if that somehow made serving raw mystery meat acceptable.
+            <img src="assets/images/refillable-water-bottle.jpg" alt="Cursed vessels of tainted sustenance" class="cursed-image">
+            
+            <p>
+                They brought me containers. Not the sealed bottles one expects at a place claiming five stars, but <span class="whisper">refillable vessels of unknown origin</span>. Who had touched them? What hands had filled them? What contamination lurked within their depths? The questions multiplied like bacteria in a petri dish, and with them came the first stirrings of dread.
             </p>
             
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager Andika Putra" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                <p style="margin-top: 10px; font-style: italic; color: #666;">Restaurant Manager Andika Putra</p>
-            </div>
-            
-            <div class="health-warning">
-                <h4>What Happened Next</h4>
-                <p style="margin: 10px 0;">One of us got severe stomach cramps that same evening. The other suffered serious gastrointestinal illness 48 hours later.</p>
-            </div>
-            
-            <img src="assets/images/rare-meat.jpg" alt="Raw meat served as 'rare beef'" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <img src="assets/images/rare-meat-zoom.jpg" alt="Close-up of meat texture - clearly not beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Seeking External Verification</h3>
-            <p style="margin-bottom: 15px;">
-                Doubting my own senses, I reached out to my friend who's a professional chef. Their response told me it definitely was not steak.
+            <p>
+                <span class="scream">One hundred and sixty thousand rupees</span> they demanded for two bottles of water. As if the transgression of serving mystery liquid in mystery containers wasn't enough, they had the audacity to price-gouge for the privilege. When I protested, they replaced the sealed bottles with these... <em>things</em>. These cursed chalices that would prove to be merely the opening act in a symphony of horror.
             </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/ask-chef-orig-thai.jpg" alt="Message to chef friend (Thai)" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/ask-chef-translated-eng.jpg" alt="Chef's response translated" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                I posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/reddit-post-1.jpg" alt="Reddit responses part 1" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/reddit-post-2.jpg" alt="Reddit responses part 2" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <img src="assets/images/reddit-ban.jpg" alt="Banned from steak forum for posting non-steak" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Management Response Timeline</h3>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <strong>Day 1 Morning:</strong> The next morning, I asked to speak with upper management about the incident. None were available. The only manager on site was the same restaurant manager who had lied to us the night before. What kind of "5-star" resort has no senior management present?
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Days 1-2:</strong> Since we didn't know if it was raw chicken or pork, we found some anti-parasite medication and took it as a precaution. Each type of meat carries different parasitic or bacterial risks.
-                </div>
-                
-                <img src="assets/images/anti-parasite-meds.jpg" alt="Anti-parasite medication taken as precaution" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                
-                <div class="timeline-item">
-                    <strong>Day 3:</strong> Finally, I had an in-person meeting with Resort Operations Manager <span class="manager-name">Sindra Sindrawan</span>. He took one look at the photo and immediately agreed with me - it was NOT beef. He promised he would identify the meat and get back to me.
-                </div>
-                
-                <div style="text-align: center; margin: 20px 0;">
-                    <img src="assets/images/sindra-sindrawan.jpg" alt="Operations Manager Sindra Sindrawan" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                    <p style="margin-top: 10px; font-style: italic; color: #666;">Operations Manager Sindra Sindrawan</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Day 3 (hours later):</strong> A few hours passed before our second meeting. Sindra sat down and, after "talking with the staff," now claimed it was beef. He showed me a photo of beef packaging as "proof." I said, "Fine, let's go to the kitchen right now and cook it up."
-                </div>
-            </div>
-            
-            <img src="assets/images/beef-packaging.jpeg" alt="Beef packaging shown as 'proof'" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <h3>The Kitchen Test</h3>
-            <p style="margin-bottom: 15px;">
-                We went to the kitchen where management cooked up what they claimed was the same meat. This time, it looked and tasted exactly like beef - proper beef. Yet they still insisted this was identical to what they'd served me two days earlier.
-            </p>
-            
-            <img src="assets/images/cooked-beef.jpeg" alt="Actually cooked beef - looks completely different" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/cooked-beef.jpeg" alt="Real beef" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">Real beef (Day 3)</p>
-                </div>
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/rare-meat.jpg" alt="Mystery meat served" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">What I was served (Day 1)</p>
-                </div>
-            </div>
-            
-            <h3>AI Analysis Proves the Truth</h3>
-            <p style="margin-bottom: 15px;">
-                Standing there in the kitchen, I opened ChatGPT and took a photo of the freshly cooked meat. The AI immediately confirmed it was definitely beef.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="ChatGPT confirms the newly cooked meat is beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                I then uploaded the photo of my original meal from two days prior. ChatGPT initially thought it was Ahi Tuna. When I clarified it was meat, not fish, the AI concluded it couldn't be beef due to the incorrect color and texture. It added that chicken or pork would NEVER be served raw by a reputable resort.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="ChatGPT says original meal cannot be beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Medical Consequences & Resort's Refusal</h3>
-            <p style="margin-bottom: 15px;">
-                I told them firmly: "I will not be gaslighted into thinking I ate steak. I've been eating steak for 40 years."
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                The meat was either chicken or pork, each carrying different health risks when consumed raw. Since I didn't know which it was, I had to visit a doctor for stool testing to check for parasites. The worst part? <strong>The resort refused to pay for the medical visit</strong>, even though they were the ones who served me raw meat.
-            </p>
-            
-            <img src="assets/images/dr-visit.jpg" alt="Doctor's receipt for parasite testing" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
         </div>
         
-        <div class="section">
-            <h2>🚿 Bathroom Conditions</h2>
+        <!-- Chapter 2 -->
+        <div class="chapter">
+            <h2 class="chapter-title blood-drip">
+                <span class="chapter-number">CHAPTER II</span>
+                The Feast of the Damned
+            </h2>
             
-            <p style="margin-bottom: 15px;">
-                The bathroom problems started the moment I turned on the faucet. Yellow water came pouring out - not slightly discolored, but distinctly yellow.
+            <p class="first-paragraph">
+                The dining room was elegant enough, with its soft lighting and ocean views. But elegance, I would learn, is merely a thin veneer over corruption. <span class="whisper">*The beautiful mask that hides the rotting face beneath.*</span>
             </p>
             
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <p>
+                We ordered rare beef. Simple enough, one would think. Beef—that most fundamental of proteins, the cornerstone of carnivorous satisfaction. But what arrived at our table... <em>Dear God, what arrived...</em>
+            </p>
+            
+            <div class="flesh-description">
+                The flesh lay there on the plate like some alien offering, glistening with an unholy sheen. Its color was wrong—not the deep red of beef, but something altogether more sinister. The texture... Christ, the texture was like nothing that had ever grazed in a pasture. It was soft, yielding, with the pallor of something that had never seen sunlight, never known the warmth of life.
+            </div>
+            
+            <img src="assets/images/rare-meat.jpg" alt="The cursed flesh that was no beef" class="cursed-image">
+            
+            <p>
+                One bite. That's all it took. The flavor was wrong—fundamentally, horrifically wrong. This was not beef. This was something else entirely, something that should never have found its way onto a human plate. <span class="whisper">*Raw. Uncooked. Dangerous.*</span>
+            </p>
+            
+            <p>
+                When we summoned the restaurant manager, <span class="cursed-name">Andika Putra</span> arrived with the practiced smile of a man accustomed to covering up sins. His eyes held no warmth, only the cold calculation of someone caught in a lie and determined to see it through to the bitter end.
+            </p>
+            
+            <img src="assets/images/andika-putra.jpg" alt="The first harbinger of deception" class="cursed-image">
+            
+            <p>
+                <span class="scream">"It is beef,"</span> he insisted, his voice carrying the weight of a dozen previous lies. <span class="scream">"Just a bad batch."</span> A bad batch. As if serving raw poultry or pork as beef was merely an unfortunate quality control issue, not a potential death sentence for the unwitting diner.
+            </p>
+            
+            <p>
+                <span class="whisper">*But the flesh doesn't lie. The flesh remembers what it was, even when those who serve it have forgotten their humanity.*</span>
+            </p>
+        </div>
+        
+        <!-- Chapter 3 -->
+        <div class="chapter">
+            <h2 class="chapter-title">
+                <span class="chapter-number">CHAPTER III</span>
+                The Corruption Within
+            </h2>
+            
+            <p class="first-paragraph">
+                The poison began its work that very evening. One of us doubled over with cramping that felt like claws tearing at the intestinal walls. The other would suffer worse—much worse—in the days to come, as whatever parasites or bacteria lurked in that mystery flesh began their feast from within.
+            </p>
+            
+            <p>
+                I sought external validation, reaching out to a professional chef, desperate to confirm what my senses already knew. The response was swift and damning: <span class="whisper">*"That is not steak."*</span>
+            </p>
+            
+            <img src="assets/images/ask-chef-orig-thai.jpg" alt="Seeking truth from those who know flesh" class="cursed-image">
+            <img src="assets/images/ask-chef-translated-eng.jpg" alt="The expert's verdict" class="cursed-image">
+            
+            <p>
+                Even artificial intelligence, cold and logical, could see what the resort's management refused to acknowledge. The photos I shared with various online communities sparked horror and disbelief. <span class="scream">I was actually banned from a steak forum</span> for posting an image of what they correctly identified as non-beef—the ultimate ironic validation of our nightmare.
+            </p>
+            
+            <img src="assets/images/reddit-post-1.jpg" alt="The crowd's verdict begins" class="cursed-image">
+            <img src="assets/images/reddit-post-2.jpg" alt="Horror and confirmation" class="cursed-image">
+            <img src="assets/images/reddit-ban.jpg" alt="Banished for speaking truth" class="cursed-image">
+            
+            <p>
+                <span class="whisper">*In desperation, we procured anti-parasite medication, not knowing whether we were fighting chicken-borne pathogens or pork-dwelling parasites. The uncertainty was perhaps the cruelest part of all.*</span>
+            </p>
+            
+            <img src="assets/images/anti-parasite-meds.jpg" alt="Medicine against the unknown corruption" class="cursed-image">
+        </div>
+        
+        <!-- Chapter 4 -->
+        <div class="chapter">
+            <h2 class="chapter-title blood-drip">
+                <span class="chapter-number">CHAPTER IV</span>
+                The Web of Lies
+            </h2>
+            
+            <p class="first-paragraph">
+                On the third day, salvation seemed to arrive in the form of <span class="cursed-name">Sindra Sindrawan</span>, the Operations Manager. Unlike his subordinate, Sindra looked at the photographs and immediately acknowledged the truth: <span class="scream">this was not beef</span>.
+            </p>
+            
+            <img src="assets/images/sindra-sindrawan.jpg" alt="The man who would betray the truth" class="cursed-image">
+            
+            <p>
+                Hope flickered like a candle in a tomb. Here, finally, was someone willing to face reality. He promised to identify the mystery meat, to get to the bottom of this culinary nightmare. <span class="whisper">*But hope, like meat left too long in the heat, has a way of turning rancid.*</span>
+            </p>
+            
+            <p>
+                Hours later, he returned, transformed. The honest man had vanished, replaced by another puppet dancing to management's tune. Now he claimed it was beef—showed me pictures of beef packaging as if printed labels could alter the reality of what had been served.
+            </p>
+            
+            <img src="assets/images/beef-packaging.jpeg" alt="False evidence, worthless papers" class="cursed-image">
+            
+            <p>
+                <span class="scream">"Let's go to the kitchen,"</span> I demanded. <span class="scream">"Cook some up right now."</span>
+            </p>
+            
+            <p>
+                And so we went, down into the belly of the beast, where they prepared what they claimed was the same meat. But this time... this time it looked like beef. Tasted like beef. Was, undeniably, beef.
+            </p>
+            
+            <img src="assets/images/cooked-beef.jpeg" alt="The real beef they should have served" class="cursed-image">
+            
+            <p>
+                <span class="whisper">*Two different meats, two different realities. The question that haunts me still: what unholy substitution had taken place that first night?*</span>
+            </p>
+            
+            <div class="ominous-quote">
+                Even artificial intelligence could see through their deception, identifying the fresh beef as genuine while condemning the original mystery meat as an abomination that no reputable establishment would dare serve raw.
+            </div>
+            
+            <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="AI confirms the replacement beef" class="cursed-image">
+            <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="AI condemns the original horror" class="cursed-image">
+        </div>
+        
+        <!-- Chapter 5 -->
+        <div class="chapter">
+            <h2 class="chapter-title">
+                <span class="chapter-number">CHAPTER V</span>
+                The Waters of Corruption
+            </h2>
+            
+            <p class="first-paragraph">
+                If the dining room was the heart of darkness, then the bathroom was its diseased liver—filtering nothing, cleansing nothing, only adding to the overall putrefaction of the experience.
+            </p>
+            
+            <p>
+                The faucet, when turned, expelled not the clear water of life, but a <span class="scream">yellow torrent</span> that spoke of rust, decay, and God knows what other contamination lurking in the pipes.
+            </p>
+            
+            <video controls class="haunted-video">
                 <source src="assets/video/yellow-water-from-faucet-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             
-            <p style="margin-bottom: 15px;">
-                The shower was equally disappointing. The "hot" water was warm at best and ran out completely after about 15 minutes. I prefer long, relaxing showers on vacation - that was impossible here.
+            <p>
+                <span class="whisper">*Yellow like jaundice, yellow like infection, yellow like the color of fear made manifest.*</span>
             </p>
             
-            <h3>The Open-Air Nightmare</h3>
-            <p style="margin-bottom: 15px;">
-                The toilet had an open-air design with zero sound privacy. This wouldn't normally be a huge issue, but when you're suffering from severe stomach problems after eating raw chicken, it becomes a nightmare. My neighbors could hear every embarrassing sound, and I could hear them conversing from my bathroom.
+            <p>
+                The shower offered no respite, providing only lukewarm water that lasted mere minutes before surrendering to the cold. But worst of all was the toilet's open-air design—a architectural decision that ensured every bout of food poisoning, every intestinal revolt caused by their tainted flesh, would be heard by all.
             </p>
             
-            <img src="assets/images/open-air-bathroom.jpg" alt="Open-air bathroom with no privacy" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <img src="assets/images/open-air-bathroom.jpg" alt="Where privacy goes to die" class="cursed-image">
             
-            <p style="margin-bottom: 15px;">
-                To make matters worse, they placed smoking and non-smoking rooms directly next to each other. Thanks to the open-air design, cigarette smoke constantly wafted into our non-smoking room.
+            <p>
+                <span class="whisper">*And through those open walls, the smoke of neighboring rooms drifted in—cigarette smoke that carried with it the acrid scent of resignation and decay.*</span>
             </p>
             
-            <img src="assets/images/smoking.jpg" alt="Neighbors smoking visible from non-smoking room" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <img src="assets/images/smoking.jpg" alt="The contaminated air" class="cursed-image">
         </div>
         
-        <div class="section">
-            <h2>🧹 Housekeeping Standards</h2>
+        <!-- Chapter 6 -->
+        <div class="chapter">
+            <h2 class="chapter-title blood-drip">
+                <span class="chapter-number">CHAPTER VI</span>
+                The Instruments of Doom
+            </h2>
             
-            <p style="margin-bottom: 15px;">
-                The housekeeping staff, while friendly, had one major hygiene issue - they cleaned the rooms while wearing their outdoor shoes. 
+            <p class="first-paragraph">
+                Even the recreational offerings bore the mark of malevolence. The bicycles they rented were not mere transportation but <span class="scream">death traps on wheels</span>—ancient, decrepit machines with tires deflated like the hopes of their riders and brakes that screamed like banshees when engaged.
             </p>
             
-            <img src="assets/images/staff-with-shoes.jpg" alt="Housekeeping staff cleaning with outdoor shoes on" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <img src="assets/images/bike-flat-tire.jpg" alt="Instruments of potential doom" class="cursed-image">
             
-            <p style="margin-bottom: 15px;">
-                Why would staff wear shoes inside while cleaning? These are the same shoes they wear outside, walking on streets and sidewalks. They then track all that dirt and contamination into our room while "cleaning" it. Basic hygiene standards completely ignored.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🚴 Bicycle Rental Safety Hazards</h2>
-            
-            <div class="critical">
-                <strong>SAFETY ALERT:</strong> Equipment poses serious risk to guests
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                The resort offered bicycle rentals, but the bikes were death traps. They were old with flat tires and broken kickstands that caused them to fall over constantly.
-            </p>
-            
-            <img src="assets/images/bike-flat-tire.jpg" alt="Rental bikes with flat tires" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                The real danger came from the brakes - they squealed loudly and barely worked. No lights or helmets were provided, which is especially dangerous since the local roads have no lighting at night.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <video controls class="haunted-video">
                 <source src="assets/video/broken-bike-480p-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             
-            <p style="margin-bottom: 10px; font-weight: bold;">See for yourself:</p>
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <p>
+                No lights for the dark roads, no helmets for protection—just rusted metal and false promises, designed to lure the unwary into night rides through unlit hellscapes.
+            </p>
+            
+            <video controls class="haunted-video">
                 <source src="assets/video/driving-at-night-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
-        
-        <div class="section">
-            <h2>💪 Fitness Facilities</h2>
             
-            <p style="margin-bottom: 15px;">
-                The "gym" was laughable. It consisted of a tiny, unstable single-machine with extremely low weight capacity and a few plastic "dumbbells" that felt like toys. Completely unsuitable for any real fitness routine.
+            <p>
+                The fitness facilities were equally cursed—a single machine as unstable as the management's grip on truth, accompanied by plastic dumbbells that felt like children's toys in the hands of anyone seeking genuine exercise.
             </p>
             
-            <img src="assets/images/terrible-gym.jpg" alt="Inadequate gym equipment" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <img src="assets/images/terrible-gym.jpg" alt="The gymnasium of futility" class="cursed-image">
             
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            <video controls class="haunted-video">
                 <source src="assets/video/terrible-gym-480p-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         
-        <div class="section">
-            <h2>✋ Final Insult: The Broken Comb</h2>
+        <!-- Chapter 7 -->
+        <div class="chapter">
+            <h2 class="chapter-title">
+                <span class="chapter-number">CHAPTER VII</span>
+                The Final Omen
+            </h2>
             
-            <p style="margin-bottom: 15px;">
-                Just before checking out, I used a wooden comb provided by the resort. It <strong>broke in half</strong>.
+            <p class="first-paragraph">
+                On the morning of departure, as if the resort needed one final opportunity to mark me with its curse, I reached for the wooden comb they had provided. <span class="whisper">*It broke in my hands.*</span>
             </p>
             
-            <p style="margin-bottom: 15px;">
-                Having spent time in Thailand, I knew this was a terrible omen. In Thai culture, a broken comb during use is a serious bad omen - a warning of misfortune. The superstition says it must be thrown away immediately or the bad luck will manifest.
+            <img src="assets/images/broken-comb.jpg" alt="The final omen, shattered" class="cursed-image">
+            
+            <p>
+                In Thai culture, a broken comb is an omen of the darkest sort—a harbinger of misfortune that must be immediately discarded lest its curse manifest in the physical world. <span class="scream">Even their grooming implements were cursed.</span>
             </p>
             
-            <p style="margin-bottom: 15px;">
-                This perfectly encapsulated the entire stay - even the resort's combs were cursed.
-            </p>
-            
-            <img src="assets/images/broken-comb.jpg" alt="Wooden comb broken in half" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <div class="info-box" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong style="color: #92400e;">Cultural Note:</strong> In Thai tradition, when a comb breaks while brushing hair, it's considered a bad omen that brings misfortune if kept. The immediate disposal of the broken comb is believed to prevent bad luck from manifesting. This belief is part of Thailand's extensive superstition framework that governs daily life.
+            <div class="flesh-description">
+                The wooden teeth split like bones, the handle cracked like something vital within the resort itself. It was as if the very building was trying to tell me something, trying to warn me of the corruption that ran deeper than tainted meat or yellow water—corruption that infected everything it touched.
             </div>
             
-            <p style="margin-bottom: 15px; font-style: italic;">
-                The resort couldn't even provide functioning combs or safe bicycles, let alone safe food, clean water, or adequate gym equipment.
+            <p>
+                <span class="whisper">*I disposed of the broken comb immediately, but some curses, once encountered, are impossible to fully cleanse.*</span>
             </p>
         </div>
         
-        <div class="section" style="text-align: center;">
-            <h2>Overall Rating</h2>
-            <div class="rating">⭐ 1/5</div>
-            <p><strong>ABSOLUTELY NOT RECOMMENDED</strong></p>
-            <p style="font-size: 1.2rem; color: #dc2626; margin: 20px 0;">By the end, I couldn't wait to leave this 1-star joke of a resort.</p>
+        <!-- Final Judgment -->
+        <div class="final-judgment">
+            <h2>THE FINAL JUDGMENT</h2>
             
-            <div class="critical" style="margin: 30px 0;">
-                <h3 style="color: #dc2626; margin-bottom: 15px;">The Real Problem: Management</h3>
-                <p style="text-align: left; line-height: 1.8;">
-                    The only saving grace is that the service staff were kind. This is a <strong>1-star resort as a direct result of 1-star management</strong>.
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    <strong>Management Failures:</strong><br>
-                    • Restaurant Manager <span class="manager-name">Andika Putra</span> - Lied directly to guests about raw chicken<br>
-                    • Operations Manager <span class="manager-name">Sindra Sindrawan</span> - Initially honest, then backtracked under pressure<br>
-                    • No senior management available on-site during crisis<br>
-                    • Attempted to gaslight guests about food safety incident<br>
-                    • Zero accountability for health violations<br>
-                    • Complete failure in basic hospitality standards
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    This resort represents everything wrong with hospitality management - prioritizing face-saving over guest safety, lying instead of taking responsibility, and operating with standards that wouldn't be acceptable at a roadside motel, let alone a resort claiming to offer a premium experience.
-                </p>
+            <div class="skull-rating">☠️ 1/5 ☠️</div>
+            
+            <div class="ominous-quote">
+                <span class="scream">CONDEMNED TO THE DEPTHS OF HOSPITALITY HELL</span>
             </div>
+            
+            <p style="font-size: 1.3rem; line-height: 2; margin: 30px 0;">
+                This is not merely a tale of poor service or substandard amenities. This is a chronicle of institutional corruption, where management <span class="cursed-name">Andika Putra</span> and <span class="cursed-name">Sindra Sindrawan</span> chose lies over truth, face-saving over guest safety, and corporate protection over basic human decency.
+            </p>
+            
+            <p style="font-size: 1.2rem; font-style: italic; margin: 30px 0;">
+                <span class="whisper">*The service staff were kind souls trapped in a machine of malevolence, but kindness cannot cleanse tainted flesh or purify yellow water.*</span>
+            </p>
+            
+            <p style="font-size: 1.4rem; color: #8b0000; font-weight: bold;">
+                Do not venture to this place. Do not test its hospitality. Some resorts merely disappoint—this one consumes.
+            </p>
         </div>
-    </div>
-    
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>🏝️ Popular Nusa Penida Attractions Nearby</h3>
-                <div class="info-grid">
-                    <div class="info-item">• <strong>Crystal Bay</strong> - Snorkeling & Diving</div>
-                    <div class="info-item">• <strong>Kelingking Beach</strong> - T-Rex Cliff Viewpoint</div>
-                    <div class="info-item">• <strong>Angel's Billabong</strong> - Natural Infinity Pool</div>
-                    <div class="info-item">• <strong>Broken Beach</strong> - Pasih Uug Arch</div>
-                    <div class="info-item">• <strong>Diamond Beach</strong> - White Sand Paradise</div>
-                    <div class="info-item">• <strong>Atuh Beach</strong> - Secluded Bay</div>
-                    <div class="info-item">• <strong>Manta Point</strong> - Manta Ray Diving</div>
-                    <div class="info-item">• <strong>Peguyangan Waterfall</strong> - Sacred Blue Stairs</div>
-                </div>
+        
+        <!-- Author's Note -->
+        <div class="author-note">
+            <h3 style="font-family: 'Cinzel', serif; font-size: 2rem; color: #8b0000; margin-bottom: 20px;">
+                Author's Note
+            </h3>
+            
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                This narrative, while presented in the style of gothic horror, is based entirely on actual events that occurred during a stay at Semaya Beach Resort in Nusa Penida, Bali. The tainted meat, yellow water, broken bicycles, inadequate gym facilities, open-air bathrooms, and management's systematic deception are all documented facts. The broken comb incident and cultural context are authentic.
+            </p>
+            
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 20px;">
+                Sometimes reality requires the language of horror to be properly understood. What happened here transcends mere poor service—it represents a fundamental betrayal of the trust between host and guest, a corruption that runs deeper than surface disappointments.
+            </p>
+            
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 20px;">
+                <span class="whisper">*The monsters in this story wear human faces and speak in corporate platitudes. They are real, and they are still serving guests.*</span>
+            </p>
+            
+            <div class="author-signature">
+                ~ Written in the style of the masters of terror ~<br>
+                <em>A true account, clothed in the language it deserves</em>
             </div>
             
-            <p style="text-align: center; margin-top: 20px; font-style: italic;">
-                While Nusa Penida offers incredible natural beauty and world-class diving, this resort fails to meet basic hospitality standards.
+            <p style="margin-top: 30px; color: #8b0000; font-style: italic;">
+                "Some stories can only be told as horror stories, because the truth is too horrible for any other genre."
             </p>
         </div>
     </div>
     
-    <footer>
-        <p>Review based on actual guest experience</p>
-        <p>Last updated: 2025</p>
-    </footer>
+    <script>
+        // Page turn animation on scroll
+        let ticking = false;
+        
+        function updateElements() {
+            const chapters = document.querySelectorAll('.chapter');
+            const windowHeight = window.innerHeight;
+            
+            chapters.forEach(chapter => {
+                const rect = chapter.getBoundingClientRect();
+                const elementTop = rect.top;
+                
+                if (elementTop < windowHeight * 0.8 && elementTop > -rect.height * 0.5) {
+                    chapter.classList.add('page-turn');
+                }
+            });
+            
+            ticking = false;
+        }
+        
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateElements);
+                ticking = true;
+            }
+        }
+        
+        window.addEventListener('scroll', requestTick);
+        
+        // Initial check
+        updateElements();
+        
+        // Horror ambiance effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Subtle screen flicker effect
+            setInterval(() => {
+                if (Math.random() < 0.02) { // 2% chance every 100ms
+                    document.body.style.filter = 'brightness(0.9) contrast(1.2)';
+                    setTimeout(() => {
+                        document.body.style.filter = '';
+                    }, 50);
+                }
+            }, 100);
+            
+            // Blood drip animation trigger
+            const bloodElements = document.querySelectorAll('.blood-drip');
+            bloodElements.forEach(element => {
+                element.addEventListener('mouseenter', () => {
+                    element.style.animation = 'none';
+                    setTimeout(() => {
+                        element.style.animation = 'drip 3s ease-in-out infinite';
+                    }, 10);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
