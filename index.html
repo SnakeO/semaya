@@ -3,12 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaya Beach Resort Bali Review - Honest Guest Experience | Nusa Penida Hotels</title>
-    <meta name="description" content="Honest review of Semaya Beach Resort in Nusa Penida, Bali. Located near Crystal Bay, Kelingking Beach, and Angel's Billabong. Read before booking this Nusa Penida accommodation.">
-    <meta name="keywords" content="Semaya Beach Resort, Nusa Penida hotels, Bali resort review, Crystal Bay accommodation, Nusa Penida accommodation, Kelingking Beach hotels, Angel's Billabong resort, Nusa Penida tourism, Bali island hotels, Indonesia beach resort">
+    <title>BALI RESORT WARNING: What They Don't Want You to Know About Semaya Beach Resort | Wanderlust Warnings</title>
+    <meta name="description" content="Honest travel blogger review of Semaya Beach Resort in Nusa Penida, Bali. Raw chicken incident, yellow water, and more shocking discoveries. Pin this before you book!">
+    <meta name="keywords" content="Bali travel blog, Nusa Penida review, travel warnings, Pinterest travel, Indonesia travel tips, solo female travel, travel blogger, wanderlust warnings">
     
+    <!-- Pinterest Rich Pins -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="BALI RESORT WARNING: What They Don't Want You to Know About Semaya Beach Resort" />
+    <meta property="og:description" content="Raw chicken served as beef, yellow water, and shocking management lies. A travel blogger's honest warning about Semaya Beach Resort." />
+    <meta property="og:image" content="assets/images/pinterest-cover.jpg" />
+    <meta property="og:url" content="https://wanderlustwarnings.com/semaya-beach-resort-bali-review" />
+    <meta property="article:author" content="Maya Chen" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
+        :root {
+            --coral: #FF6B6B;
+            --coral-light: #FFB3B3;
+            --coral-dark: #E55555;
+            --mint: #4ECDC4;
+            --mint-light: #A3E6E0;
+            --mint-dark: #3BA99F;
+            --gold: #FFD93D;
+            --gold-light: #FFEB8A;
+            --gold-dark: #E6C42B;
+            --cream: #FFF8F0;
+            --warm-white: #FEFEFE;
+            --text-dark: #2D3748;
+            --text-medium: #4A5568;
+            --text-light: #718096;
+            --shadow: 0 10px 25px rgba(0,0,0,0.1);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -16,207 +48,1059 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--cream) 0%, var(--warm-white) 100%);
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
         }
         
-        header {
-            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        /* Blog Header */
+        .blog-header {
+            background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
             color: white;
-            padding: 60px 20px;
-            text-align: center;
+            padding: 20px 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         
-        header h1 {
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Dancing Script', cursive;
             font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
-        .subtitle {
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-menu a:hover {
+            opacity: 0.8;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icons a {
+            color: white;
             font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/bali-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
             opacity: 0.95;
         }
         
         .warning-badge {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--text-dark);
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
             display: inline-block;
-            background: #fbbf24;
-            color: #713f12;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            margin-top: 20px;
+            box-shadow: var(--shadow);
+            animation: pulse 2s infinite;
         }
         
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
         }
         
-        .section {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        
-        .section h2 {
-            color: #dc2626;
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #fee2e2;
-        }
-        
-        .section h3 {
-            color: #7c2d12;
-            font-size: 1.3rem;
-            margin: 20px 0 10px 0;
-        }
-        
-        .issue-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .issue-list li {
-            padding: 10px 0;
-            padding-left: 30px;
-            position: relative;
-        }
-        
-        .issue-list li:before {
-            content: "⚠️";
+        .pin-button {
             position: absolute;
-            left: 0;
+            top: 20px;
+            right: 20px;
+            background: var(--coral);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
         }
         
-        .sub-issue {
-            margin-left: 20px;
-            padding: 5px 0;
-            color: #666;
-            list-style-type: disc;
+        .pin-button:hover {
+            background: var(--coral-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
         }
         
-        .critical {
-            background: #fee2e2;
-            border-left: 4px solid #dc2626;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
-        }
-        
-        .critical strong {
-            color: #dc2626;
-        }
-        
-        .photo-placeholder {
-            background: #f3f4f6;
-            border: 2px dashed #9ca3af;
+        /* Author Bio */
+        .author-bio {
+            background: white;
+            border-radius: 20px;
             padding: 40px;
-            text-align: center;
-            color: #6b7280;
-            margin: 20px 0;
-            border-radius: 8px;
-            font-style: italic;
+            margin: -50px auto 60px;
+            max-width: 800px;
+            box-shadow: var(--shadow);
+            position: relative;
+            z-index: 100;
         }
         
-        .health-warning {
-            background: #fef2f2;
-            border: 2px solid #dc2626;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+        .author-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
         }
         
-        .health-warning h4 {
-            color: #dc2626;
+        .author-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--mint);
+        }
+        
+        .author-info h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: var(--coral);
             margin-bottom: 10px;
         }
         
-        footer {
+        .author-info p {
+            color: var(--text-medium);
+            margin-bottom: 15px;
+        }
+        
+        .author-socials {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .author-socials a {
+            color: var(--mint);
+            font-size: 1.3rem;
+            transition: color 0.3s;
+        }
+        
+        .author-socials a:hover {
+            color: var(--mint-dark);
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .blog-post {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+        }
+        
+        /* Post Meta */
+        .post-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--cream);
+        }
+        
+        .post-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .post-date, .reading-time {
+            background: var(--mint-light);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+        
+        .share-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .share-btn {
+            padding: 10px 15px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: transform 0.3s;
+        }
+        
+        .share-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .share-pinterest { background: #BD081C; }
+        .share-instagram { background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); }
+        .share-facebook { background: #1877F2; }
+        
+        /* Typography */
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--coral);
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: var(--coral);
+            margin: 50px 0 25px;
             text-align: center;
-            padding: 40px 20px;
-            color: #666;
-            background: #e5e7eb;
         }
         
-        .rating {
-            font-size: 2rem;
-            color: #dc2626;
-            margin: 20px 0;
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--mint-dark);
+            margin: 30px 0 15px;
         }
         
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            .section h2 {
-                font-size: 1.4rem;
-            }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
         
-        .info-box {
-            background: #eff6ff;
-            border: 2px solid #3b82f6;
-            padding: 20px;
-            border-radius: 8px;
+        /* Photo Grid */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .photo-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .photo-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .photo-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .photo-overlay {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .pin-this {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: var(--coral);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        
+        .photo-item:hover .pin-this {
+            opacity: 1;
+        }
+        
+        /* Travel Tips Callout */
+        .travel-tip {
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            border-left: 5px solid var(--gold-dark);
+            box-shadow: var(--shadow);
+        }
+        
+        .travel-tip h4 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+        
+        .travel-tip p {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        /* Critical Warning */
+        .critical-warning {
+            background: linear-gradient(135deg, var(--coral-light) 0%, var(--coral) 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin: 40px 0;
+            color: white;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .critical-warning h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Map Section */
+        .map-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .map-placeholder {
+            background: var(--mint-light);
+            height: 400px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--text-medium);
+            margin-top: 20px;
+        }
+        
+        /* Comments Section */
+        .comments-section {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .comment {
+            background: var(--cream);
+            border-radius: 15px;
+            padding: 25px;
             margin-bottom: 20px;
         }
         
-        .info-box h3 {
-            color: #1e40af;
-            margin-bottom: 15px;
+        .comment-author {
+            font-weight: 600;
+            color: var(--coral);
+            margin-bottom: 10px;
         }
         
-        .info-grid {
+        .comment-date {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+        }
+        
+        /* Related Posts */
+        .related-posts {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .related-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
         }
         
-        .info-item {
-            padding: 5px 0;
+        .related-post {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
         }
         
-        .info-item strong {
-            color: #1e40af;
+        .related-post:hover {
+            transform: translateY(-5px);
         }
         
-        .manager-name {
-            background: #fef3c7;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-weight: bold;
-            color: #92400e;
+        .related-post img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
         
-        .timeline {
-            background: #f9fafb;
-            border-left: 3px solid #dc2626;
+        .related-content {
+            padding: 20px;
+        }
+        
+        .related-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--coral);
+            margin-bottom: 10px;
+        }
+        
+        /* Newsletter Signup */
+        .newsletter {
+            background: linear-gradient(135deg, var(--mint) 0%, var(--mint-dark) 100%);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .newsletter h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
             padding: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+        }
+        
+        .newsletter-form button {
+            background: var(--gold);
+            color: var(--text-dark);
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .newsletter-form button:hover {
+            background: var(--gold-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* Tags */
+        .post-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 40px 0;
+        }
+        
+        .tag {
+            background: var(--mint-light);
+            color: var(--text-dark);
+            padding: 8px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .tag:hover {
+            background: var(--mint);
+            color: white;
+        }
+        
+        /* Rating */
+        .rating-box {
+            background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .rating-stars {
+            font-size: 3rem;
             margin: 20px 0;
         }
         
-        .timeline-item {
-            margin-bottom: 15px;
-            padding-left: 15px;
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .author-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .blog-post {
+                padding: 30px 20px;
+            }
+            
+            .post-meta {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
         }
         
-        .timeline-item strong {
-            color: #dc2626;
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .nav-menu {
+                gap: 15px;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .author-bio {
+                margin: -30px 20px 40px;
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <div class="header-content">
+            <a href="#" class="logo">Wanderlust Warnings</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#travel-tips">Travel Tips</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <a href="#" class="pin-button">
+            <i class="fab fa-pinterest"></i> Pin This!
+        </a>
+        <div class="hero-content">
+            <h1>BALI RESORT WARNING:<br>The Shocking Truth About Semaya Beach Resort</h1>
+            <p class="hero-subtitle">What they don't want you to know before you book</p>
+            <div class="warning-badge">⚠️ MUST READ BEFORE BOOKING</div>
+        </div>
+    </section>
+
+    <!-- Author Bio -->
+    <div class="container">
+        <div class="author-bio">
+            <div class="author-content">
+                <img src="assets/images/maya-avatar.jpg" alt="Maya Chen Travel Blogger" class="author-avatar">
+                <div class="author-info">
+                    <h3>Maya Chen</h3>
+                    <p>Solo female traveler & digital nomad sharing honest hotel reviews and travel warnings to keep you safe on your adventures. 🌏✈️</p>
+                    <div class="author-socials">
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article class="blog-post">
+            <!-- Post Meta -->
+            <div class="post-meta">
+                <div class="post-info">
+                    <span class="post-date"><i class="fas fa-calendar"></i> January 15, 2025</span>
+                    <span class="reading-time"><i class="fas fa-clock"></i> 8 min read</span>
+                </div>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn share-pinterest">
+                        <i class="fab fa-pinterest"></i> Save
+                    </a>
+                    <a href="#" class="share-btn share-instagram">
+                        <i class="fab fa-instagram"></i> Share
+                    </a>
+                    <a href="#" class="share-btn share-facebook">
+                        <i class="fab fa-facebook"></i> Share
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <h1>The Bali Resort That Nearly Ruined My Trip (And Could Ruin Yours Too!)</h1>
+            
+            <p>Hey beautiful humans! 💕 I'm usually the girl who finds the silver lining in every travel disaster, but what happened at Semaya Beach Resort in Nusa Penida, Bali left me absolutely shook. I'm talking raw chicken served as "beef," yellow water flowing from faucets, and management that straight-up lied to my face.</p>
+            
+            <p>If you're planning a trip to Bali and considering this resort, PLEASE read this entire post. I'm sharing every shocking detail because your safety matters more than their reputation. Let's dive in...</p>
+
+            <div class="travel-tip">
+                <h4>Maya's Travel Tip ✨</h4>
+                <p>Always research hotels beyond the pretty Instagram photos. Real guest experiences tell the true story - and this one is a doozy!</p>
+            </div>
+
+            <h2>🌴 Setting the Scene: Paradise Found (Or So I Thought)</h2>
+            
+            <p>Picture this: I'm fresh off the boat to Nusa Penida, that dreamy Indonesian island that's been all over my Pinterest feed. Crystal Bay is literally 5 minutes away, I can practically taste those sunset cocktails, and I'm feeling so grateful for this little slice of paradise.</p>
+            
+            <p>The resort looked decent from the outside - not luxury level, but hey, I'm a budget-conscious solo female traveler who's stayed in hostels with shared bathrooms. How bad could it be?</p>
+            
+            <p><em>Spoiler alert: It could be REALLY bad.</em></p>
+
+            <!-- Photo Grid -->
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/resort-exterior.jpg" alt="Semaya Beach Resort exterior">
+                    <div class="photo-overlay">Resort Exterior</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/crystal-bay-view.jpg" alt="Crystal Bay near resort">
+                    <div class="photo-overlay">Crystal Bay View</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/nusa-penida-arrival.jpg" alt="Arriving at Nusa Penida">
+                    <div class="photo-overlay">Island Arrival</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h2>💧 Red Flag #1: The Water Bottle Scam</h2>
+            
+            <p>Okay babes, let me start with something that should be basic hospitality 101. I get to my room, unpack my cute travel outfits, and look around for complimentary water bottles. Nothing. Nada. Not even a sad little plastic cup.</p>
+            
+            <p>I call the front desk thinking there's been some mistake. "Hi, could I get some water bottles for my room please?"</p>
+            
+            <p>Twenty minutes later, housekeeping arrives with two sealed bottles and a bill for 160,000 Indonesian Rupees - that's about $10 USD for two bottles of water! 😱</p>
+            
+            <div class="critical-warning">
+                <h4>🚨 Plot Twist Alert!</h4>
+                <p>When I complained about the outrageous charge, management admitted they "should have" provided free water. But instead of giving me proper sealed bottles, they took away the ones I'd paid for and replaced them with sketchy refillable containers!</p>
+            </div>
+            
+            <p>Y'all, this is Indonesia. Water safety is already a concern, and now they're giving me mysterious liquid in random containers? My travel anxiety was through the roof!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/refillable-water-bottle.jpg" alt="Suspicious refillable water bottles">
+                    <div class="photo-overlay">Sketchy Water Setup</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h2>🍖 Red Flag #2: The Raw Chicken Nightmare</h2>
+            
+            <p>This is where things go from annoying to absolutely terrifying. I'm having dinner at the resort restaurant with my travel buddy, and we both order rare beef steaks. We're chatting, taking cute food pics for the 'gram, living our best island life...</p>
+            
+            <p>Then we take a bite. 🤢</p>
+            
+            <p>Something was immediately wrong. The texture, the color, the taste - this was NOT beef. We flag down the server, and restaurant manager Andika Putra comes over. This man looked me dead in the eyes and insisted multiple times that it was beef, just "a bad batch."</p>
+            
+            <p>A BAD BATCH?! Sir, this is clearly raw chicken!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/rare-meat.jpg" alt="Raw meat served as beef at Semaya Beach Resort">
+                    <div class="photo-overlay">What They Called "Beef"</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/rare-meat-zoom.jpg" alt="Close-up of raw meat texture">
+                    <div class="photo-overlay">Definitely Not Beef!</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager who lied">
+                    <div class="photo-overlay">Manager Andika</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <div class="travel-tip">
+                <h4>Solo Female Travel Safety Tip 🛡️</h4>
+                <p>Trust your instincts ALWAYS. If something looks, smells, or tastes wrong, don't let anyone gaslight you into thinking otherwise. Your safety > their feelings!</p>
+            </div>
+
+            <h3>The Health Scare That Followed</h3>
+            
+            <p>Within hours, one of us was doubled over with stomach cramps. Two days later, the other was dealing with serious digestive issues. We had to buy anti-parasite medication because we didn't even know if it was raw chicken or pork we'd consumed!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/anti-parasite-meds.jpg" alt="Anti-parasite medication">
+                    <div class="photo-overlay">Precautionary Meds</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/dr-visit.jpg" alt="Doctor visit receipt">
+                    <div class="photo-overlay">Medical Bills</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h3>Getting Experts to Confirm What I Already Knew</h3>
+            
+            <p>Still doubting myself (hello, gaslighting trauma), I reached out to my chef friend back home. Their response? Definitely not beef! I even posted on a steak forum and got BANNED because it wasn't actually steak! 😂</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/ask-chef-orig-thai.jpg" alt="Message to chef friend">
+                    <div class="photo-overlay">Expert Opinion</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/reddit-ban.jpg" alt="Banned from steak forum">
+                    <div class="photo-overlay">Forum Drama</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h2>🚿 Red Flag #3: The Yellow Water Horror Show</h2>
+            
+            <p>As if food poisoning wasn't enough, the bathroom situation was giving me major ick vibes. I turn on the faucet for my evening skincare routine, and YELLOW WATER starts flowing out!</p>
+            
+            <p>Not slightly tinted - I'm talking bright yellow, like someone mixed turmeric with tap water. How am I supposed to brush my teeth with this?!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/yellow-water-flow.jpg" alt="Yellow water from faucet">
+                    <div class="photo-overlay">Bathroom Nightmare</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h3>Zero Privacy When Nature Calls</h3>
+            
+            <p>The bathroom had this "open-air" design that might look cute on Pinterest, but becomes a nightmare when you're dealing with food poisoning. My neighbors could hear EVERYTHING, and I could hear their conversations from the toilet.</p>
+            
+            <p>Plus, they put smoking and non-smoking rooms right next to each other, so cigarette smoke constantly drifted into our space. Not exactly the zen retreat vibes I was going for!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/open-air-bathroom.jpg" alt="Open-air bathroom design">
+                    <div class="photo-overlay">No Privacy</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+                <div class="photo-item">
+                    <img src="assets/images/smoking.jpg" alt="Neighbors smoking near non-smoking room">
+                    <div class="photo-overlay">Smoke Issues</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h2>🧹 Red Flag #4: Questionable Cleaning Standards</h2>
+            
+            <p>The housekeeping staff were sweethearts, but they were cleaning our rooms wearing their outdoor shoes! The same shoes they wear to walk around dusty streets are now tracking dirt all over the floors they're supposedly "cleaning."</p>
+            
+            <p>Basic hygiene, people! This isn't rocket science!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/staff-with-shoes.jpg" alt="Staff cleaning with outdoor shoes">
+                    <div class="photo-overlay">Hygiene Issues</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h2>🚴 Red Flag #5: Death Trap Bicycles</h2>
+            
+            <p>Wanting to explore the island, I rented one of their bikes. Big mistake! These things were falling apart - flat tires, broken kickstands, and brakes that barely worked. No helmets or lights provided either.</p>
+            
+            <p>The roads in Nusa Penida have zero lighting at night. These bikes could have literally killed me!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/bike-flat-tire.jpg" alt="Broken rental bike with flat tire">
+                    <div class="photo-overlay">Unsafe Equipment</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h2>💪 The "Gym" That Made Me Laugh-Cry</h2>
+            
+            <p>As a fitness girlie, I was excited to maintain my workout routine. The "gym" was literally one unstable machine and some plastic dumbbells that felt like toys. I've seen better equipment at kids' playgrounds!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/terrible-gym.jpg" alt="Inadequate gym facilities">
+                    <div class="photo-overlay">Joke of a Gym</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <h2>🔮 The Final Omen: Broken Comb Bad Luck</h2>
+            
+            <p>Just before checkout, I used the wooden comb provided in the bathroom. It literally broke in half in my hands! Having spent time in Thailand, I know this is considered a terrible omen - a warning of incoming misfortune.</p>
+            
+            <p>At this point, even the universe was telling me to get out of there!</p>
+
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="assets/images/broken-comb.jpg" alt="Broken wooden comb">
+                    <div class="photo-overlay">Bad Omen</div>
+                    <a href="#" class="pin-this">Pin This!</a>
+                </div>
+            </div>
+
+            <div class="travel-tip">
+                <h4>Cultural Awareness Tip 🌸</h4>
+                <p>In Thai culture, a broken comb while brushing is considered a bad omen. Whether you're superstitious or not, it perfectly symbolized this cursed stay!</p>
+            </div>
+
+            <!-- Final Rating -->
+            <div class="rating-box">
+                <h2>My Honest Rating</h2>
+                <div class="rating-stars">⭐ 1/5 Stars</div>
+                <p><strong>ABSOLUTELY NOT RECOMMENDED</strong></p>
+                <p>This 1-star experience is entirely due to 1-star management. The service staff were lovely, but management's lies and complete disregard for guest safety make this place dangerous.</p>
+            </div>
+
+            <!-- Post Tags -->
+            <div class="post-tags">
+                <a href="#" class="tag">#BaliTravel</a>
+                <a href="#" class="tag">#TravelWarning</a>
+                <a href="#" class="tag">#NusaPenida</a>
+                <a href="#" class="tag">#HotelReview</a>
+                <a href="#" class="tag">#SoloFemaleTravel</a>
+                <a href="#" class="tag">#FoodSafety</a>
+                <a href="#" class="tag">#TravelBlogger</a>
+                <a href="#" class="tag">#IndonesiaTravel</a>
+            </div>
+        </article>
+
+        <!-- Map Section -->
+        <div class="map-section">
+            <h2>📍 Where This Nightmare Resort is Located</h2>
+            <p>Semaya Beach Resort is located near Crystal Bay in Nusa Penida, Bali. While the location is stunning, the resort itself is a health hazard!</p>
+            <div class="map-placeholder">
+                🗺️ Interactive Map: Semaya Beach Resort, Nusa Penida, Bali<br>
+                📍 Jl. Raya Batukandik, Nusa Penida, Klungkung Regency, Bali 80771
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments-section">
+            <h2>💬 What My Readers Are Saying</h2>
+            
+            <div class="comment">
+                <div class="comment-author">🌺 Sarah_Adventures</div>
+                <div class="comment-date">2 days ago</div>
+                <p>OMG Maya! I almost booked this place for next month. You literally saved my trip! Thank you for being so honest about this experience. 💕</p>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">✈️ WanderlustEmma</div>
+                <div class="comment-date">3 days ago</div>
+                <p>The raw chicken story has me SHOOK! How do they even stay in business?? Sharing this with all my travel groups. Stay safe queen! 👑</p>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">🏝️ IslandHopperJess</div>
+                <div class="comment-date">1 week ago</div>
+                <p>I've had similar experiences with sketchy resorts in SEA. Your detailed review is exactly what us solo female travelers need. Thank you for speaking up! 🙏</p>
+            </div>
+            
+            <div class="comment">
+                <div class="comment-author">🍃 EcoTraveler_Mike</div>
+                <div class="comment-date">1 week ago</div>
+                <p>As a chef, that raw chicken situation makes me livid. Food safety isn't optional! Hope you're feeling better now. 😔</p>
+            </div>
+        </div>
+
+        <!-- Related Posts -->
+        <div class="related-posts">
+            <h2>📚 You Might Also Like These Travel Warnings</h2>
+            <div class="related-grid">
+                <div class="related-post">
+                    <img src="assets/images/related-1.jpg" alt="Thailand resort warning">
+                    <div class="related-content">
+                        <h3 class="related-title">The Thai Resort That Gave Me Dengue Fever</h3>
+                        <p>My horrifying experience at a 5-star resort in Phuket that nearly landed me in the hospital...</p>
+                    </div>
+                </div>
+                <div class="related-post">
+                    <img src="assets/images/related-2.jpg" alt="Vietnam hotel scam">
+                    <div class="related-content">
+                        <h3 class="related-title">Vietnam Hotel Scam: How I Lost $500</h3>
+                        <p>The booking fraud that every solo female traveler needs to know about before visiting Vietnam...</p>
+                    </div>
+                </div>
+                <div class="related-post">
+                    <img src="assets/images/related-3.jpg" alt="Travel safety tips">
+                    <div class="related-content">
+                        <h3 class="related-title">10 Red Flags Every Solo Traveler Must Know</h3>
+                        <p>Warning signs that could save your life, your money, and your sanity while traveling alone...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="newsletter">
+            <h3>Join My Travel Tribe! 💌</h3>
+            <p>Get honest hotel reviews, safety tips, and exclusive travel warnings delivered straight to your inbox. Because your safety matters more than their marketing!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email for travel safety tips" required>
+                <button type="submit">Join the Tribe!</button>
+            </form>
+            <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.9;">
+                ✨ No spam, just real talk about travel safety and amazing destinations!
+            </p>
+        </div>
+    </div>
+
     <script>
-        // Lazy loading for images and videos
+        // Pinterest hover effect for images
+        document.querySelectorAll('.photo-item').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.querySelector('.pin-this').style.opacity = '1';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.querySelector('.pin-this').style.opacity = '0';
+            });
+        });
+
+        // Newsletter form submission
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for joining the Wanderlust Warnings tribe! 💕');
+        });
+
+        // Share button functionality
+        document.querySelectorAll('.share-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.classList.contains('share-pinterest')) {
+                    window.open('https://pinterest.com/pin/create/button/?url=' + encodeURIComponent(window.location.href) + '&description=' + encodeURIComponent('BALI RESORT WARNING: Raw chicken, yellow water, and shocking management lies at Semaya Beach Resort'), '_blank');
+                } else if (this.classList.contains('share-instagram')) {
+                    alert('Copy this link to share on Instagram Stories! 💕');
+                } else if (this.classList.contains('share-facebook')) {
+                    window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location.href), '_blank');
+                }
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Lazy loading for images
         document.addEventListener('DOMContentLoaded', function() {
-            // Lazy load images
             const images = document.querySelectorAll('img');
             const imageObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -232,386 +1116,11 @@
             });
             
             images.forEach(img => {
-                if (img.src) {
-                    // Store original src as data-src and clear src for lazy loading
-                    img.dataset.src = img.src;
-                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect width="400" height="300" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="sans-serif" font-size="16"%3ELoading...%3C/text%3E%3C/svg%3E';
+                if (img.src && img.src.includes('assets/')) {
                     imageObserver.observe(img);
                 }
             });
-            
-            // Lazy load videos
-            const videos = document.querySelectorAll('video');
-            const videoObserver = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const video = entry.target;
-                        const source = video.querySelector('source');
-                        if (source && source.dataset.src) {
-                            source.src = source.dataset.src;
-                            source.removeAttribute('data-src');
-                            video.load();
-                        }
-                        observer.unobserve(video);
-                    }
-                });
-            });
-            
-            videos.forEach(video => {
-                const source = video.querySelector('source');
-                if (source && source.src) {
-                    source.dataset.src = source.src;
-                    source.removeAttribute('src');
-                    videoObserver.observe(video);
-                }
-            });
-            
         });
     </script>
-    <header>
-        <h1>Semaya Beach Resort Review</h1>
-        <p class="subtitle">An Honest Guest Experience - Nusa Penida, Bali</p>
-        <div class="warning-badge">⚠️ Health & Safety Concerns</div>
-    </header>
-    
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>📍 Resort Information & Location</h3>
-                <div class="info-grid">
-                    <div class="info-item">
-                        <strong>Resort:</strong> Semaya Beach Resort
-                    </div>
-                    <div class="info-item">
-                        <strong>Location:</strong> Nusa Penida Island, Bali, Indonesia
-                    </div>
-                    <div class="info-item">
-                        <strong>Address:</strong> Jl. Raya Batukandik, Nusa Penida, Klungkung Regency, Bali 80771
-                    </div>
-                    <div class="info-item">
-                        <strong>Near:</strong> Crystal Bay Beach (5 min)
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        
-        <div class="section">
-            <h2>👋 My Arrival</h2>
-            
-            <p style="margin-bottom: 20px;">
-                When I arrived at Semaya Beach Resort, the location near Crystal Bay looked promising. But problems started immediately.
-            </p>
-            
-            <h3>No Drinking Water Provided</h3>
-            <p style="margin-bottom: 15px;">
-                After settling in, I looked for complimentary water bottles - standard in most hotels. There were none. I called the front desk to request some. They sent up two sealed bottles with a bill for <strong>160,000 Indonesian Rupees</strong> (approximately $10 USD).
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                When I complained about both the lack of complimentary water and the outrageous charge, management admitted they "should have" provided water in the room. But here's where it gets worse - they took away the sealed bottles I had ordered and replaced them with <strong>refillable containers</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                In Indonesia, a 5-star resort should not be providing water in refillable, unsealed containers. Are the containers clean? Is the water properly filtered? Are the people handling it following proper hygiene protocols? All of these worries would be completely avoidable if they just provided complimentary sealed water in the first place, like every other 5-star resort does.
-            </p>
-            
-            <img src="assets/images/refillable-water-bottle.jpg" alt="Refillable water bottles provided by resort" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Not the best start to a supposedly 5-star experience.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🍽️ Restaurant - The Raw Chicken Incident</h2>
-            
-            <div class="critical">
-                <strong>CRITICAL FOOD SAFETY VIOLATION:</strong> Raw chicken served instead of ordered rare beef
-            </div>
-            
-            <h3>The Night It Happened</h3>
-            <p style="margin-bottom: 15px;">
-                My date and I ordered rare beef for dinner. What arrived at our table looked wrong from the start, but we only realized the full horror after taking a bite. The texture and flavor were completely unlike any beef we'd ever tasted.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                When we complained, Restaurant Manager <span class="manager-name">Andika Putra</span> came to our table. Despite both of us arguing that this was clearly not steak, he insisted multiple times that it was beef. He claimed it was just "a bad batch" - as if that somehow made serving raw mystery meat acceptable.
-            </p>
-            
-            <div style="text-align: center; margin: 20px 0;">
-                <img src="assets/images/andika-putra.jpg" alt="Restaurant Manager Andika Putra" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                <p style="margin-top: 10px; font-style: italic; color: #666;">Restaurant Manager Andika Putra</p>
-            </div>
-            
-            <div class="health-warning">
-                <h4>What Happened Next</h4>
-                <p style="margin: 10px 0;">One of us got severe stomach cramps that same evening. The other suffered serious gastrointestinal illness 48 hours later.</p>
-            </div>
-            
-            <img src="assets/images/rare-meat.jpg" alt="Raw meat served as 'rare beef'" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <img src="assets/images/rare-meat-zoom.jpg" alt="Close-up of meat texture - clearly not beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Seeking External Verification</h3>
-            <p style="margin-bottom: 15px;">
-                Doubting my own senses, I reached out to my friend who's a professional chef. Their response told me it definitely was not steak.
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/ask-chef-orig-thai.jpg" alt="Message to chef friend (Thai)" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/ask-chef-translated-eng.jpg" alt="Chef's response translated" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                I posted the photo on a social media site that specializes in steak. Within hours, I received dozens of messages all confirming the same thing - this wasn't beef. The ultimate proof? I actually got BANNED from the forum because I posted a picture of non-steak, and they only allow steak photos!
-            </p>
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <img src="assets/images/reddit-post-1.jpg" alt="Reddit responses part 1" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-                <img src="assets/images/reddit-post-2.jpg" alt="Reddit responses part 2" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
-            </div>
-            
-            <img src="assets/images/reddit-ban.jpg" alt="Banned from steak forum for posting non-steak" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Management Response Timeline</h3>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <strong>Day 1 Morning:</strong> The next morning, I asked to speak with upper management about the incident. None were available. The only manager on site was the same restaurant manager who had lied to us the night before. What kind of "5-star" resort has no senior management present?
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Days 1-2:</strong> Since we didn't know if it was raw chicken or pork, we found some anti-parasite medication and took it as a precaution. Each type of meat carries different parasitic or bacterial risks.
-                </div>
-                
-                <img src="assets/images/anti-parasite-meds.jpg" alt="Anti-parasite medication taken as precaution" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                
-                <div class="timeline-item">
-                    <strong>Day 3:</strong> Finally, I had an in-person meeting with Resort Operations Manager <span class="manager-name">Sindra Sindrawan</span>. He took one look at the photo and immediately agreed with me - it was NOT beef. He promised he would identify the meat and get back to me.
-                </div>
-                
-                <div style="text-align: center; margin: 20px 0;">
-                    <img src="assets/images/sindra-sindrawan.jpg" alt="Operations Manager Sindra Sindrawan" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
-                    <p style="margin-top: 10px; font-style: italic; color: #666;">Operations Manager Sindra Sindrawan</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <strong>Day 3 (hours later):</strong> A few hours passed before our second meeting. Sindra sat down and, after "talking with the staff," now claimed it was beef. He showed me a photo of beef packaging as "proof." I said, "Fine, let's go to the kitchen right now and cook it up."
-                </div>
-            </div>
-            
-            <img src="assets/images/beef-packaging.jpeg" alt="Beef packaging shown as 'proof'" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <h3>The Kitchen Test</h3>
-            <p style="margin-bottom: 15px;">
-                We went to the kitchen where management cooked up what they claimed was the same meat. This time, it looked and tasted exactly like beef - proper beef. Yet they still insisted this was identical to what they'd served me two days earlier.
-            </p>
-            
-            <img src="assets/images/cooked-beef.jpeg" alt="Actually cooked beef - looks completely different" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
-            
-            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/cooked-beef.jpeg" alt="Real beef" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">Real beef (Day 3)</p>
-                </div>
-                <div style="flex: 1; min-width: 250px; text-align: center;">
-                    <img src="assets/images/rare-meat.jpg" alt="Mystery meat served" style="width: 100%; border-radius: 8px;">
-                    <p style="margin-top: 5px; font-style: italic;">What I was served (Day 1)</p>
-                </div>
-            </div>
-            
-            <h3>AI Analysis Proves the Truth</h3>
-            <p style="margin-bottom: 15px;">
-                Standing there in the kitchen, I opened ChatGPT and took a photo of the freshly cooked meat. The AI immediately confirmed it was definitely beef.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="ChatGPT confirms the newly cooked meat is beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                I then uploaded the photo of my original meal from two days prior. ChatGPT initially thought it was Ahi Tuna. When I clarified it was meat, not fish, the AI concluded it couldn't be beef due to the incorrect color and texture. It added that chicken or pork would NEVER be served raw by a reputable resort.
-            </p>
-            
-            <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="ChatGPT says original meal cannot be beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Medical Consequences & Resort's Refusal</h3>
-            <p style="margin-bottom: 15px;">
-                I told them firmly: "I will not be gaslighted into thinking I ate steak. I've been eating steak for 40 years."
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                The meat was either chicken or pork, each carrying different health risks when consumed raw. Since I didn't know which it was, I had to visit a doctor for stool testing to check for parasites. The worst part? <strong>The resort refused to pay for the medical visit</strong>, even though they were the ones who served me raw meat.
-            </p>
-            
-            <img src="assets/images/dr-visit.jpg" alt="Doctor's receipt for parasite testing" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-        </div>
-        
-        <div class="section">
-            <h2>🚿 Bathroom Conditions</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The bathroom problems started the moment I turned on the faucet. Yellow water came pouring out - not slightly discolored, but distinctly yellow.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/yellow-water-from-faucet-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p style="margin-bottom: 15px;">
-                The shower was equally disappointing. The "hot" water was warm at best and ran out completely after about 15 minutes. I prefer long, relaxing showers on vacation - that was impossible here.
-            </p>
-            
-            <h3>The Open-Air Nightmare</h3>
-            <p style="margin-bottom: 15px;">
-                The toilet had an open-air design with zero sound privacy. This wouldn't normally be a huge issue, but when you're suffering from severe stomach problems after eating raw chicken, it becomes a nightmare. My neighbors could hear every embarrassing sound, and I could hear them conversing from my bathroom.
-            </p>
-            
-            <img src="assets/images/open-air-bathroom.jpg" alt="Open-air bathroom with no privacy" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                To make matters worse, they placed smoking and non-smoking rooms directly next to each other. Thanks to the open-air design, cigarette smoke constantly wafted into our non-smoking room.
-            </p>
-            
-            <img src="assets/images/smoking.jpg" alt="Neighbors smoking visible from non-smoking room" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-        </div>
-        
-        <div class="section">
-            <h2>🧹 Housekeeping Standards</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The housekeeping staff, while friendly, had one major hygiene issue - they cleaned the rooms while wearing their outdoor shoes. 
-            </p>
-            
-            <img src="assets/images/staff-with-shoes.jpg" alt="Housekeeping staff cleaning with outdoor shoes on" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                Why would staff wear shoes inside while cleaning? These are the same shoes they wear outside, walking on streets and sidewalks. They then track all that dirt and contamination into our room while "cleaning" it. Basic hygiene standards completely ignored.
-            </p>
-        </div>
-        
-        <div class="section">
-            <h2>🚴 Bicycle Rental Safety Hazards</h2>
-            
-            <div class="critical">
-                <strong>SAFETY ALERT:</strong> Equipment poses serious risk to guests
-            </div>
-            
-            <p style="margin-bottom: 15px;">
-                The resort offered bicycle rentals, but the bikes were death traps. They were old with flat tires and broken kickstands that caused them to fall over constantly.
-            </p>
-            
-            <img src="assets/images/bike-flat-tire.jpg" alt="Rental bikes with flat tires" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <p style="margin-bottom: 15px;">
-                The real danger came from the brakes - they squealed loudly and barely worked. No lights or helmets were provided, which is especially dangerous since the local roads have no lighting at night.
-            </p>
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/broken-bike-480p-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            
-            <p style="margin-bottom: 10px; font-weight: bold;">See for yourself:</p>
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/driving-at-night-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <div class="section">
-            <h2>💪 Fitness Facilities</h2>
-            
-            <p style="margin-bottom: 15px;">
-                The "gym" was laughable. It consisted of a tiny, unstable single-machine with extremely low weight capacity and a few plastic "dumbbells" that felt like toys. Completely unsuitable for any real fitness routine.
-            </p>
-            
-            <img src="assets/images/terrible-gym.jpg" alt="Inadequate gym equipment" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-                <source src="assets/video/terrible-gym-480p-compressed.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        
-        <div class="section">
-            <h2>✋ Final Insult: The Broken Comb</h2>
-            
-            <p style="margin-bottom: 15px;">
-                Just before checking out, I used a wooden comb provided by the resort. It <strong>broke in half</strong>.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                Having spent time in Thailand, I knew this was a terrible omen. In Thai culture, a broken comb during use is a serious bad omen - a warning of misfortune. The superstition says it must be thrown away immediately or the bad luck will manifest.
-            </p>
-            
-            <p style="margin-bottom: 15px;">
-                This perfectly encapsulated the entire stay - even the resort's combs were cursed.
-            </p>
-            
-            <img src="assets/images/broken-comb.jpg" alt="Wooden comb broken in half" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <div class="info-box" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong style="color: #92400e;">Cultural Note:</strong> In Thai tradition, when a comb breaks while brushing hair, it's considered a bad omen that brings misfortune if kept. The immediate disposal of the broken comb is believed to prevent bad luck from manifesting. This belief is part of Thailand's extensive superstition framework that governs daily life.
-            </div>
-            
-            <p style="margin-bottom: 15px; font-style: italic;">
-                The resort couldn't even provide functioning combs or safe bicycles, let alone safe food, clean water, or adequate gym equipment.
-            </p>
-        </div>
-        
-        <div class="section" style="text-align: center;">
-            <h2>Overall Rating</h2>
-            <div class="rating">⭐ 1/5</div>
-            <p><strong>ABSOLUTELY NOT RECOMMENDED</strong></p>
-            <p style="font-size: 1.2rem; color: #dc2626; margin: 20px 0;">By the end, I couldn't wait to leave this 1-star joke of a resort.</p>
-            
-            <div class="critical" style="margin: 30px 0;">
-                <h3 style="color: #dc2626; margin-bottom: 15px;">The Real Problem: Management</h3>
-                <p style="text-align: left; line-height: 1.8;">
-                    The only saving grace is that the service staff were kind. This is a <strong>1-star resort as a direct result of 1-star management</strong>.
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    <strong>Management Failures:</strong><br>
-                    • Restaurant Manager <span class="manager-name">Andika Putra</span> - Lied directly to guests about raw chicken<br>
-                    • Operations Manager <span class="manager-name">Sindra Sindrawan</span> - Initially honest, then backtracked under pressure<br>
-                    • No senior management available on-site during crisis<br>
-                    • Attempted to gaslight guests about food safety incident<br>
-                    • Zero accountability for health violations<br>
-                    • Complete failure in basic hospitality standards
-                </p>
-                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    This resort represents everything wrong with hospitality management - prioritizing face-saving over guest safety, lying instead of taking responsibility, and operating with standards that wouldn't be acceptable at a roadside motel, let alone a resort claiming to offer a premium experience.
-                </p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <div class="section">
-            <div class="info-box">
-                <h3>🏝️ Popular Nusa Penida Attractions Nearby</h3>
-                <div class="info-grid">
-                    <div class="info-item">• <strong>Crystal Bay</strong> - Snorkeling & Diving</div>
-                    <div class="info-item">• <strong>Kelingking Beach</strong> - T-Rex Cliff Viewpoint</div>
-                    <div class="info-item">• <strong>Angel's Billabong</strong> - Natural Infinity Pool</div>
-                    <div class="info-item">• <strong>Broken Beach</strong> - Pasih Uug Arch</div>
-                    <div class="info-item">• <strong>Diamond Beach</strong> - White Sand Paradise</div>
-                    <div class="info-item">• <strong>Atuh Beach</strong> - Secluded Bay</div>
-                    <div class="info-item">• <strong>Manta Point</strong> - Manta Ray Diving</div>
-                    <div class="info-item">• <strong>Peguyangan Waterfall</strong> - Sacred Blue Stairs</div>
-                </div>
-            </div>
-            
-            <p style="text-align: center; margin-top: 20px; font-style: italic;">
-                While Nusa Penida offers incredible natural beauty and world-class diving, this resort fails to meet basic hospitality standards.
-            </p>
-        </div>
-    </div>
-    
-    <footer>
-        <p>Review based on actual guest experience</p>
-        <p>Last updated: 2025</p>
-    </footer>
 </body>
 </html>
