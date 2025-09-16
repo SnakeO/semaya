@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세마야 비치 리조트 발리 리뷰 - 정직한 투숙객 경험 | 누사 페니다 호텔</title>
+    <meta name="description" content="발리 누사 페니다 세마야 비치 리조트의 정직한 리뷰. 크리스탈 베이, 켈링킹 해변, 엔젤스 빌라봉 근처 위치. 이 누사 페니다 숙박시설 예약 전 반드시 읽어보세요.">
+    <meta name="keywords" content="세마야 비치 리조트, 누사 페니다 호텔, 발리 리조트 리뷰, 크리스탈 베이 숙박, 누사 페니다 숙박, 켈링킹 해변 호텔, 엔젤스 빌라봉 리조트, 누사 페니다 관광, 발리 섬 호텔, 인도네시아 비치 리조트">
+    
+    
+    <style>
+        /* Language Selector */
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 5px;
+            display: flex;
+            gap: 5px;
+        }
+        
+        .language-selector a {
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .language-selector a:hover {
+            background: #f0f0f0;
+        }
+        
+        .language-selector a.active {
+            background: #dc2626;
+            color: white;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .warning-badge {
+            display: inline-block;
+            background: #fbbf24;
+            color: #713f12;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        
+        .section h2 {
+            color: #dc2626;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #fee2e2;
+        }
+        
+        .section h3 {
+            color: #7c2d12;
+            font-size: 1.3rem;
+            margin: 20px 0 10px 0;
+        }
+        
+        .issue-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .issue-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .issue-list li:before {
+            content: "⚠️";
+            position: absolute;
+            left: 0;
+        }
+        
+        .sub-issue {
+            margin-left: 20px;
+            padding: 5px 0;
+            color: #666;
+            list-style-type: disc;
+        }
+        
+        .critical {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        
+        .critical strong {
+            color: #dc2626;
+        }
+        
+        .photo-placeholder {
+            background: #f3f4f6;
+            border: 2px dashed #9ca3af;
+            padding: 40px;
+            text-align: center;
+            color: #6b7280;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        
+        .health-warning {
+            background: #fef2f2;
+            border: 2px solid #dc2626;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .health-warning h4 {
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            background: #e5e7eb;
+        }
+        
+        .rating {
+            font-size: 2rem;
+            color: #dc2626;
+            margin: 20px 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .section h2 {
+                font-size: 1.4rem;
+            }
+            
+            /* Ensure all images are responsive on mobile */
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+                width: 100% !important;
+            }
+            
+            video {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+        
+        .info-box {
+            background: #eff6ff;
+            border: 2px solid #3b82f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .info-box h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .info-item {
+            padding: 5px 0;
+        }
+        
+        .info-item strong {
+            color: #1e40af;
+        }
+        
+        .manager-name {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #92400e;
+        }
+        
+        .timeline {
+            background: #f9fafb;
+            border-left: 3px solid #dc2626;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .timeline-item {
+            margin-bottom: 15px;
+            padding-left: 15px;
+        }
+        
+        .timeline-item strong {
+            color: #dc2626;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <a href="index.html">🇬🇧 English</a>
+        <a href="id.html">🇮🇩 Bahasa Indonesia</a>
+        <a href="zh.html">🇨🇳 中文</a>
+        <a href="ru.html">🇷🇺 Русский</a>
+        <a href="ja.html">🇯🇵 日本語</a>
+        <a href="it.html">🇮🇹 Italiano</a>
+        <a href="es.html">🇪🇸 Español</a>
+        <a href="th.html">🇹🇭 ภาษาไทย</a>
+        <a href="hi.html">🇮🇳 हिन्दी</a>
+        <a href="ko.html" class="active">🇰🇷 한국어</a>
+        <a href="ms.html">🇲🇾 Bahasa Melayu</a>
+        <a href="fr.html">🇫🇷 Français</a>
+        <a href="de.html">🇩🇪 Deutsch</a>
+    </div>
+    <script>
+        // Lazy loading for images and videos
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lazy load images
+            const images = document.querySelectorAll('img');
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        observer.unobserve(img);
+                    }
+                });
+            });
+            
+            images.forEach(img => {
+                if (img.src) {
+                    // Store original src as data-src and clear src for lazy loading
+                    img.dataset.src = img.src;
+                    img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"%3E%3Crect width="400" height="300" fill="%23f0f0f0"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%23999" font-family="sans-serif" font-size="16"%3E로딩 중...%3C/text%3E%3C/svg%3E';
+                    imageObserver.observe(img);
+                }
+            });
+            
+            // Lazy load videos
+            const videos = document.querySelectorAll('video');
+            const videoObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const video = entry.target;
+                        const source = video.querySelector('source');
+                        if (source && source.dataset.src) {
+                            source.src = source.dataset.src;
+                            source.removeAttribute('data-src');
+                            video.load();
+                        }
+                        observer.unobserve(video);
+                    }
+                });
+            });
+            
+            videos.forEach(video => {
+                const source = video.querySelector('source');
+                if (source && source.src) {
+                    source.dataset.src = source.src;
+                    source.removeAttribute('src');
+                    videoObserver.observe(video);
+                }
+            });
+            
+        });
+    </script>
+    <header>
+        <h1>세마야 비치 리조트 리뷰</h1>
+        <p class="subtitle">정직한 투숙객 경험 - 누사 페니다, 발리</p>
+        <div class="warning-badge">⚠️ 건강 및 안전 우려사항</div>
+    </header>
+    
+    <div class="container">
+        <div class="section">
+            <div class="info-box">
+                <h3>📍 리조트 정보 및 위치</h3>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <strong>리조트명:</strong> 세마야 비치 리조트
+                    </div>
+                    <div class="info-item">
+                        <strong>위치:</strong> 누사 페니다 섬, 발리, 인도네시아
+                    </div>
+                    <div class="info-item">
+                        <strong>주소:</strong> Jl. Raya Batukandik, Nusa Penida, Klungkung Regency, Bali 80771
+                    </div>
+                    <div class="info-item">
+                        <strong>인근:</strong> 크리스탈 베이 해변 (5분 거리)
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="section">
+            <h2>👋 도착 당일</h2>
+            
+            <p style="margin-bottom: 20px;">
+                세마야 비치 리조트에 도착했을 때, 크리스탈 베이 근처의 위치는 유망해 보였습니다. 하지만 문제는 즉시 시작되었습니다.
+            </p>
+            
+            <h3>음용수 미제공</h3>
+            <p style="margin-bottom: 15px;">
+                객실에 정착한 후, 대부분의 호텔에서 표준으로 제공하는 무료 생수병을 찾았습니다. 하지만 없었습니다. 프론트 데스크에 요청했더니, 밀봉된 생수 2병을 <strong>인도네시아 루피아 160,000원</strong> (약 10달러)의 청구서와 함께 보내왔습니다.
+            </p>
+            
+            <p style="margin-bottom: 15px;">
+                무료 생수 부재와 터무니없는 요금에 대해 불만을 제기하자, 경영진은 객실에 물을 "제공했어야 했다"고 인정했습니다. 하지만 여기서 더 심각해집니다 - 그들은 제가 주문한 밀봉된 생수병을 가져가고 <strong>리필 가능한 용기</strong>로 교체했습니다.
+            </p>
+            
+            <p style="margin-bottom: 15px;">
+                인도네시아에서 5성급 리조트가 리필 가능하고 밀봉되지 않은 용기로 물을 제공해서는 안 됩니다. 용기가 깨끗한가요? 물이 제대로 여과되었나요? 이를 다루는 사람들이 적절한 위생 프로토콜을 따르고 있나요? 이러한 모든 걱정은 다른 모든 5성급 리조트가 하는 것처럼 처음부터 무료 밀봉 생수를 제공했다면 완전히 피할 수 있었을 것입니다.
+            </p>
+            
+            <img src="assets/images/refillable-water-bottle.jpg" alt="리조트에서 제공한 리필 가능한 물병" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <p style="margin-bottom: 15px;">
+                5성급이라고 주장하는 경험의 시작치고는 최악이었습니다.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>🍽️ 레스토랑 - 날 닭고기 사건</h2>
+            
+            <div class="critical">
+                <strong>중대한 식품 안전 위반:</strong> 주문한 레어 쇠고기 대신 날 닭고기가 제공됨
+            </div>
+            
+            <h3>사건이 발생한 밤</h3>
+            <p style="margin-bottom: 15px;">
+                저와 제 파트너는 저녁에 레어 쇠고기를 주문했습니다. 테이블에 나온 것은 처음부터 이상해 보였지만, 한 입 먹어본 후에야 그 끔찍한 진실을 깨달았습니다. 질감과 맛이 지금까지 먹어본 어떤 쇠고기와도 완전히 달랐습니다.
+            </p>
+            
+            <p style="margin-bottom: 15px;">
+                불만을 제기하자 레스토랑 매니저 <span class="manager-name">Andika Putra</span>가 저희 테이블로 왔습니다. 저희 둘 다 이것이 명백히 스테이크가 아니라고 주장했음에도 불구하고, 그는 여러 번 그것이 쇠고기라고 주장했습니다. 그는 단지 "나쁜 배치"라고 주장했습니다 - 마치 그것이 날 정체불명의 고기를 제공하는 것을 용인할 수 있게 만드는 것처럼 말입니다.
+            </p>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="assets/images/andika-putra.jpg" alt="레스토랑 매니저 Andika Putra" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
+                <p style="margin-top: 10px; font-style: italic; color: #666;">레스토랑 매니저 Andika Putra</p>
+            </div>
+            
+            <div class="health-warning">
+                <h4>그 다음에 일어난 일</h4>
+                <p style="margin: 10px 0;">저희 중 한 명은 당일 저녁에 심각한 복통을 겪었습니다. 다른 한 명은 48시간 후에 심각한 위장 질환을 앓았습니다.</p>
+            </div>
+            
+            <img src="assets/images/rare-meat.jpg" alt="'레어 쇠고기'로 제공된 날 고기" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <img src="assets/images/rare-meat-zoom.jpg" alt="고기 질감 근접 촬영 - 명백히 쇠고기가 아님" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <h3>외부 검증 요청</h3>
+            <p style="margin-bottom: 15px;">
+                제 감각을 의심하며, 전문 요리사인 친구에게 연락했습니다. 그들의 답변은 그것이 확실히 스테이크가 아니라는 것이었습니다.
+            </p>
+            
+            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
+                <img src="assets/images/ask-chef-orig-thai.jpg" alt="요리사 친구에게 보낸 메시지 (태국어)" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
+                <img src="assets/images/ask-chef-translated-eng.jpg" alt="요리사의 답변 번역본" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
+            </div>
+            
+            <p style="margin-bottom: 15px;">
+                저는 스테이크 전문 소셜 미디어 사이트에 사진을 게시했습니다. 몇 시간 내에 모두 같은 것을 확인하는 수십 개의 메시지를 받았습니다 - 이것은 쇠고기가 아니었습니다. 결정적인 증거는? 스테이크가 아닌 사진을 올렸다는 이유로 실제로 포럼에서 차단당했습니다. 그들은 스테이크 사진만 허용하기 때문입니다!
+            </p>
+            
+            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
+                <img src="assets/images/reddit-post-1.jpg" alt="Reddit 응답 1부" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
+                <img src="assets/images/reddit-post-2.jpg" alt="Reddit 응답 2부" style="flex: 1; min-width: 250px; max-width: 48%; border-radius: 8px;">
+            </div>
+            
+            <img src="assets/images/reddit-ban.jpg" alt="스테이크가 아닌 것을 게시하여 스테이크 포럼에서 차단됨" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <h3>경영진 대응 타임라인</h3>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <strong>1일차 아침:</strong> 다음 날 아침, 이 사건에 대해 상급 경영진과 이야기하고 싶다고 요청했습니다. 아무도 없었습니다. 현장에 있는 유일한 매니저는 전날 밤 저희에게 거짓말을 했던 그 레스토랑 매니저였습니다. "5성급" 리조트에 상급 경영진이 현장에 없다는 것이 말이 됩니까?
+                </div>
+                
+                <div class="timeline-item">
+                    <strong>1-2일차:</strong> 날 닭고기인지 돼지고기인지 모르기 때문에, 예방 차원에서 구충제를 구해서 복용했습니다. 각 고기 종류마다 다른 기생충이나 세균 위험이 있습니다.
+                </div>
+                
+                <img src="assets/images/anti-parasite-meds.jpg" alt="예방 차원에서 복용한 구충제" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+                
+                <div class="timeline-item">
+                    <strong>3일차:</strong> 마침내 리조트 운영 매니저 <span class="manager-name">Sindra Sindrawan</span>와 직접 만났습니다. 그는 사진을 한 번 보고 즉시 저에게 동의했습니다 - 그것은 쇠고기가 아니었습니다. 그는 고기를 확인해서 답변하겠다고 약속했습니다.
+                </div>
+                
+                <div style="text-align: center; margin: 20px 0;">
+                    <img src="assets/images/sindra-sindrawan.jpg" alt="운영 매니저 Sindra Sindrawan" style="max-width: 300px; border-radius: 8px; display: block; margin: 0 auto;">
+                    <p style="margin-top: 10px; font-style: italic; color: #666;">운영 매니저 Sindra Sindrawan</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <strong>3일차 (몇 시간 후):</strong> 두 번째 미팅 전까지 몇 시간이 지났습니다. Sindra는 앉아서 "직원들과 이야기한 후" 이제 그것이 쇠고기라고 주장했습니다. 그는 "증거"로 쇠고기 포장지 사진을 보여주었습니다. 저는 "좋습니다, 지금 당장 주방에 가서 요리해 봅시다"라고 말했습니다.
+                </div>
+            </div>
+            
+            <img src="assets/images/beef-packaging.jpeg" alt="'증거'로 보여준 쇠고기 포장지" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
+            
+            <h3>주방 테스트</h3>
+            <p style="margin-bottom: 15px;">
+                경영진이 같은 고기라고 주장하는 것을 요리하는 주방에 갔습니다. 이번에는 쇠고기처럼 보이고 맛도 정확히 쇠고기 같았습니다 - 제대로 된 쇠고기였습니다. 그러나 그들은 여전히 이것이 이틀 전에 저에게 제공한 것과 동일하다고 주장했습니다.
+            </p>
+            
+            <img src="assets/images/cooked-beef.jpeg" alt="실제로 요리된 쇠고기 - 완전히 다른 모습" style="max-width: 600px; border-radius: 8px; margin: 20px auto; display: block;">
+            
+            <div style="display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <img src="assets/images/cooked-beef.jpeg" alt="진짜 쇠고기" style="width: 100%; border-radius: 8px;">
+                    <p style="margin-top: 5px; font-style: italic;">진짜 쇠고기 (3일차)</p>
+                </div>
+                <div style="flex: 1; min-width: 250px; text-align: center;">
+                    <img src="assets/images/rare-meat.jpg" alt="제공받은 정체불명의 고기" style="width: 100%; border-radius: 8px;">
+                    <p style="margin-top: 5px; font-style: italic;">제가 제공받은 것 (1일차)</p>
+                </div>
+            </div>
+            
+            <h3>AI 분석이 진실을 증명하다</h3>
+            <p style="margin-bottom: 15px;">
+                주방에 서서 ChatGPT를 열고 갓 요리된 고기의 사진을 찍었습니다. AI는 즉시 그것이 확실히 쇠고기라고 확인했습니다.
+            </p>
+            
+            <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="ChatGPT가 새로 요리된 고기가 쇠고기임을 확인" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <p style="margin-bottom: 15px;">
+                그 다음 이틀 전의 원래 식사 사진을 업로드했습니다. ChatGPT는 처음에 그것이 참치회라고 생각했습니다. 그것이 생선이 아니라 고기라고 명확히 하자, AI는 잘못된 색상과 질감 때문에 그것이 쇠고기일 수 없다고 결론지었습니다. 평판이 좋은 리조트에서는 닭고기나 돼지고기를 날 것으로 제공하지 않는다고 덧붙였습니다.
+            </p>
+            
+            <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="ChatGPT가 원래 식사는 쇠고기가 될 수 없다고 말함" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <h3>의료 결과 및 리조트의 거부</h3>
+            <p style="margin-bottom: 15px;">
+                저는 단호하게 말했습니다: "스테이크를 먹었다고 속이려 하지 마세요. 저는 40년간 스테이크를 먹어왔습니다."
+            </p>
+            
+            <p style="margin-bottom: 15px;">
+                그 고기는 닭고기이거나 돼지고기였으며, 각각 날 것으로 섭취했을 때 다른 건강 위험을 가지고 있습니다. 그것이 무엇인지 모르기 때문에, 기생충 검사를 위해 의사를 방문해서 대변 검사를 받아야 했습니다. 최악의 부분은? <strong>리조트가 의료비 지불을 거부했다는 것</strong>입니다. 그들이 저에게 날 고기를 제공했음에도 불구하고 말입니다.
+            </p>
+            
+            <img src="assets/images/dr-visit.jpg" alt="기생충 검사를 위한 의사 영수증" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <h3>당국에 신고</h3>
+            <p style="margin-bottom: 15px;">
+                이 위험한 식품 안전 위반과 리조트의 완전한 책임 회피 후, 저는 <strong>지역 보건부에 이 사건을 알리는</strong> 필요한 조치를 취했습니다. 또한 다른 여행객들이 이 리조트의 심각한 건강 위험에 대해 경고받을 수 있도록 <strong>자카르타 주재 미국 대사관에도 통보</strong>했습니다.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>🚿 욕실 상태</h2>
+            
+            <p style="margin-bottom: 15px;">
+                욕실 문제는 수도꼭지를 틀자마자 시작되었습니다. 노란 물이 쏟아져 나왔습니다 - 약간 변색된 것이 아니라 뚜렷하게 노란색이었습니다.
+            </p>
+            
+            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+                <source src="assets/video/yellow-water-from-faucet-compressed.mp4" type="video/mp4">
+                브라우저가 비디오 태그를 지원하지 않습니다.
+            </video>
+            
+            <p style="margin-bottom: 15px;">
+                샤워도 마찬가지로 실망스러웠습니다. "뜨거운" 물은 기껏해야 미지근했고 약 15분 후에 완전히 떨어졌습니다. 저는 휴가 중에 길고 편안한 샤워를 선호하는데 - 여기서는 불가능했습니다.
+            </p>
+            
+            <h3>야외 변기의 악몽</h3>
+            <p style="margin-bottom: 15px;">
+                변기는 소음 차단이 전혀 안 되는 야외 디자인이었습니다. 평상시에는 큰 문제가 아니겠지만, 날 닭고기를 먹고 심각한 위장 문제를 겪고 있을 때는 악몽이 됩니다. 옆방 사람들이 모든 창피한 소리를 들을 수 있었고, 저도 화장실에서 그들의 대화를 들을 수 있었습니다.
+            </p>
+            
+            <img src="assets/images/open-air-bathroom.jpg" alt="프라이버시가 없는 야외 화장실" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <p style="margin-bottom: 15px;">
+                설상가상으로, 그들은 흡연실과 금연실을 바로 옆에 배치했습니다. 야외 디자인 덕분에 담배 연기가 계속해서 저희 금연실로 들어왔습니다.
+            </p>
+            
+            <img src="assets/images/smoking.jpg" alt="금연실에서 보이는 옆방 흡연자들" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+        </div>
+        
+        <div class="section">
+            <h2>🧹 하우스키핑 기준</h2>
+            
+            <p style="margin-bottom: 15px;">
+                하우스키핑 직원들은 친절했지만, 하나의 주요한 위생 문제가 있었습니다 - 그들이 실외용 신발을 신고 객실을 청소했다는 것입니다.
+            </p>
+            
+            <img src="assets/images/staff-with-shoes.jpg" alt="실외용 신발을 신고 청소하는 하우스키핑 직원" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <p style="margin-bottom: 15px;">
+                직원들이 청소하면서 왜 실내에서 신발을 신고 있을까요? 이는 그들이 실외에서 신는 똑같은 신발로, 길거리와 인도를 걸었던 신발입니다. 그 다음 객실을 "청소"하면서 모든 더러움과 오염물질을 가져옵니다. 기본 위생 기준이 완전히 무시되었습니다.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h2>🚴 자전거 대여 안전 위험</h2>
+            
+            <div class="critical">
+                <strong>안전 경고:</strong> 장비가 투숙객에게 심각한 위험을 가함
+            </div>
+            
+            <p style="margin-bottom: 15px;">
+                리조트에서 자전거 대여를 제공했지만, 자전거들은 죽음의 함정이었습니다. 오래되고 타이어가 펑크 났으며 계속해서 넘어지는 고장난 킥스탠드가 있었습니다.
+            </p>
+            
+            <img src="assets/images/bike-flat-tire.jpg" alt="펑크난 타이어의 대여용 자전거" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <p style="margin-bottom: 15px;">
+                진짜 위험은 브레이크에서 왔습니다 - 시끄럽게 삐걱거리며 거의 작동하지 않았습니다. 라이트나 헬멧도 제공되지 않았는데, 이는 밤에 조명이 없는 현지 도로에서 특히 위험합니다.
+            </p>
+            
+            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+                <source src="assets/video/broken-bike-480p-compressed.mp4" type="video/mp4">
+                브라우저가 비디오 태그를 지원하지 않습니다.
+            </video>
+            
+            <p style="margin-bottom: 10px; font-weight: bold;">직접 보세요:</p>
+            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+                <source src="assets/video/driving-at-night-compressed.mp4" type="video/mp4">
+                브라우저가 비디오 태그를 지원하지 않습니다.
+            </video>
+        </div>
+        
+        <div class="section">
+            <h2>💪 피트니스 시설</h2>
+            
+            <p style="margin-bottom: 15px;">
+                "헬스장"은 웃기는 수준이었습니다. 극도로 낮은 무게 용량을 가진 작고 불안정한 단일 기계와 장난감 같은 느낌의 플라스틱 "덤벨" 몇 개로 구성되어 있었습니다. 제대로 된 피트니스 루틴에는 완전히 부적합했습니다.
+            </p>
+            
+            <img src="assets/images/terrible-gym.jpg" alt="부적절한 헬스장 장비" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+                <source src="assets/video/terrible-gym-480p-compressed.mp4" type="video/mp4">
+                브라우저가 비디오 태그를 지원하지 않습니다.
+            </video>
+        </div>
+        
+        <div class="section">
+            <h2>✋ 마지막 모독: 부러진 빗</h2>
+            
+            <p style="margin-bottom: 15px;">
+                체크아웃 직전, 리조트에서 제공한 나무 빗을 사용했습니다. 그것이 <strong>반으로 부러졌습니다</strong>.
+            </p>
+            
+            <p style="margin-bottom: 15px;">
+                태국에서 시간을 보낸 경험이 있어서, 이것이 끔찍한 징조라는 것을 알았습니다. 태국 문화에서 사용 중 빗이 부러지는 것은 심각한 나쁜 징조 - 불행의 경고입니다. 미신에 따르면 즉시 버려야 하며 그렇지 않으면 나쁜 운이 현실이 된다고 합니다.
+            </p>
+            
+            <p style="margin-bottom: 15px;">
+                이것은 전체 숙박을 완벽하게 요약했습니다 - 리조트의 빗조차 저주받았습니다.
+            </p>
+            
+            <img src="assets/images/broken-comb.jpg" alt="반으로 부러진 나무 빗" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
+            
+            <div class="info-box" style="background: #fef3c7; border-color: #f59e0b;">
+                <strong style="color: #92400e;">문화적 참고사항:</strong> 태국 전통에서 머리를 빗는 동안 빗이 부러지면, 보관할 경우 불행을 가져다주는 나쁜 징조로 여겨집니다. 부러진 빗의 즉시 폐기는 나쁜 운이 현실화되는 것을 방지한다고 믿어집니다. 이 믿음은 일상생활을 지배하는 태국의 광범위한 미신 체계의 일부입니다.
+            </div>
+            
+            <p style="margin-bottom: 15px; font-style: italic;">
+                리조트는 제대로 작동하는 빗이나 안전한 자전거도 제공할 수 없었고, 안전한 음식, 깨끗한 물, 또는 적절한 헬스장 장비는 말할 것도 없었습니다.
+            </p>
+        </div>
+        
+        <div class="section" style="text-align: center;">
+            <h2>종합 평점</h2>
+            <div class="rating">⭐ 1/5</div>
+            <p><strong>절대 추천하지 않음</strong></p>
+            <p style="font-size: 1.2rem; color: #dc2626; margin: 20px 0;">결국, 이 1성급 농담 같은 리조트를 떠나고 싶어서 견딜 수가 없었습니다.</p>
+            
+            <div class="critical" style="margin: 30px 0;">
+                <h3 style="color: #dc2626; margin-bottom: 15px;">진짜 문제: 경영진</h3>
+                <p style="text-align: left; line-height: 1.8;">
+                    유일한 구원은 서비스 직원들이 친절했다는 것입니다. 이곳은 <strong>1성급 경영진의 직접적인 결과로 인한 1성급 리조트</strong>입니다.
+                </p>
+                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
+                    <strong>경영진의 실패:</strong><br>
+                    • 레스토랑 매니저 <span class="manager-name">Andika Putra</span> - 날 닭고기에 대해 투숙객에게 직접 거짓말<br>
+                    • 운영 매니저 <span class="manager-name">Sindra Sindrawan</span> - 처음에는 정직했으나 압력 하에 후퇴<br>
+                    • 위기 상황에서 현장에 상급 경영진 부재<br>
+                    • 식품 안전 사건에 대해 투숙객을 속이려 시도<br>
+                    • 건강 위반에 대한 책임감 제로<br>
+                    • 기본 환대 기준의 완전한 실패
+                </p>
+                <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
+                    이 리조트는 환대 경영의 모든 잘못된 점을 대표합니다 - 투숙객 안전보다 체면 살리기를 우선시하고, 책임지는 대신 거짓말하며, 프리미엄 경험을 제공한다고 주장하는 리조트는 고사하고 길가 모텔에서도 받아들여지지 않을 기준으로 운영하고 있습니다.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="section">
+            <div class="info-box">
+                <h3>🏝️ 인근 인기 누사 페니다 명소</h3>
+                <div class="info-grid">
+                    <div class="info-item">• <strong>크리스탈 베이</strong> - 스노클링 & 다이빙</div>
+                    <div class="info-item">• <strong>켈링킹 해변</strong> - 티렉스 절벽 전망대</div>
+                    <div class="info-item">• <strong>엔젤스 빌라봉</strong> - 자연 인피니티 풀</div>
+                    <div class="info-item">• <strong>브로큰 비치</strong> - 파시 우그 아치</div>
+                    <div class="info-item">• <strong>다이아몬드 비치</strong> - 화이트 샌드 파라다이스</div>
+                    <div class="info-item">• <strong>아투 비치</strong> - 한적한 만</div>
+                    <div class="info-item">• <strong>만타 포인트</strong> - 만타 레이 다이빙</div>
+                    <div class="info-item">• <strong>페구양안 폭포</strong> - 신성한 푸른 계단</div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 20px; font-style: italic;">
+                누사 페니다는 놀라운 자연의 아름다움과 세계적 수준의 다이빙을 제공하지만, 이 리조트는 기본적인 환대 기준을 충족하지 못합니다.
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>실제 투숙객 경험을 바탕으로 한 리뷰</p>
+        <p>최종 업데이트: 2025년</p>
+    </footer>
+</body>
+</html>
