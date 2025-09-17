@@ -15,31 +15,37 @@
             top: 20px;
             right: 20px;
             z-index: 1000;
+        }
+
+        .language-dropdown {
             background: white;
+            padding: 10px 16px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            padding: 5px;
-            display: flex;
-            gap: 5px;
-        }
-        
-        .language-selector a {
-            padding: 8px 16px;
-            text-decoration: none;
-            color: #333;
-            border-radius: 5px;
+            border: 2px solid #e5e7eb;
+            font-size: 14px;
             font-weight: 500;
+            cursor: pointer;
+            min-width: 200px;
+            color: #333;
             transition: all 0.3s;
-            display: inline-block;
         }
-        
-        .language-selector a:hover {
-            background: #f0f0f0;
+
+        .language-dropdown:hover {
+            border-color: #dc2626;
+            background: #fef2f2;
         }
-        
-        .language-selector a.active {
-            background: #dc2626;
-            color: white;
+
+        .language-dropdown:focus {
+            outline: none;
+            border-color: #dc2626;
+            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+        }
+
+        .language-dropdown option {
+            padding: 5px;
+            background: white;
+            color: #333;
         }
         
         * {
@@ -265,19 +271,21 @@
 <body>
     <!-- Language Selector -->
     <div class="language-selector">
-        <a href="index.html">🇬🇧 English</a>
-        <a href="id.html">🇮🇩 Bahasa Indonesia</a>
-        <a href="zh.html">🇨🇳 中文</a>
-        <a href="ru.html">🇷🇺 Русский</a>
-        <a href="ja.html">🇯🇵 日本語</a>
-        <a href="it.html">🇮🇹 Italiano</a>
-        <a href="es.html">🇪🇸 Español</a>
-        <a href="th.html">🇹🇭 ภาษาไทย</a>
-        <a href="hi.html">🇮🇳 हिन्दी</a>
-        <a href="ko.html">🇰🇷 한국어</a>
-        <a href="ms.html" class="active">🇲🇾 Bahasa Melayu</a>
-        <a href="fr.html">🇫🇷 Français</a>
-        <a href="de.html">🇩🇪 Deutsch</a>
+        <select class="language-dropdown" onchange="window.location.href=this.value;">
+            <option value="index.html">🇬🇧 English</option>
+            <option value="id.html">🇮🇩 Bahasa Indonesia</option>
+            <option value="zh.html">🇨🇳 中文</option>
+            <option value="ru.html">🇷🇺 Русский</option>
+            <option value="ja.html">🇯🇵 日本語</option>
+            <option value="it.html">🇮🇹 Italiano</option>
+            <option value="es.html">🇪🇸 Español</option>
+            <option value="th.html">🇹🇭 ภาษาไทย</option>
+            <option value="hi.html">🇮🇳 हिन्दр</option>
+            <option value="ko.html">🇰🇷 한국어</option>
+            <option value="ms.html" selected>🇲🇾 Bahasa Melayu</option>
+            <option value="fr.html">🇫🇷 Français</option>
+            <option value="de.html">🇩🇪 Deutsch</option>
+        </select>
     </div>
     <script>
         // Lazy loading for images and videos
