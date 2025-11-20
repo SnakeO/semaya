@@ -266,6 +266,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -664,8 +784,111 @@
                 </p>
             </div>
         </div>
+
+        <!-- Additional Guest Reviews Section -->
+        <div class="section reviews-section">
+            <h2>📝 What Other Guests Say</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Anonymous Guest</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">1 out of 5</span>
+                </div>
+                <div class="review-date">Reviewed August 5, 2025 via mobile</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">Deeply Disappointing!!!</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 1 out of 5 – Deeply Disappointing and Far from 5-Star</strong></p>
+
+                    <p style="margin-bottom: 15px;">Perhaps the most telling comparison is this: the hotel next door, Seven Dreams, offers an infinitely better experience in every way — from the facilities and food to the service and atmosphere. It only makes this place feel even more disappointing.</p>
+
+                    <p style="margin-bottom: 15px;">This hotel does not match its online presentation. Many areas are still under construction, giving the entire property an unfinished and chaotic feel.</p>
+
+                    <p style="margin-bottom: 15px;">Service was far below expectations. When we asked to speak to a manager about the many issues we encountered, they sent someone who later admitted he was just the restaurant manager — not someone with any authority to address serious concerns.</p>
+
+                    <p style="margin-bottom: 15px;">The spa and gym are nowhere near 5-star standard — outdated, poorly maintained, and clearly neglected.</p>
+
+                    <p style="margin-bottom: 15px;">The location is very remote. Unless you're willing to rent a scooter every day or pay high prices for a driver, you're completely cut off from everything. And if you're hoping to plan a romantic surprise or evening, don't even bother — the hotel offers no support or flexibility for that.</p>
+
+                    <p style="margin-bottom: 15px;">Worse still, the atmosphere felt uncomfortable as a woman. It felt like only the man in the couple was acknowledged or respected, as if he was the only one worth speaking to because he's the one paying. My input or presence as a guest was largely ignored — unprofessional and outdated behavior that has no place in hospitality.</p>
+
+                    <p style="margin-bottom: 15px;">Even small details were overlooked. For example, there is no music system in the room, no ambiance features, and barely any entertainment options on the TV. If you're hoping to relax with a romantic film or soft music in the evening, you're out of luck.</p>
+
+                    <p style="margin-bottom: 15px;">All of this combined made the stay deeply disappointing. This is not a 5-star resort — not in quality, not in service, and certainly not in atmosphere. I absolutely would not return, and I strongly advise others to look elsewhere.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Date of stay:</strong> August 2025<br>
+                    <strong>Trip type:</strong> Traveled as a couple
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">Local Guide</span>
+                    <span class="reviewer-stats">23 reviews · 34 photos</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 out of 5</span>
+                </div>
+                <div class="review-date">2 months ago on Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">We stayed 3 nights in room 122. The room and bathroom are sublime, with a private pool and incredible views. The à la carte breakfast was excellent, with a wide variety of choices—probably the best we had during our trip to Bali.</p>
+
+                    <p style="margin-bottom: 10px;"><strong>However, several points spoiled our stay:</strong></p>
+                    <ul>
+                        <li><strong>Construction:</strong> A house right behind our room was under construction, with noise from 7:50 a.m. to 5:00 p.m. This construction wasn't announced to us, and no goodwill gesture was offered despite the significant inconvenience.</li>
+                        <li><strong>Price:</strong> The minibar is overpriced (a beer costs 3x the market price), and the restaurant is also overpriced for what's on offer.</li>
+                        <li><strong>Location:</strong> The hotel is very isolated, and access is complicated and expensive. We were charged IDR 350,000 for the transfer from the port. We also booked a half-day chauffeured tour through the hotel to visit two beaches (IDR 600,000), but the car smelled strongly of stale tobacco smoke, and there was no air conditioning, only a ventilation fan turned up to full blast.</li>
+                        <li><strong>Limited facilities:</strong> no real fitness room (just a treadmill, a rusty bike, and a broken machine), no real spa (only two tables set up next to the breakfast room).</li>
+                        <li><strong>Impassable private beach:</strong> covered in seaweed. However, at low tide, with shoes, it's possible to go further out and snorkel, where you can see many tropical fish.</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>In summary:</strong> a magnificent setting and an excellent breakfast, but too many inconveniences related to unannounced construction, the isolation, and the price/quality ratio.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Rooms:</strong> 5 · <strong>Service:</strong> 3 · <strong>Location:</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">Local Guide</span>
+                    <span class="reviewer-stats">30 reviews · 1 photo</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 out of 5</span>
+                </div>
+                <div class="review-date">A year ago on Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">First of all, I have to say that I rarely write reviews. However, in this case, I feel compelled to say something. The hotel doesn't really live up to the impressions you get from the pictures.</p>
+
+                    <p style="margin-bottom: 15px;">Many buildings are half-finished (construction sites), and the beach is practically unusable, as you can't swim or walk in the water due to coral, sharp rocks, and currents.</p>
+
+                    <p style="margin-bottom: 15px;">The service is unfortunately not fully trained. Many employees don't speak English. This makes ordering room service incredibly difficult at times. Which brings us to the next part: the food. The food is, unfortunately, a disaster, to say the least. I've rarely eaten so badly on vacation. Some of the food was inedible (no longer good). Furthermore, many dishes on the menu were permanently unavailable.</p>
+
+                    <p style="margin-bottom: 15px;">Another problem with the hotel is its location. You're ages away from everything and have to either rent a scooter every day or hire a driver (expensive).</p>
+
+                    <p style="margin-bottom: 15px;">Last but not least, it must be said that the rooms and the pool are truly beautiful, and several of the staff members go above and beyond to make our stay as pleasant as possible. A special thank you goes to Putra, who made everything possible during our stay!</p>
+
+                    <p style="margin-bottom: 15px;">Nevertheless, the hotel falls far short of its own expectations, which should be clear to anyone booking here.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Trip type:</strong> Vacation · <strong>Travel group:</strong> Couple<br>
+                    <strong>Rooms:</strong> 4 · <strong>Service:</strong> 2 · <strong>Location:</strong> 1
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <div class="container">
         <div class="section">
             <div class="info-box">
