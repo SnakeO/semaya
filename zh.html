@@ -266,6 +266,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -664,8 +784,111 @@
                 </p>
             </div>
         </div>
+
+        <!-- Additional Guest Reviews Section -->
+        <div class="section reviews-section">
+            <h2>📝 其他客人的评价</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">匿名客人</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">5分中1分</span>
+                </div>
+                <div class="review-date">2025年8月5日 手机评价</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">真的很失望！！！</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 5分中1分 – 真的很失望，远非五星级</strong></p>
+
+                    <p style="margin-bottom: 15px;">最能说明问题的对比就是：隔壁的Seven Dreams酒店在设施、食物、服务和氛围上都提供了远好得多的体验。这让这里显得更加令人失望。</p>
+
+                    <p style="margin-bottom: 15px;">这家酒店与在线介绍不符。许多区域仍在施工中，整个建筑感觉未完成且混乱。</p>
+
+                    <p style="margin-bottom: 15px;">服务远低于预期。当我们要求与经理交谈以处理我们遇到的许多问题时，他们派来了一个人，后来承认他只是餐厅经理，没有权限处理严重问题。</p>
+
+                    <p style="margin-bottom: 15px;">水疗和健身房远低于五星级标准——它们陈旧、维护不良，显然被忽视了。</p>
+
+                    <p style="margin-bottom: 15px;">位置非常偏远。如果你不愿意每天租赁摩托车或支付昂贵的司机费用，你就会被完全隔离。而且如果你想计划浪漫的惊喜或晚餐，根本别费力——酒店对此毫无支持或灵活性。</p>
+
+                    <p style="margin-bottom: 15px;">更糟的是，作为女性，我感到气氛不舒服。感觉好像只有男人才被承认或尊重——因为他是付款人。对我作为客人的意见或存在几乎被忽视——这在酒店业中是不专业和时代错误的。</p>
+
+                    <p style="margin-bottom: 15px;">甚至小细节也被忽视了。例如，房间里没有音乐系统，没有氛围功能，电视娱乐选项很少。如果你想在晚上放松观看浪漫电影或听舒缓音乐，你就出局了。</p>
+
+                    <p style="margin-bottom: 15px;">所有这些加在一起，我的住宿真的令人失望。这不是五星级度假村——不是品质，不是服务，绝对不是氛围。我永远不会回来，强烈建议其他人寻找其他地方。</p>
+                </div>
+                <div class="review-meta">
+                    <strong>住宿日期：</strong> 2025年8月<br>
+                    <strong>旅行类型：</strong> 情侣旅游
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">本地向导</span>
+                    <span class="reviewer-stats">23条评价 · 34张照片</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">5分中3分</span>
+                </div>
+                <div class="review-date">2个月前 Google评价</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">我在122号房住了3晚。房间和浴室很棒，配有私人游泳池和令人惊艳的景观。自助早餐很棒，选择很多——可能是我在巴厘岛度假时吃过的最好的。</p>
+
+                    <p style="margin-bottom: 10px;"><strong>但有几点毁了这次住宿：</strong></p>
+                    <ul>
+                        <li><strong>施工：</strong> 房间正后方有房子在施工，早上7:50到下午5:00有噪音。我们事先没有被通知，尽管造成了重大不便，但没有任何善意的表示。</li>
+                        <li><strong>价格：</strong> 迷你吧太贵了（啤酒价格是市场价的3倍），餐厅也相对于他们提供的东西来说太贵了。</li>
+                        <li><strong>位置：</strong> 酒店非常偏远，交通困难且昂贵。我们从港口被收费35万印尼盾。我们也通过酒店预订了一个半日司机导游游览两个海滩（60万印尼盾），但车又旧又烟味浓，空调坏了，只有最大风力的风扇。</li>
+                        <li><strong>有限的设施：</strong> 没有真正的健身室（只有一台跑步机、一辆生锈的自行车和坏了的机器），没有真正的水疗（只有安装在早餐区旁的两张桌子）。</li>
+                        <li><strong>不可通行的私人海滩：</strong> 被海草覆盖。但在退潮时穿着鞋子，你可以走得更远，浮潜并看到许多热带鱼。</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>总结：</strong> 宏伟的环境和很好的早餐，但计划外的施工、隔离和关于价格对比的不便太多了。</p>
+                </div>
+                <div class="review-meta">
+                    <strong>房间：</strong> 5 · <strong>服务：</strong> 3 · <strong>位置：</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">本地向导</span>
+                    <span class="reviewer-stats">30条评价 · 1张照片</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">5分中3分</span>
+                </div>
+                <div class="review-date">1年前 Google评价</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">首先，我很少写评价。但在这种情况下，我觉得我必须说点什么。酒店与从照片中得到的印象并不相符。</p>
+
+                    <p style="margin-bottom: 15px;">许多建筑物半完工（建筑工地），海滩由于珊瑚、尖锐的岩石和水流而实际上无法游泳或行走，因此事实上无法使用。</p>
+
+                    <p style="margin-bottom: 15px;">遗憾的是，服务根本没有得到培训。许多员工不会说英语。这有时会使房间服务订单变得非常困难。这引导我们进入下一部分：食物。食物遗憾的是最少来说是灾难。在假期中我很少吃得这么糟糕。有些食物根本无法食用（不再新鲜了）。此外，菜单上的许多菜肴永久不可用。</p>
+
+                    <p style="margin-bottom: 15px;">酒店的另一个问题是位置。它离一切都很远，所以你必须每天租赁摩托车或雇用司机（昂贵）。</p>
+
+                    <p style="margin-bottom: 15px;">最后，我必须说房间和游泳池确实很漂亮，许多员工尽力使我们的住宿尽可能愉快。特别感谢Putra，他在整个住宿期间使一切成为可能！</p>
+
+                    <p style="margin-bottom: 15px;">尽管如此，酒店远未能达到其期望，这应该对预订这里的任何人都很清楚。</p>
+                </div>
+                <div class="review-meta">
+                    <strong>旅行类型：</strong> 假期 · <strong>旅行群体：</strong> 情侣<br>
+                    <strong>房间：</strong> 4 · <strong>服务：</strong> 2 · <strong>位置：</strong> 1
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <div class="container">
         <div class="section">
             <div class="info-box">

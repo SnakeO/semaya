@@ -260,6 +260,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -659,7 +779,112 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="container">
+        <!-- Additional Guest Reviews Section -->
+        <div class="section reviews-section">
+            <h2>📝 รีวิวจากแขกท่านอื่น</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Anonymous Guest</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">1 ใน 5 คะแนน</span>
+                </div>
+                <div class="review-date">รีวิวเมื่อ 5 สิงหาคม 2025 ผ่านโทรศัพท์มือถือ</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">ผิดหวังอย่างลึกซึ้ง!!!</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 1 ใน 5 คะแนน – ผิดหวังอย่างลึกซึ้งและห่างไกลจาก 5 ดาว</strong></p>
+
+                    <p style="margin-bottom: 15px;">การเปรียบเทียบที่ชี้ให้เห็นสิ่งนี้ได้ชัดเจนที่สุดคือ โรงแรมข้างเคียง Seven Dreams ให้ประสบการณ์ที่ดีกว่าอย่างมากในทุกด้าน - ตั้งแต่สิ่งอำนวยความสะดวกและอาหาร ไปจนถึงบริการและบรรยากาศ สิ่งนี้ทำให้สถานที่นี้รู้สึกผิดหวังยิ่งขึ้น</p>
+
+                    <p style="margin-bottom: 15px;">โรงแรมแห่งนี้ไม่ตรงกับการนำเสนอออนไลน์ พื้นที่หลายแห่งยังคงอยู่ระหว่างการก่อสร้าง ทำให้ทั้งอสังหาริมทรัพย์มีความรู้สึกที่ไม่เสร็จสิ้นและโกลาหล</p>
+
+                    <p style="margin-bottom: 15px;">บริการอยู่ต่ำกว่าความคาดหวังมาก เมื่อเราขอพูดกับผู้จัดการเกี่ยวกับปัญหามากมายที่เราพบ พวกเขาส่งบุคคลที่ยินยอมว่าเขาเป็นเพียงผู้จัดการห้องอาหารเท่านั้น - ไม่มีอำนาจแก้ไขปัญหาที่ร้ายแรง</p>
+
+                    <p style="margin-bottom: 15px;">สปาและยิมอยู่ห่างไกลจากมาตรฐาน 5 ดาว — ล้าสมัย บำรุงรักษาไม่ดี และชัดเจนว่าถูกทิ้งหลัง</p>
+
+                    <p style="margin-bottom: 15px;">ที่ตั้งอยู่ห่างไกลมาก หากคุณไม่เต็มใจที่จะเช่ารถเดือบทุกวันหรือจ่ายค่าไกด์สูง คุณจะแยกตัวออกจากทุกสิ่ง และหากคุณหวังว่าจะวางแผนเซอร์ไพรส์หรือค่ำคืนที่โรแมนติก ห้ามเลย — โรงแรมไม่มีการสนับสนุนหรือความยืดหยุ่น</p>
+
+                    <p style="margin-bottom: 15px;">สิ่งที่แย่ไปกว่านั้น บรรยากาศรู้สึกไม่สะดวกสำหรับผู้หญิง ดูเหมือนว่าเพียงชายในคู่รักเท่านั้นที่ได้รับการยอมรับหรือเคารพ ราวกับว่าเขาคือคนเดียวที่คุ้มค่าพูดถึง เพราะเขาคือผู้จ่ายเงิน ความคิดเห็นหรือการมีอยู่ของฉันในฐานะแขกส่วนใหญ่ถูกมองข้าม — พฤติกรรมที่ไม่เป็นมืออาชีพและล้าสมัยที่ไม่มีที่ในการต้อนรับ</p>
+
+                    <p style="margin-bottom: 15px;">แม้แต่รายละเอียดเล็กๆ ก็ถูกมองข้าม ตัวอย่างเช่น ไม่มีระบบเพลงในห้องพัก ไม่มีฟีเจอร์ด้านบรรยากาศ และตัวเลือกความบันเทิงบนทีวี นี่เป็นเพียงเล็กน้อย หากคุณหวังว่าจะผ่อนคลายกับหนังโรแมนติกหรือเพลงนุ่มๆ ในตอนเย็น คุณจะไม่มีโชค</p>
+
+                    <p style="margin-bottom: 15px;">ทั้งหมดนี้รวมกันทำให้การพักผ่อนผิดหวังอย่างลึกซึ้ง นี่ไม่ใช่รีสอร์ท 5 ดาว — ไม่ใช่ด้านคุณภาพ ไม่ใช่ด้านบริการ และแน่นอนว่าไม่ใช่ด้านบรรยากาศ ฉันจะไม่กลับมาอีกอย่างแน่นอน และฉันขอแนะนำให้คนอื่นมองหาที่อื่น</p>
+                </div>
+                <div class="review-meta">
+                    <strong>วันที่พัก:</strong> สิงหาคม 2025<br>
+                    <strong>ประเภทการเดินทาง:</strong> เดินทางเป็นคู่รัก
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">ไกด์ท้องถิ่น</span>
+                    <span class="reviewer-stats">รีวิว 23 รายการ · รูปภาพ 34 รูป</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 ใน 5 คะแนน</span>
+                </div>
+                <div class="review-date">2 เดือนที่แล้ว บน Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">เราพักที่ห้อง 122 เป็นเวลา 3 คืน ห้องพักและห้องน้ำสวยงาม พร้อมสระว่ายน้ำส่วนตัวและวิวที่น่าอัศจรรย์ อาหารเช้าแบบอลาคาร์ทดีเยี่ยม มีตัวเลือกมากมาย — อาจเป็นอาหารที่ดีที่สุดที่เรากินในการเดินทางไปบาหลี</p>
+
+                    <p style="margin-bottom: 10px;"><strong>อย่างไรก็ตาม ปัญหาหลายประการทำให้การพักผ่อนของเราเสียหาย:</strong></p>
+                    <ul>
+                        <li><strong>การก่อสร้าง:</strong> บ้านหลังหนึ่งด้านหลังห้องของเรากำลังอยู่ระหว่างการก่อสร้าง มีเสียงตั้งแต่ 07:50 น. ถึง 17:00 น. การก่อสร้างนี้ไม่ได้รับการแจ้งให้เรา และไม่มีการเสนออะไรเพื่อแสดงจริยมรรมแม้จะมีความไม่สะดวกมาก</li>
+                        <li><strong>ราคา:</strong> บาร์มิ니เบิร์ราคาแพง (เบียร์ราคา 3 เท่าของราคาตลาด) และร้านอาหารก็แพงเกินไปสำหรับสิ่งที่มี</li>
+                        <li><strong>ที่ตั้ง:</strong> โรงแรมแยกตัวออกมากและเข้าถึงได้ยากและราคาแพง เราถูกเรียกเก็บเงิน 350,000 รูเปียสำหรับการขนส่งจากท่า เรายังจองทัวร์มีไกด์ครึ่งวันผ่านโรงแรมเพื่อไปเยี่ยมชมสองหาด (600,000 รูเปีย) แต่รถมีกลิ่นบุหรี่เก่าแรง ไม่มีแอร์ เพียงพัดลมระบายอากาศที่เปิดเต็มที่</li>
+                        <li><strong>สิ่งอำนวยความสะดวกจำกัด:</strong> ไม่มีห้องฟิตเนสจริง (มีเพียงเครื่องลู่วิ่ง 1 เครื่อง จักรยานสนิม และเครื่องจักรที่เสีย) ไม่มีสปาจริง (มีเพียงโต๊ะ 2 โต๊ะตั้งอยู่ข้างห้องอาหารเช้า)</li>
+                        <li><strong>หาดส่วนตัวที่ผ่านไม่ได้:</strong> ปกคลุมด้วยน้ำหญ้า อย่างไรก็ตาม เมื่อน้ำลดลง มีรองเท้า คุณสามารถออกไปไกลและว่ายน้ำท่องสำรวจ ซึ่งคุณสามารถเห็นปลาสวรรค์หลายชนิด</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>สรุป:</strong> สถานที่ที่น่าทึ่งและอาหารเช้าที่ยอดเยี่ยม แต่ความไม่สะดวกมากมายเกี่ยวกับการก่อสร้างที่ไม่ได้รับการประกาศ ความแยกตัวออก และอัตราส่วนราคา/คุณภาพ</p>
+                </div>
+                <div class="review-meta">
+                    <strong>ห้องพัก:</strong> 5 · <strong>บริการ:</strong> 3 · <strong>ที่ตั้ง:</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">ไกด์ท้องถิ่น</span>
+                    <span class="reviewer-stats">รีวิว 30 รายการ · รูปภาพ 1 รูป</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 ใน 5 คะแนน</span>
+                </div>
+                <div class="review-date">1 ปีที่แล้ว บน Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">ก่อนอื่น ฉันต้องพูดว่าฉันแทบไม่เขียนรีวิว อย่างไรก็ตาม ในกรณีนี้ ฉันรู้สึกว่าต้องพูดถึงบางสิ่ง โรงแรมไม่ตรงกับความประทับใจที่คุณได้รับจากรูปภาพจริงๆ</p>
+
+                    <p style="margin-bottom: 15px;">อาคารจำนวนมากยังคงไม่สำเร็จ (สถานที่ก่อสร้าง) และหาดแทบจะใช้ไม่ได้เนื่องจากไม่สามารถว่ายน้ำหรือเดินในน้ำได้เพราะมีปะการังหิน และกระแสน้ำ</p>
+
+                    <p style="margin-bottom: 15px;">น่าเสียดาย บริการไม่ได้รับการฝึกอบรมอย่างเต็มที่ พนักงานหลายคนไม่พูดภาษาอังกฤษ สิ่งนี้ทำให้การสั่งห้องอาหารลำบากอย่างเหลือเชื่อในบางครั้ง ซึ่งนำเราไปยังส่วนต่อไป: อาหาร อาหารน่าเศร้า ฉันแทบไม่เคยกินแย่ขนาดนี้ในวันหยุด อาหารบางชนิดไม่สามารถกินได้ (ไม่ดีอีกแล้ว) ยิ่งไปกว่านั้น จานอาหารจำนวนมากในเมนูหมดชอบถาวร</p>
+
+                    <p style="margin-bottom: 15px;">ปัญหาอื่นของโรงแรมคือตำแหน่งของมัน คุณอยู่ห่างไกลจากทุกอย่าง และต้องเช่าจักรยานทุกวันหรือจ้างไกด์ (ราคาแพง)</p>
+
+                    <p style="margin-bottom: 15px;">สุดท้าย แต่ไม่ท้ายสุด ต้องบอกว่าห้องพักและสระว่ายน้ำนั้นสวยงามมาก และพนักงานหลายคนพยายามเต็มที่เพื่อให้การพักของเราสบายสบาย ขอบคุณพิเศษไปถึง Putra ที่ทำให้ทุกอย่างเป็นไปได้ในการพักของเรา!</p>
+
+                    <p style="margin-bottom: 15px;">อย่างไรก็ตาม โรงแรมล้มเหลวจากมากไปน้อยของความคาดหวังของตัวเอง ซึ่งควรจะชัดเจนสำหรับคนใดๆ ที่จองที่นี่</p>
+                </div>
+                <div class="review-meta">
+                    <strong>ประเภทการเดินทาง:</strong> วันหยุด · <strong>กลุ่มการเดินทาง:</strong> คู่รัก<br>
+                    <strong>ห้องพัก:</strong> 4 · <strong>บริการ:</strong> 2 · <strong>ที่ตั้ง:</strong> 1
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="section">
             <div class="info-box">

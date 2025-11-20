@@ -266,6 +266,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -664,8 +784,111 @@
                 </p>
             </div>
         </div>
+
+        <!-- Additional Guest Reviews Section -->
+        <div class="section reviews-section">
+            <h2>📝 他のゲストの声</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Anonymous Guest</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">5点中1点</span>
+                </div>
+                <div class="review-date">2025年8月5日モバイルから投稿</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">非常に失望しました!!!</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 5点中1点 – 非常に失望、5つ星には程遠い</strong></p>
+
+                    <p style="margin-bottom: 15px;">おそらく最も明確な比較は次のとおりです。隣のホテル、セブンドリームスは、施設、食事、サービス、雰囲気のあらゆる面で無限に優れた体験を提供しています。それがこの場所をさらに失望させます。</p>
+
+                    <p style="margin-bottom: 15px;">このホテルはオンラインでの表示と一致しません。多くのエリアがまだ建設中で、施設全体が未完成で混沌とした感じを与えます。</p>
+
+                    <p style="margin-bottom: 15px;">サービスは期待を大きく下回りました。私たちが遭遇した多くの問題についてマネージャーと話すよう求めたとき、彼らはレストランのマネージャーに過ぎないと後で認めた人を送りました—深刻な懸念に対処する権限を持つ人ではありませんでした。</p>
+
+                    <p style="margin-bottom: 15px;">スパとジムは5つ星の基準に全く達していません—時代遅れで、管理が悪く、明らかに放置されています。</p>
+
+                    <p style="margin-bottom: 15px;">場所は非常に遠隔地です。毎日スクーターを借りるか、ドライバーに高額を支払う気がない限り、すべてから完全に切り離されています。そして、ロマンチックなサプライズや夜を計画したいと思っても、試みないでください—ホテルはそのためのサポートや柔軟性を提供しません。</p>
+
+                    <p style="margin-bottom: 15px;">さらに悪いことに、女性として雰囲気が不快でした。カップルの男性だけが認められたり尊重されたりしているように感じました。まるで彼が支払う人だから話す価値のある唯一の人であるかのようでした。ゲストとしての私の意見や存在はほとんど無視されました—ホスピタリティに場所のない非専門的で時代遅れの行動です。</p>
+
+                    <p style="margin-bottom: 15px;">小さな詳細さえも見落とされました。例えば、部屋には音楽システムがなく、雰囲気の機能もなく、テレビにはほとんどエンターテイメントオプションがありません。夜にロマンチックな映画やソフトな音楽でリラックスすることを望んでいるなら、運がありません。</p>
+
+                    <p style="margin-bottom: 15px;">これらすべてが組み合わさって、滞在は非常に失望しました。これは5つ星リゾートではありません—品質でも、サービスでも、そして確かに雰囲気でもありません。絶対に戻りません。他の人には他を探すことを強くお勧めします。</p>
+                </div>
+                <div class="review-meta">
+                    <strong>滞在日:</strong> 2025年8月<br>
+                    <strong>旅行タイプ:</strong> カップルで旅行
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">Local Guide</span>
+                    <span class="reviewer-stats">23件のレビュー · 34枚の写真</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">5点中3点</span>
+                </div>
+                <div class="review-date">2か月前にGoogleで投稿</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">122号室に3泊しました。部屋とバスルームは素晴らしく、プライベートプールと素晴らしい景色があります。アラカルトの朝食は素晴らしく、多様な選択肢がありました—おそらくバリ旅行中で最高でした。</p>
+
+                    <p style="margin-bottom: 10px;"><strong>しかし、いくつかの点が滞在を台無しにしました:</strong></p>
+                    <ul>
+                        <li><strong>工事:</strong> 部屋のすぐ後ろの家が工事中で、午前7時50分から午後5時まで騒音がありました。この工事は通知されず、重大な不便にもかかわらず誠意のあるジェスチャーは提供されませんでした。</li>
+                        <li><strong>価格:</strong> ミニバーは高すぎます(ビールが市場価格の3倍)、そしてレストランも提供内容に対して高すぎます。</li>
+                        <li><strong>場所:</strong> ホテルは非常に孤立しており、アクセスは複雑で高価です。港からの送迎に350,000 IDRを請求されました。また、2つのビーチを訪れるためにホテル経由で半日のドライバー付きツアーを予約しました(600,000 IDR)が、車は古いタバコの煙の臭いが強く、エアコンはなく、最大限の通気ファンだけでした。</li>
+                        <li><strong>限られた施設:</strong> 本当のジムはありません(トレッドミル、錆びた自転車、壊れたマシンだけ)、本当のスパもありません(朝食室の隣に設置された2つのテーブルだけ)。</li>
+                        <li><strong>通行不能なプライベートビーチ:</strong> 海藻で覆われています。しかし、干潮時には靴を履いて、より遠くに行ってシュノーケリングすることができ、多くの熱帯魚を見ることができます。</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>要約:</strong> 素晴らしい環境と素晴らしい朝食ですが、通知されていない工事、隔離、および品質/価格比に関連する不便が多すぎます。</p>
+                </div>
+                <div class="review-meta">
+                    <strong>部屋:</strong> 5 · <strong>サービス:</strong> 3 · <strong>場所:</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">Local Guide</span>
+                    <span class="reviewer-stats">30件のレビュー · 1枚の写真</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">5点中3点</span>
+                </div>
+                <div class="review-date">1年前にGoogleで投稿</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">まず第一に、私はレビューを書くことはほとんどありません。しかし、この場合、何か言わざるを得ません。ホテルは写真から得られる印象に本当に応えていません。</p>
+
+                    <p style="margin-bottom: 15px;">多くの建物が半分完成しており(建設現場)、ビーチは実質的に使用不可能で、サンゴ、鋭い岩、潮流のために泳いだり水中を歩いたりすることができません。</p>
+
+                    <p style="margin-bottom: 15px;">サービスは残念ながら完全に訓練されていません。多くの従業員は英語を話しません。これにより、ルームサービスの注文が時々非常に困難になります。それは次の部分につながります:食べ物。食べ物は残念ながら控えめに言っても災害です。休暇中にこんなに悪い食事をしたことはほとんどありません。食べ物の一部は食べられませんでした(もう良くありません)。さらに、メニューの多くの料理は永久に利用できませんでした。</p>
+
+                    <p style="margin-bottom: 15px;">ホテルのもう一つの問題はその場所です。すべてから遠く離れており、毎日スクーターを借りるか、ドライバーを雇う必要があります(高価)。</p>
+
+                    <p style="margin-bottom: 15px;">最後になりましたが、部屋とプールは本当に美しく、スタッフの何人かは私たちの滞在をできるだけ快適にするために全力を尽くしていることを言わなければなりません。滞在中にすべてを可能にしてくれたプトラに特別な感謝を!</p>
+
+                    <p style="margin-bottom: 15px;">それでも、ホテルは独自の期待に大きく届いていません。これはここで予約する人には明らかであるべきです。</p>
+                </div>
+                <div class="review-meta">
+                    <strong>旅行タイプ:</strong> バケーション · <strong>旅行グループ:</strong> カップル<br>
+                    <strong>部屋:</strong> 4 · <strong>サービス:</strong> 2 · <strong>場所:</strong> 1
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <div class="container">
         <div class="section">
             <div class="info-box">

@@ -266,6 +266,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -497,31 +617,31 @@
             
             <h3>AI विश्लेषण सच्चाई साबित करता है</h3>
             <p style="margin-bottom: 15px;">
-                Standing there in the kitchen, I opened ChatGPT and took a photo of the freshly cooked meat. The AI immediately confirmed it was definitely beef.
+                रसोई में खड़े होकर, मैंने ChatGPT खोला और ताज़े पके हुए मांस की तस्वीर ली। AI ने तुरंत पुष्टि की कि यह निश्चित रूप से बीफ था।
             </p>
-            
+
             <img src="assets/images/chat-gpt-identifies-beef.jpg" alt="ChatGPT confirms the newly cooked meat is beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
+
             <p style="margin-bottom: 15px;">
-                I then uploaded the photo of my original meal from two days prior. ChatGPT initially thought it was Ahi Tuna. When I clarified it was meat, not fish, the AI concluded it couldn't be beef due to the incorrect color and texture. It added that chicken or pork would NEVER be served raw by a reputable resort.
+                मैंने फिर दो दिन पहले के अपने असली खाने की तस्वीर अपलोड की। ChatGPT को शुरुआत में लगा कि यह Ahi Tuna है। जब मैंने स्पष्ट किया कि यह मछली नहीं, बल्कि मांस है, तो AI ने निष्कर्ष निकाला कि गलत रंग और संरचना के कारण यह बीफ नहीं हो सकता। इसने जोड़ा कि कोई सम्मानित रिसॉर्ट कभी भी चिकन या सूअर का मांस कच्चा परोसेगा।
             </p>
-            
+
             <img src="assets/images/chat-gpt-identifies-not-beef.jpeg" alt="ChatGPT says original meal cannot be beef" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Medical Consequences & Resort's Refusal</h3>
+
+            <h3>चिकित्सा परिणाम और रिसॉर्ट की अस्वीकृति</h3>
             <p style="margin-bottom: 15px;">
-                I told them firmly: "I will not be gaslighted into thinking I ate steak. I've been eating steak for 40 years."
+                मैंने उन्हें दृढ़ता से कहा: "मैं खुद को यह सोचने के लिए बहकाया नहीं जाऊंगा कि मैंने स्टेक खाया है। मैं 40 साल से स्टेक खा रहा हूं।"
             </p>
-            
+
             <p style="margin-bottom: 15px;">
-                The meat was either chicken or pork, each carrying different health risks when consumed raw. Since I didn't know which it was, I had to visit a doctor for stool testing to check for parasites. The worst part? <strong>The resort refused to pay for the medical visit</strong>, even though they were the ones who served me raw meat.
+                वह मांस चिकन या सूअर था, दोनों में कच्चा सेवन करते समय अलग-अलग स्वास्थ्य जोखिम होते हैं। चूंकि मुझे नहीं पता था कि यह कौन सा था, मुझे परजीवियों की जांच के लिए स्टूल टेस्टिंग के लिए डॉक्टर के पास जाना पड़ा। सबसे बुरी बात? <strong>रिसॉर्ट ने चिकित्सा दौरे का भुगतान करने से इनकार कर दिया</strong>, भले ही उन्होंने ही मुझे कच्चा मांस परोसा था।
             </p>
-            
+
             <img src="assets/images/dr-visit.jpg" alt="Doctor's receipt for parasite testing" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
-            <h3>Reporting to Authorities</h3>
+
+            <h3>अधिकारियों को रिपोर्ट करना</h3>
             <p style="margin-bottom: 15px;">
-                After this dangerous food safety violation and the resort's complete refusal to take responsibility, I took the necessary step of <strong>informing the local health ministry</strong> about the incident. I also <strong>notified the US Embassy in Jakarta</strong> to ensure other travelers would be warned about the serious health risks at this resort.
+                इस खतरनाक खाद्य सुरक्षा उल्लंघन और रिसॉर्ट की जिम्मेदारी लेने से पूर्ण इनकार के बाद, मैंने <strong>स्थानीय स्वास्थ्य मंत्रालय को इस घटना के बारे में सूचित करने</strong> का आवश्यक कदम उठाया। मैंने <strong>जकार्ता में अमेरिकी दूतावास को भी सूचित किया</strong> ताकि अन्य यात्रियों को इस रिसॉर्ट में गंभीर स्वास्थ्य जोखिमों के बारे में चेतावनी दी जा सके।
             </p>
         </div>
         
@@ -549,93 +669,93 @@
             <img src="assets/images/open-air-bathroom.jpg" alt="बिना गोपनीयता वाला खुला बाथरूम" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
             
             <p style="margin-bottom: 15px;">
-                To make matters worse, they placed smoking and non-smoking rooms directly next to each other. Thanks to the open-air design, cigarette smoke constantly wafted into our non-smoking room.
+                और भी बुरी बात यह है कि उन्होंने धूम्रपान और गैर-धूम्रपान कमरों को सीधे बगल में रखा। खुले आकाश के डिजाइन के कारण, सिगरेट का धुआं लगातार हमारे गैर-धूम्रपान कमरे में आता रहा।
             </p>
-            
+
             <img src="assets/images/smoking.jpg" alt="Neighbors smoking visible from non-smoking room" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
         </div>
-        
+
         <div class="section">
             <h2>🧹 हाउसकीपिंग मानक</h2>
-            
+
             <p style="margin-bottom: 15px;">
-                The housekeeping staff, while friendly, had one major hygiene issue - they cleaned the rooms while wearing their outdoor shoes. 
+                हाउसकीपिंग कर्मचारी, दोस्ताना होने के बावजूद, एक बड़ी स्वच्छता समस्या थी - उन्होंने अपने आउटडोर जूते पहनकर कमरों की सफाई की।
             </p>
-            
+
             <img src="assets/images/staff-with-shoes.jpg" alt="Housekeeping staff cleaning with outdoor shoes on" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
+
             <p style="margin-bottom: 15px;">
-                Why would staff wear shoes inside while cleaning? These are the same shoes they wear outside, walking on streets and sidewalks. They then track all that dirt and contamination into our room while "cleaning" it. Basic hygiene standards completely ignored.
+                कर्मचारी सफाई के दौरान अंदर जूते क्यों पहनते होंगे? ये वही जूते हैं जो वे बाहर पहनते हैं, सड़कों और फुटपाथों पर चलते हैं। फिर वे हमारे कमरे में सभी गंदगी और प्रदूषण को "सफाई" करते समय लाते हैं। मौलिक स्वच्छता मानकों को पूरी तरह अनदेखा किया गया।
             </p>
         </div>
-        
+
         <div class="section">
             <h2>🚴 साइकिल किराया सुरक्षा जोखिम</h2>
-            
+
             <div class="critical">
                 <strong>सुरक्षा चेतावनी:</strong> उपकरण अतिथियों के लिए गंभीर जोखिम पैदा करते हैं
             </div>
-            
+
             <p style="margin-bottom: 15px;">
-                The resort offered bicycle rentals, but the bikes were death traps. They were old with flat tires and broken kickstands that caused them to fall over constantly.
+                रिसॉर्ट ने साइकिल किराए पर दीं, लेकिन बाइकें मौत के जाल थीं। वे पुरानी थीं, सपाट टायरों और टूटी हुई किकस्टैंड के साथ जो उन्हें लगातार गिरने का कारण बनती थीं।
             </p>
-            
+
             <img src="assets/images/bike-flat-tire.jpg" alt="Rental bikes with flat tires" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
+
             <p style="margin-bottom: 15px;">
-                The real danger came from the brakes - they squealed loudly and barely worked. No lights or helmets were provided, which is especially dangerous since the local roads have no lighting at night.
+                असली खतरा ब्रेक से आया - वे जोर से चीखते थे और लगभग काम नहीं करते थे। कोई लाइट या हेलमेट प्रदान नहीं किए गए, जो विशेष रूप से खतरनाक है क्योंकि स्थानीय सड़कों पर रात में कोई रोशनी नहीं है।
             </p>
-            
+
             <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
                 <source src="assets/video/broken-bike-480p-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            
-            <p style="margin-bottom: 10px; font-weight: bold;">See for yourself:</p>
+
+            <p style="margin-bottom: 10px; font-weight: bold;">खुद देखें:</p>
             <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
                 <source src="assets/video/driving-at-night-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        
+
         <div class="section">
             <h2>💪 फिटनेस सुविधाएं</h2>
-            
+
             <p style="margin-bottom: 15px;">
-                The "gym" was laughable. It consisted of a tiny, unstable single-machine with extremely low weight capacity and a few plastic "dumbbells" that felt like toys. Completely unsuitable for any real fitness routine.
+                "जिम" हास्यास्पद था। इसमें एक छोटी, अस्थिर एकल मशीन शामिल थी जिसमें अत्यंत कम वजन क्षमता थी और कुछ प्लास्टिक "डंबल" जो खिलौनों जैसे लगते थे। किसी भी वास्तविक फिटनेस दिनचर्या के लिए पूरी तरह अनुपयुक्त।
             </p>
-            
+
             <img src="assets/images/terrible-gym.jpg" alt="Inadequate gym equipment" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
+
             <video controls style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
                 <source src="assets/video/terrible-gym-480p-compressed.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-        
+
         <div class="section">
             <h2>✋ अंतिम अपमान: टूटी कंघी</h2>
-            
+
             <p style="margin-bottom: 15px;">
-                Just before checking out, I used a wooden comb provided by the resort. It <strong>broke in half</strong>.
+                चेक आउट करने से ठीक पहले, मैंने रिसॉर्ट द्वारा प्रदान की गई एक लकड़ी की कंघी का उपयोग किया। यह <strong>आधे में टूट गई</strong>।
             </p>
-            
+
             <p style="margin-bottom: 15px;">
-                Having spent time in Thailand, I knew this was a terrible omen. In Thai culture, a broken comb during use is a serious bad omen - a warning of misfortune. The superstition says it must be thrown away immediately or the bad luck will manifest.
+                थाईलैंड में समय बिताने के बाद, मुझे पता था कि यह एक भयानक शगुन था। थाई संस्कृति में, उपयोग के दौरान कंघी का टूटना एक गंभीर बुरा शगुन है - दुर्भाग्य की चेतावनी। अंधविश्वास कहता है कि इसे तुरंत फेंक दिया जाना चाहिए या बुरी किस्मत प्रकट होगी।
             </p>
-            
+
             <p style="margin-bottom: 15px;">
-                This perfectly encapsulated the entire stay - even the resort's combs were cursed.
+                इसने पूरे प्रवास को परिपूर्ण रूप से समेट दिया - यहां तक कि रिसॉर्ट की कंघी भी शापित थी।
             </p>
-            
+
             <img src="assets/images/broken-comb.jpg" alt="Wooden comb broken in half" style="max-width: 100%; border-radius: 8px; margin: 20px 0;">
-            
+
             <div class="info-box" style="background: #fef3c7; border-color: #f59e0b;">
-                <strong style="color: #92400e;">Cultural Note:</strong> In Thai tradition, when a comb breaks while brushing hair, it's considered a bad omen that brings misfortune if kept. The immediate disposal of the broken comb is believed to prevent bad luck from manifesting. This belief is part of Thailand's extensive superstition framework that governs daily life.
+                <strong style="color: #92400e;">सांस्कृतिक नोट:</strong> थाई परंपरा में, जब बाल बनाते समय कंघी टूट जाती है, तो इसे एक बुरा शगुन माना जाता है जो अगर रखी हुई हो तो दुर्भाग्य लाता है। टूटी कंघी का तुरंत निपटान बुरी किस्मत को प्रकट होने से रोकने के लिए माना जाता है। यह विश्वास थाईलैंड के व्यापक अंधविश्वास ढांचे का हिस्सा है जो दैनिक जीवन को नियंत्रित करता है।
             </div>
-            
+
             <p style="margin-bottom: 15px; font-style: italic;">
-                The resort couldn't even provide functioning combs or safe bicycles, let alone safe food, clean water, or adequate gym equipment.
+                रिसॉर्ट काम करने वाली कंघी या सुरक्षित साइकिलें भी प्रदान नहीं कर सके, अकेले सुरक्षित भोजन, स्वच्छ पानी, या पर्याप्त जिम उपकरण की बात करें।
             </p>
         </div>
         
@@ -648,24 +768,127 @@
             <div class="critical" style="margin: 30px 0;">
                 <h3 style="color: #dc2626; margin-bottom: 15px;">असली समस्या: प्रबंधन</h3>
                 <p style="text-align: left; line-height: 1.8;">
-                    The only saving grace is that the service staff were kind. This is a <strong>1-star resort as a direct result of 1-star management</strong>.
+                    एकमात्र बचत यह है कि सेवा कर्मचारी दयालु थे। यह <strong>1-स्टार प्रबंधन के प्रत्यक्ष परिणाम के रूप में एक 1-स्टार रिसॉर्ट है</strong>।
                 </p>
                 <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    <strong>Management Failures:</strong><br>
-                    • Restaurant Manager <span class="manager-name">Andika Putra</span> - Lied directly to guests about raw chicken<br>
-                    • Operations Manager <span class="manager-name">Sindra Sindrawan</span> - Initially honest, then backtracked under pressure<br>
-                    • No senior management available on-site during crisis<br>
-                    • Attempted to gaslight guests about food safety incident<br>
-                    • Zero accountability for health violations<br>
-                    • Complete failure in basic hospitality standards
+                    <strong>प्रबंधन की विफलताएं:</strong><br>
+                    • रेस्तरां प्रबंधक <span class="manager-name">Andika Putra</span> - कच्चे चिकन के बारे में अतिथियों से सीधे झूठ बोला<br>
+                    • ऑपरेशन्स प्रबंधक <span class="manager-name">Sindra Sindrawan</span> - शुरुआत में ईमानदार, फिर दबाव में पीछे हटे<br>
+                    • संकट के दौरान साइट पर कोई वरिष्ठ प्रबंधन उपलब्ध नहीं<br>
+                    • खाद्य सुरक्षा घटना के बारे में अतिथियों को बहकाने का प्रयास<br>
+                    • स्वास्थ्य उल्लंघनों के लिए शून्य जवाबदेही<br>
+                    • मौलिक आतिथ्य मानकों में पूर्ण विफलता
                 </p>
                 <p style="text-align: left; line-height: 1.8; margin-top: 15px;">
-                    This resort represents everything wrong with hospitality management - prioritizing face-saving over guest safety, lying instead of taking responsibility, and operating with standards that wouldn't be acceptable at a roadside motel, let alone a resort claiming to offer a premium experience.
+                    यह रिसॉर्ट आतिथ्य प्रबंधन में सब कुछ गलत का प्रतिनिधित्व करता है - अतिथि सुरक्षा पर चेहरे की बचत को प्राथमिकता देना, जिम्मेदारी लेने के बजाय झूठ बोलना, और ऐसे मानकों के साथ संचालन करना जो सड़क के किनारे के मोटल में भी स्वीकार्य नहीं होंगे, अकेले एक प्रीमियम अनुभव प्रदान करने का दावा करने वाले रिसॉर्ट में।
                 </p>
             </div>
         </div>
+
+        <!-- Additional Guest Reviews Section -->
+        <div class="section reviews-section">
+            <h2>📝 अन्य मेहमानों की राय</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Anonymous Guest</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">5 में से 1</span>
+                </div>
+                <div class="review-date">5 अगस्त 2025 को मोबाइल के माध्यम से समीक्षा की गई</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">बहुत निराशाजनक!!!</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 5 में से 1 – बहुत निराशाजनक और 5-स्टार से कोसों दूर</strong></p>
+
+                    <p style="margin-bottom: 15px;">सबसे बड़ी तुलना यह है: बगल का होटल, Seven Dreams, हर तरह से - सुविधाओं से लेकर भोजन, सेवा और वातावरण तक - एक बेहतर अनुभव प्रदान करता है। इसने इस जगह को और भी निराशाजनक महसूस कराता है।</p>
+
+                    <p style="margin-bottom: 15px;">यह होटल ऑनलाइन प्रस्तुति से मेल नहीं खाता। कई क्षेत्र अभी भी निर्माणाधीन हैं, जिससे पूरी संपत्ति अधूरी और अराजक लगती है।</p>
+
+                    <p style="margin-bottom: 15px;">सेवा अपेक्षाओं से बहुत कम थी। जब हमने हमारे सामने आई कई समस्याओं के बारे में प्रबंधक से बात करने को कहा, तो उन्होंने किसी को भेजा जिसने बाद में स्वीकार किया कि वह केवल रेस्तरां प्रबंधक है - किसी गंभीर मुद्दे को संबोधित करने का कोई अधिकार नहीं है।</p>
+
+                    <p style="margin-bottom: 15px;">स्पा और जिम 5-स्टार मानक से दूर हैं - पुरानी, खराब रखरखाव और स्पष्ट रूप से उपेक्षित।</p>
+
+                    <p style="margin-bottom: 15px;">यह स्थान बहुत दूरस्थ है। जब तक आप हर दिन स्कूटर किराए पर लेने या ड्राइवर के लिए ऊंची कीमत देने को तैयार न हों, आप सब कुछ से पूरी तरह कट गए हैं। और अगर आप किसी रोमांटिक सरप्राइज़ या संध्या की योजना बनाने की आशा रखते हैं, तो कोशिश भी न करें — होटल इसके लिए कोई समर्थन या लचीलापन प्रदान नहीं करता।</p>
+
+                    <p style="margin-bottom: 15px;">बदतर, एक महिला के रूप में वातावरण असहज महसूस हुआ। ऐसा लगा कि केवल पुरुष को स्वीकार किया जाता है या सम्मानित किया जाता है, जैसे वह भुगतान करने वाला है। मेरी राय या उपस्थिति को अतिथि के रूप में ज्यादातर अनदेखा किया गया - यह एक व्यावसायिक और पुरानी मानसिकता का व्यवहार है जिसका आतिथ्य में कोई स्थान नहीं है।</p>
+
+                    <p style="margin-bottom: 15px;">छोटी-छोटी बातें भी नज़रअंदाज़ की गईं। उदाहरण के लिए, कमरे में कोई संगीत प्रणाली नहीं है, कोई वातावरण सुविधाएं नहीं हैं, और टीवी पर मनोरंजन विकल्प लगभग नहीं हैं। अगर आप शाम को एक रोमांटिक फिल्म या नरम संगीत के साथ आराम करने की उम्मीद कर रहे हैं, तो आप अभागे हैं।</p>
+
+                    <p style="margin-bottom: 15px;">यह सब मिलकर प्रवास को बहुत निराशाजनक बनाता है। यह 5-स्टार रिसॉर्ट नहीं है - न गुणवत्ता में, न सेवा में, और निश्चित रूप से वातावरण में नहीं। मैं निश्चित रूप से वापस नहीं आऊंगा, और मैं दूसरों को दृढ़ता से कहीं और देखने की सलाह देता हूं।</p>
+                </div>
+                <div class="review-meta">
+                    <strong>रहने की तारीख:</strong> अगस्त 2025<br>
+                    <strong>यात्रा का प्रकार:</strong> दंपति के रूप में यात्रा की गई
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">स्थानीय गाइड</span>
+                    <span class="reviewer-stats">23 समीक्षाएं · 34 फोटो</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">5 में से 3</span>
+                </div>
+                <div class="review-date">2 महीने पहले Google पर</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">हमने कमरा 122 में 3 रातें रहीं। कमरा और बाथरूम शानदार थे, निजी पूल और अविश्वसनीय दृश्यों के साथ। अ ला कार्ट नाश्ता शानदार था, विभिन्न विकल्पों के साथ - शायद बाली यात्रा में हमने जो सबसे अच्छा खाया।</p>
+
+                    <p style="margin-bottom: 10px;"><strong>हालांकि, कुछ बातों ने हमारे ठहरने को बर्बाद कर दिया:</strong></p>
+                    <ul>
+                        <li><strong>निर्माण:</strong> हमारे कमरे के पीछे एक घर निर्माणाधीन था, 7:50 पूर्वाह्न से 5:00 अपराह्न तक शोर। इस निर्माण के बारे में हमें सूचित नहीं किया गया था, और महत्वपूर्ण असुविधा के बावजूद कोई सद्भावना का इशारा नहीं दिया गया।</li>
+                        <li><strong>मूल्य:</strong> मिनिबार ओवरप्राइस्ड है (एक बीयर बाजार मूल्य का 3x है), और रेस्तरां भी इसके लिए ओवरप्राइस्ड है।</li>
+                        <li><strong>स्थान:</strong> होटल बहुत अलग-थलग है, और पहुंच जटिल और महंगी है। हमसे बंदरगाह से स्थानांतरण के लिए IDR 350,000 का शुल्क लिया गया। हमने होटल के माध्यम से दो समुद्र तटों का दौरा करने के लिए एक आधा दिन के चालक दल के दौरे (IDR 600,000) भी बुक किए, लेकिन कार में तेज तंबाकू की गंध आ रही थी, कोई एयर कंडीशनिंग नहीं थी, केवल पूरी ताकत से चलने वाला वेंटिलेशन फैन।</li>
+                        <li><strong>सीमित सुविधाएं:</strong> कोई वास्तविक फिटनेस कक्ष नहीं है (केवल एक ट्रेडमिल, एक जंग लगी बाइक, और एक टूटी हुई मशीन), कोई वास्तविक स्पा नहीं है (नाश्ते के कमरे के पास केवल दो टेबल सेट हैं)।</li>
+                        <li><strong>अगम्य निजी समुद्र तट:</strong> समुद्री शैवाल से ढका हुआ। हालांकि, निम्न ज्वार पर, जूते के साथ, यह आगे जाने और स्नॉर्कल करने के लिए संभव है, जहां आप कई उष्णकटिबंधीय मछलियां देख सकते हैं।</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>सारांश:</strong> एक शानदार सेटिंग और उत्कृष्ट नाश्ता, लेकिन अघोषित निर्माण, अलगाववाद और मूल्य/गुणवत्ता अनुपात से संबंधित बहुत सारी असुविधाएं।</p>
+                </div>
+                <div class="review-meta">
+                    <strong>कमरे:</strong> 5 · <strong>सेवा:</strong> 3 · <strong>स्थान:</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">स्थानीय गाइड</span>
+                    <span class="reviewer-stats">30 समीक्षाएं · 1 फोटो</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">5 में से 3</span>
+                </div>
+                <div class="review-date">एक साल पहले Google पर</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">सबसे पहले, मुझे कहना चाहिए कि मैं शायद ही समीक्षा लिखता हूं। हालांकि, इस मामले में, मुझे कुछ कहना चाहिए। होटल चित्रों से जो प्रभाव मिलते हैं उससे वास्तव में मेल नहीं खाता।</p>
+
+                    <p style="margin-bottom: 15px;">कई इमारतें अधूरी हैं (निर्माण स्थल), और समुद्र तट व्यावहारिक रूप से अप्रयोग्य है क्योंकि आप प्रवाल, तीव्र चट्टानों और течения के कारण पानी में तैर या चल नहीं सकते।</p>
+
+                    <p style="margin-bottom: 15px;">दुर्भाग्य से, सेवा पूरी तरह से प्रशिक्षित नहीं है। कई कर्मचारी अंग्रेजी नहीं बोलते हैं। यह कभी-कभी कमरे की सेवा का आदेश देना अत्यंत कठिन बनाता है। जो हमें अगले भाग में ले जाता है: खाना। खाना, दुर्भाग्य से, कम से कम कहने के लिए एक आपदा है। मैंने शायद ही कभी छुट्टी पर इतना बुरा खाया है। कुछ खाना खाने योग्य नहीं था (और अच्छा नहीं)। इसके अलावा, मेनू पर कई व्यंजन स्थायी रूप से उपलब्ध नहीं थे।</p>
+
+                    <p style="margin-bottom: 15px;">होटल की एक और समस्या इसका स्थान है। आप सब कुछ से दूर हैं और हर दिन स्कूटर किराए पर लेना या ड्राइवर को किराए पर लेना है (महंगा)।</p>
+
+                    <p style="margin-bottom: 15px;">अंत में, यह कहना चाहिए कि कमरे और पूल वास्तव में सुंदर हैं, और कई कर्मचारी हमारे ठहरने को जितना संभव हो उतना सुखद बनाने के लिए सर्वाधिक प्रयास करते हैं। विशेष रूप से Putra को धन्यवाद, जिन्होंने हमारे ठहरने के दौरान सब कुछ संभव बनाया!</p>
+
+                    <p style="margin-bottom: 15px;">फिर भी, होटल अपनी अपेक्षाओं से बहुत कम है, और यह किसी को भी यहां बुकिंग के लिए स्पष्ट होना चाहिए।</p>
+                </div>
+                <div class="review-meta">
+                    <strong>यात्रा का प्रकार:</strong> अवकाश · <strong>यात्रा समूह:</strong> दंपति<br>
+                    <strong>कमरे:</strong> 4 · <strong>सेवा:</strong> 2 · <strong>स्थान:</strong> 1
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <div class="container">
         <div class="section">
             <div class="info-box">

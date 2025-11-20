@@ -266,6 +266,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -664,8 +784,111 @@
                 </p>
             </div>
         </div>
+
+        <!-- Additional Guest Reviews Section -->
+        <div class="section reviews-section">
+            <h2>📝 Lo Que Dicen Otros Huéspedes</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Anonymous Guest</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">1 de 5</span>
+                </div>
+                <div class="review-date">Revisado el 5 de agosto de 2025 vía móvil</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">¡Profundamente Decepcionante!</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 1 de 5 – Profundamente Decepcionante y Lejos de 5 Estrellas</strong></p>
+
+                    <p style="margin-bottom: 15px;">Quizás la comparación más reveladora es esta: el hotel de al lado, Seven Dreams, ofrece una experiencia infinitamente mejor en todos los sentidos, desde las instalaciones y la comida hasta el servicio y el ambiente. Solo hace que este lugar se sienta aún más decepcionante.</p>
+
+                    <p style="margin-bottom: 15px;">Este hotel no coincide con su presentación en línea. Muchas áreas todavía están en construcción, lo que le da a toda la propiedad una sensación inacabada y caótica.</p>
+
+                    <p style="margin-bottom: 15px;">El servicio estuvo muy por debajo de las expectativas. Cuando pedimos hablar con un gerente sobre los muchos problemas que encontramos, enviaron a alguien que luego admitió que era solo el gerente del restaurante, no alguien con autoridad para abordar preocupaciones serias.</p>
+
+                    <p style="margin-bottom: 15px;">El spa y el gimnasio no están ni cerca del estándar de 5 estrellas: anticuados, mal mantenidos y claramente descuidados.</p>
+
+                    <p style="margin-bottom: 15px;">La ubicación es muy remota. A menos que esté dispuesto a alquilar un scooter todos los días o pagar precios altos por un conductor, estará completamente aislado de todo. Y si espera planear una sorpresa romántica o una velada, ni siquiera se moleste: el hotel no ofrece apoyo ni flexibilidad para eso.</p>
+
+                    <p style="margin-bottom: 15px;">Peor aún, el ambiente se sintió incómodo como mujer. Se sentía como si solo se reconociera o respetara al hombre de la pareja, como si fuera el único con quien valía la pena hablar porque es quien paga. Mi aporte o presencia como huésped fue en gran medida ignorado: comportamiento poco profesional y anticuado que no tiene lugar en la hospitalidad.</p>
+
+                    <p style="margin-bottom: 15px;">Incluso los pequeños detalles fueron pasados por alto. Por ejemplo, no hay sistema de música en la habitación, no hay características de ambiente y apenas hay opciones de entretenimiento en el televisor. Si espera relajarse con una película romántica o música suave por la noche, no tiene suerte.</p>
+
+                    <p style="margin-bottom: 15px;">Todo esto combinado hizo que la estadía fuera profundamente decepcionante. Este no es un resort de 5 estrellas, ni en calidad, ni en servicio, y ciertamente no en ambiente. Absolutamente no volvería, y aconsejo encarecidamente a otros que busquen en otro lugar.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Fecha de estadía:</strong> Agosto de 2025<br>
+                    <strong>Tipo de viaje:</strong> Viajó en pareja
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">Local Guide</span>
+                    <span class="reviewer-stats">23 reseñas · 34 fotos</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 de 5</span>
+                </div>
+                <div class="review-date">Hace 2 meses en Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">Nos quedamos 3 noches en la habitación 122. La habitación y el baño son sublimes, con piscina privada y vistas increíbles. El desayuno a la carta fue excelente, con una amplia variedad de opciones, probablemente el mejor que tuvimos durante nuestro viaje a Bali.</p>
+
+                    <p style="margin-bottom: 10px;"><strong>Sin embargo, varios puntos arruinaron nuestra estadía:</strong></p>
+                    <ul>
+                        <li><strong>Construcción:</strong> Una casa justo detrás de nuestra habitación estaba en construcción, con ruido de 7:50 a.m. a 5:00 p.m. Esta construcción no nos fue anunciada, y no se ofreció ningún gesto de buena voluntad a pesar del inconveniente significativo.</li>
+                        <li><strong>Precio:</strong> El minibar está sobrepreciado (una cerveza cuesta 3 veces el precio del mercado), y el restaurante también está sobrepreciado por lo que ofrece.</li>
+                        <li><strong>Ubicación:</strong> El hotel está muy aislado, y el acceso es complicado y caro. Nos cobraron 350,000 IDR por el traslado desde el puerto. También reservamos un tour de medio día con chofer a través del hotel para visitar dos playas (600,000 IDR), pero el auto olía fuertemente a humo de tabaco rancio, y no había aire acondicionado, solo un ventilador de ventilación a máxima potencia.</li>
+                        <li><strong>Instalaciones limitadas:</strong> no hay gimnasio real (solo una cinta de correr, una bicicleta oxidada y una máquina rota), no hay spa real (solo dos mesas instaladas junto a la sala de desayuno).</li>
+                        <li><strong>Playa privada intransitable:</strong> cubierta de algas. Sin embargo, durante la marea baja, con zapatos, es posible salir más lejos y hacer snorkel, donde se pueden ver muchos peces tropicales.</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>En resumen:</strong> un entorno magnífico y un desayuno excelente, pero demasiados inconvenientes relacionados con la construcción no anunciada, el aislamiento y la relación precio/calidad.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Habitaciones:</strong> 5 · <strong>Servicio:</strong> 3 · <strong>Ubicación:</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">Local Guide</span>
+                    <span class="reviewer-stats">30 reseñas · 1 foto</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 de 5</span>
+                </div>
+                <div class="review-date">Hace un año en Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">En primer lugar, debo decir que rara vez escribo reseñas. Sin embargo, en este caso, me siento obligado a decir algo. El hotel realmente no está a la altura de las impresiones que se obtienen de las fotos.</p>
+
+                    <p style="margin-bottom: 15px;">Muchos edificios están a medio terminar (obras de construcción), y la playa es prácticamente inutilizable, ya que no se puede nadar ni caminar en el agua debido al coral, las rocas afiladas y las corrientes.</p>
+
+                    <p style="margin-bottom: 15px;">El servicio lamentablemente no está completamente capacitado. Muchos empleados no hablan inglés. Esto hace que pedir servicio a la habitación sea increíblemente difícil a veces. Lo que nos lleva a la siguiente parte: la comida. La comida es, lamentablemente, un desastre, por decir lo menos. Rara vez he comido tan mal en vacaciones. Parte de la comida era incomible (ya no estaba buena). Además, muchos platos del menú no estaban disponibles permanentemente.</p>
+
+                    <p style="margin-bottom: 15px;">Otro problema del hotel es su ubicación. Estás muy lejos de todo y tienes que alquilar un scooter todos los días o contratar un conductor (caro).</p>
+
+                    <p style="margin-bottom: 15px;">Por último, pero no menos importante, debe decirse que las habitaciones y la piscina son realmente hermosas, y varios miembros del personal hacen todo lo posible para que nuestra estadía sea lo más agradable posible. ¡Un agradecimiento especial para Putra, quien hizo todo posible durante nuestra estadía!</p>
+
+                    <p style="margin-bottom: 15px;">Sin embargo, el hotel queda muy por debajo de sus propias expectativas, lo que debería ser claro para cualquiera que reserve aquí.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Tipo de viaje:</strong> Vacaciones · <strong>Grupo de viaje:</strong> Pareja<br>
+                    <strong>Habitaciones:</strong> 4 · <strong>Servicio:</strong> 2 · <strong>Ubicación:</strong> 1
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <div class="container">
         <div class="section">
             <div class="info-box">

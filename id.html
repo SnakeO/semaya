@@ -266,6 +266,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -665,7 +785,111 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="container">
+        <div class="section reviews-section">
+            <h2>📝 Apa Kata Tamu Lain</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Tamu Anonim</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">1 dari 5</span>
+                </div>
+                <div class="review-date">Diulas 5 Agustus 2025 via mobile</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">Sangat Mengecewakan!!!</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 1 dari 5 – Sangat Mengecewakan dan Jauh dari 5-Bintang</strong></p>
+
+                    <p style="margin-bottom: 15px;">Mungkin perbandingan yang paling menjelaskan adalah ini: hotel sebelah, Seven Dreams, menawarkan pengalaman yang jauh lebih baik dalam segala hal — dari fasilitas dan makanan hingga layanan dan suasana. Hal itu hanya membuat tempat ini terasa semakin mengecewakan.</p>
+
+                    <p style="margin-bottom: 15px;">Hotel ini tidak sesuai dengan presentasi online-nya. Banyak area masih dalam tahap konstruksi, memberikan properti secara keseluruhan nuansa yang belum selesai dan kacau.</p>
+
+                    <p style="margin-bottom: 15px;">Layanan jauh di bawah ekspektasi. Ketika kami meminta untuk berbicara dengan manajer tentang banyak masalah yang kami temui, mereka mengirim seseorang yang kemudian mengakui dia hanya manajer restoran — bukan seseorang dengan wewenang untuk menangani kekhawatiran serius.</p>
+
+                    <p style="margin-bottom: 15px;">Spa dan gym tidak mendekati standar 5-bintang — ketinggalan zaman, perawatan buruk, dan jelas terabaikan.</p>
+
+                    <p style="margin-bottom: 15px;">Lokasi sangat terpencil. Kecuali Anda bersedia menyewa skuter setiap hari atau membayar harga tinggi untuk sopir, Anda benar-benar terputus dari segalanya. Dan jika Anda berharap merencanakan kejutan romantis atau malam, jangan repot-repot — hotel tidak menawarkan dukungan atau fleksibilitas untuk itu.</p>
+
+                    <p style="margin-bottom: 15px;">Lebih buruk lagi, suasananya terasa tidak nyaman sebagai seorang wanita. Rasanya seperti hanya pria dalam pasangan yang diakui atau dihormati, seolah-olah dia satu-satunya yang layak diajak bicara karena dialah yang membayar. Masukan atau kehadiran saya sebagai tamu sebagian besar diabaikan — perilaku tidak profesional dan ketinggalan zaman yang tidak ada tempatnya dalam perhotelan.</p>
+
+                    <p style="margin-bottom: 15px;">Bahkan detail kecil diabaikan. Misalnya, tidak ada sistem musik di kamar, tidak ada fitur suasana, dan hampir tidak ada pilihan hiburan di TV. Jika Anda berharap untuk bersantai dengan film romantis atau musik lembut di malam hari, Anda tidak beruntung.</p>
+
+                    <p style="margin-bottom: 15px;">Semua ini digabungkan membuat menginap sangat mengecewakan. Ini bukan resort 5-bintang — tidak dalam kualitas, tidak dalam layanan, dan tentu tidak dalam suasana. Saya sama sekali tidak akan kembali, dan saya sangat menyarankan orang lain untuk mencari tempat lain.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Tanggal menginap:</strong> Agustus 2025<br>
+                    <strong>Jenis perjalanan:</strong> Bepergian sebagai pasangan
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">Pemandu Lokal</span>
+                    <span class="reviewer-stats">23 ulasan · 34 foto</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 dari 5</span>
+                </div>
+                <div class="review-date">2 bulan yang lalu di Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">Kami menginap 3 malam di kamar 122. Kamar dan kamar mandi sangat megah, dengan kolam renang pribadi dan pemandangan yang luar biasa. Sarapan à la carte sangat luar biasa, dengan berbagai pilihan — mungkin yang terbaik yang kami miliki selama perjalanan kami ke Bali.</p>
+
+                    <p style="margin-bottom: 10px;"><strong>Namun, beberapa poin merusak menginap kami:</strong></p>
+                    <ul>
+                        <li><strong>Konstruksi:</strong> Sebuah rumah tepat di belakang kamar kami sedang dalam konstruksi, dengan kebisingan dari 7:50 pagi hingga 5:00 sore. Konstruksi ini tidak diumumkan kepada kami, dan tidak ada gestur niat baik yang ditawarkan meskipun ketidaknyamanan yang signifikan.</li>
+                        <li><strong>Harga:</strong> Minibar terlalu mahal (bir berharga 3x harga pasar), dan restoran juga terlalu mahal untuk apa yang ditawarkan.</li>
+                        <li><strong>Lokasi:</strong> Hotel sangat terisolasi, dan aksesnya rumit dan mahal. Kami dikenakan biaya IDR 350.000 untuk transfer dari pelabuhan. Kami juga memesan tur setengah hari dengan sopir melalui hotel untuk mengunjungi dua pantai (IDR 600.000), tetapi mobil berbau sangat kuat asap tembakau basi, dan tidak ada AC, hanya kipas ventilasi yang dinaikkan ke kecepatan penuh.</li>
+                        <li><strong>Fasilitas terbatas:</strong> tidak ada ruang kebugaran nyata (hanya treadmill, sepeda berkarat, dan mesin yang rusak), tidak ada spa nyata (hanya dua meja yang dipasang di samping ruang sarapan).</li>
+                        <li><strong>Pantai pribadi yang tidak dapat dilalui:</strong> tertutup rumput laut. Namun, saat air surut, dengan sepatu, dimungkinkan untuk pergi lebih jauh dan snorkeling, di mana Anda dapat melihat banyak ikan tropis.</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Kesimpulannya:</strong> pengaturan yang megah dan sarapan yang luar biasa, tetapi terlalu banyak ketidaknyamanan terkait dengan konstruksi yang tidak diumumkan, isolasi, dan rasio harga/kualitas.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Kamar:</strong> 5 · <strong>Layanan:</strong> 3 · <strong>Lokasi:</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">Pemandu Lokal</span>
+                    <span class="reviewer-stats">30 ulasan · 1 foto</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 dari 5</span>
+                </div>
+                <div class="review-date">Setahun yang lalu di Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">Pertama-tama, saya harus mengatakan bahwa saya jarang menulis ulasan. Namun, dalam kasus ini, saya merasa terdorong untuk mengatakan sesuatu. Hotel ini tidak benar-benar sesuai dengan kesan yang Anda dapatkan dari gambar-gambarnya.</p>
+
+                    <p style="margin-bottom: 15px;">Banyak bangunan yang setengah jadi (lokasi konstruksi), dan pantainya praktis tidak dapat digunakan, karena Anda tidak dapat berenang atau berjalan di air karena karang, batu tajam, dan arus.</p>
+
+                    <p style="margin-bottom: 15px;">Layanan sayangnya tidak sepenuhnya terlatih. Banyak karyawan tidak berbicara bahasa Inggris. Ini membuat memesan layanan kamar menjadi sangat sulit kadang-kadang. Yang membawa kita ke bagian selanjutnya: makanan. Makanan sayangnya adalah bencana, untuk sedikitnya. Saya jarang makan begitu buruk saat liburan. Beberapa makanan tidak dapat dimakan (tidak lagi baik). Lebih lanjut, banyak hidangan di menu secara permanen tidak tersedia.</p>
+
+                    <p style="margin-bottom: 15px;">Masalah lain dengan hotel adalah lokasinya. Anda sangat jauh dari segalanya dan harus menyewa skuter setiap hari atau menyewa sopir (mahal).</p>
+
+                    <p style="margin-bottom: 15px;">Terakhir tapi tidak kalah pentingnya, harus dikatakan bahwa kamar dan kolam renang benar-benar indah, dan beberapa anggota staf melakukan segalanya untuk membuat menginap kami senyaman mungkin. Terima kasih khusus ditujukan kepada Putra, yang membuat segalanya mungkin selama menginap kami!</p>
+
+                    <p style="margin-bottom: 15px;">Namun demikian, hotel ini jauh dari ekspektasinya sendiri, yang seharusnya jelas bagi siapa pun yang memesan di sini.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Jenis perjalanan:</strong> Liburan · <strong>Kelompok perjalanan:</strong> Pasangan<br>
+                    <strong>Kamar:</strong> 4 · <strong>Layanan:</strong> 2 · <strong>Lokasi:</strong> 1
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="section">
             <div class="info-box">

@@ -266,6 +266,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -664,8 +784,111 @@
                 </p>
             </div>
         </div>
+
+        <!-- Additional Guest Reviews Section -->
+        <div class="section reviews-section">
+            <h2>📝 다른 투숙객의 의견</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">익명 투숙객</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">5점 만점에 1점</span>
+                </div>
+                <div class="review-date">2025년 8월 5일 모바일로 작성된 리뷰</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">정말 실망스럽습니다!!!</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 5점 만점에 1점 – 정말 실망스럽고 5성급과는 거리가 멉니다</strong></p>
+
+                    <p style="margin-bottom: 15px;">가장 말해주는 비교는 바로 이것입니다: 옆집 호텔인 Seven Dreams는 시설, 음식, 서비스, 분위기 등 모든 면에서 훨씬 더 나은 경험을 제공합니다. 이곳이 더욱 실망스럽게 느껴지게 만들 뿐입니다.</p>
+
+                    <p style="margin-bottom: 15px;">이 호텔은 온라인 소개와 일치하지 않습니다. 많은 구역이 여전히 공사 중이어서 전체 건물이 미완성이고 혼란스러운 느낌을 줍니다.</p>
+
+                    <p style="margin-bottom: 15px;">서비스는 기대에 훨씬 못 미쳤습니다. 우리가 겪은 많은 문제에 대해 매니저와 대화를 요청했을 때, 그들은 나중에 자신이 단지 레스토랑 매니저일 뿐이며 심각한 문제를 처리할 권한이 없다고 인정한 사람을 보냈습니다.</p>
+
+                    <p style="margin-bottom: 15px;">스파와 체육관은 5성급 기준과는 거리가 멉니다 — 구식이고, 유지 관리가 잘 안 되어 있으며, 명백히 방치되어 있습니다.</p>
+
+                    <p style="margin-bottom: 15px;">위치가 매우 외딴 곳입니다. 매일 스쿠터를 빌리거나 운전기사에게 높은 가격을 지불할 의향이 없다면 모든 것에서 완전히 단절됩니다. 그리고 낭만적인 서프라이즈나 저녁을 계획하기를 원한다면 시도조차 하지 마세요 — 호텔은 그에 대한 지원이나 유연성을 전혀 제공하지 않습니다.</p>
+
+                    <p style="margin-bottom: 15px;">더 나쁜 것은 여성으로서 분위기가 불편했다는 것입니다. 마치 커플 중 남자만 인정되거나 존중받는 것처럼 느껴졌습니다. 그가 돈을 내는 사람이기 때문에 그만이 대화할 가치가 있는 사람인 것처럼 말입니다. 투숙객으로서의 내 의견이나 존재는 대부분 무시당했습니다 — 환대 업계에서 있어서는 안 될 비전문적이고 시대착오적인 행동입니다.</p>
+
+                    <p style="margin-bottom: 15px;">심지어 작은 디테일도 간과되었습니다. 예를 들어, 객실에 음악 시스템이 없고, 분위기 기능도 없으며, TV의 엔터테인먼트 옵션도 거의 없습니다. 저녁에 로맨틱한 영화나 부드러운 음악으로 휴식을 취하기를 원한다면 운이 없는 것입니다.</p>
+
+                    <p style="margin-bottom: 15px;">이 모든 것이 합쳐져서 체류가 정말 실망스러웠습니다. 이것은 5성급 리조트가 아닙니다 — 품질이 아니고, 서비스도 아니고, 분위기도 확실히 아닙니다. 나는 절대 다시 돌아오지 않을 것이며, 다른 사람들에게도 다른 곳을 찾아보라고 강력히 권합니다.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>숙박 날짜:</strong> 2025년 8월<br>
+                    <strong>여행 유형:</strong> 커플 여행
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">로컬 가이드</span>
+                    <span class="reviewer-stats">리뷰 23개 · 사진 34장</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">5점 만점에 3점</span>
+                </div>
+                <div class="review-date">2개월 전 Google에서</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">122호실에서 3박을 했습니다. 객실과 욕실은 훌륭했고, 전용 수영장과 놀라운 전망을 자랑합니다. 단품 아침 식사는 훌륭했으며 다양한 선택지가 있었습니다—아마도 발리 여행 중 먹었던 것 중 최고였을 것입니다.</p>
+
+                    <p style="margin-bottom: 10px;"><strong>하지만 몇 가지 점이 숙박을 망쳤습니다:</strong></p>
+                    <ul>
+                        <li><strong>공사:</strong> 객실 바로 뒤에 있는 집이 공사 중이었고 오전 7시 50분부터 오후 5시까지 소음이 있었습니다. 이 공사는 우리에게 알려지지 않았고 상당한 불편에도 불구하고 어떤 선의의 제스처도 제공되지 않았습니다.</li>
+                        <li><strong>가격:</strong> 미니바는 너무 비쌉니다(맥주 한 잔이 시장 가격의 3배입니다), 레스토랑도 제공하는 것에 비해 너무 비쌉니다.</li>
+                        <li><strong>위치:</strong> 호텔이 매우 고립되어 있고 접근이 복잡하고 비쌉니다. 항구에서 오는 교통비로 IDR 350,000을 청구받았습니다. 우리는 또한 호텔을 통해 두 해변을 방문하는 반나절 운전기사 투어(IDR 600,000)를 예약했지만, 차는 오래된 담배 냄새가 심하게 나고 에어컨이 없었으며 최대로 올린 환풍기만 있었습니다.</li>
+                        <li><strong>제한된 시설:</strong> 진짜 피트니스 룸이 없습니다(러닝머신 하나, 녹슨 자전거, 고장난 기계만 있습니다), 진짜 스파도 없습니다(아침 식사실 옆에 설치된 테이블 두 개만 있습니다).</li>
+                        <li><strong>통행 불가능한 전용 해변:</strong> 해초로 뒤덮여 있습니다. 하지만 썰물 때 신발을 신으면 더 멀리 나가서 스노클링을 할 수 있으며 많은 열대 물고기를 볼 수 있습니다.</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>요약:</strong> 웅장한 환경과 훌륭한 아침 식사이지만 예고되지 않은 공사, 고립, 가격 대비 품질 비율과 관련된 불편이 너무 많습니다.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>객실:</strong> 5 · <strong>서비스:</strong> 3 · <strong>위치:</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">로컬 가이드</span>
+                    <span class="reviewer-stats">리뷰 30개 · 사진 1장</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">5점 만점에 3점</span>
+                </div>
+                <div class="review-date">1년 전 Google에서</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">우선, 저는 리뷰를 거의 쓰지 않습니다. 하지만 이 경우에는 무언가 말해야 할 것 같습니다. 호텔은 사진에서 얻는 인상과 실제로 일치하지 않습니다.</p>
+
+                    <p style="margin-bottom: 15px;">많은 건물이 반쯤 완성되어 있고(공사장), 해변은 산호, 날카로운 바위, 물살 때문에 물에서 수영하거나 걸을 수 없어 사실상 사용할 수 없습니다.</p>
+
+                    <p style="margin-bottom: 15px;">안타깝게도 서비스가 완전히 훈련되지 않았습니다. 많은 직원이 영어를 하지 못합니다. 이것은 때때로 룸 서비스 주문을 엄청나게 어렵게 만듭니다. 이것은 다음 부분으로 우리를 데려갑니다: 음식. 음식은 안타깝게도 최소한으로 말해서 재앙입니다. 휴가 중에 이렇게 형편없이 먹어본 적이 거의 없습니다. 일부 음식은 먹을 수 없었습니다(더 이상 좋지 않음). 게다가 메뉴의 많은 요리가 영구적으로 제공되지 않았습니다.</p>
+
+                    <p style="margin-bottom: 15px;">호텔의 또 다른 문제는 위치입니다. 모든 것에서 멀리 떨어져 있어서 매일 스쿠터를 빌리거나 운전기사를 고용해야 합니다(비쌉니다).</p>
+
+                    <p style="margin-bottom: 15px;">마지막으로, 객실과 수영장은 정말 아름답고 여러 직원이 우리의 숙박을 가능한 한 쾌적하게 만들기 위해 최선을 다한다는 점을 말해야 합니다. 특히 숙박 중 모든 것을 가능하게 만든 Putra에게 특별히 감사드립니다!</p>
+
+                    <p style="margin-bottom: 15px;">그럼에도 불구하고 호텔은 자신의 기대에 훨씬 못 미치며, 이것은 여기에 예약하는 모든 사람에게 분명해야 합니다.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>여행 유형:</strong> 휴가 · <strong>여행 그룹:</strong> 커플<br>
+                    <strong>객실:</strong> 4 · <strong>서비스:</strong> 2 · <strong>위치:</strong> 1
+                </div>
+            </div>
+        </div>
     </div>
-    
+
     <div class="container">
         <div class="section">
             <div class="info-box">

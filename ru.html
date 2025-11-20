@@ -266,6 +266,126 @@
         .timeline-item strong {
             color: #dc2626;
         }
+
+        /* Additional Reviews Section */
+        .reviews-section {
+            margin-top: 40px;
+        }
+
+        .reviews-section h2 {
+            color: #1e40af;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .review-card {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .reviewer-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #1f2937;
+        }
+
+        .reviewer-badge {
+            background: #3b82f6;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .reviewer-stats {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .review-stars.low {
+            color: #dc2626;
+        }
+
+        .review-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .review-content {
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 15px;
+        }
+
+        .review-content strong {
+            color: #1f2937;
+        }
+
+        .review-content ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .review-content li {
+            margin: 5px 0;
+        }
+
+        .review-meta {
+            background: #f9fafb;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .review-meta strong {
+            color: #374151;
+        }
+
+        @media (max-width: 600px) {
+            .reviewer-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .review-card {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -665,7 +785,111 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="container">
+        <div class="section reviews-section">
+            <h2>📝 Отзывы других гостей</h2>
+
+            <!-- Review 1: Deeply Disappointing -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Аноним гостя</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars low">⭐</span>
+                    <span style="color: #dc2626; font-weight: bold;">1 из 5 звезд</span>
+                </div>
+                <div class="review-date">5 августа 2025 г. Отзыв с мобильного устройства</div>
+                <h3 style="color: #dc2626; margin-bottom: 15px;">Очень разочаровано!!!</h3>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;"><strong>⭐ 1 из 5 звезд - абсолютно разочаровано, далеко от 5-звездочного опыта</strong></p>
+
+                    <p style="margin-bottom: 15px;">Самое красноречивое сравнение вот это: соседний отель Seven Dreams предоставляет гораздо лучший опыт во всех аспектах — удобства, еда, обслуживание, атмосфера. Это только подчеркивает разочарование от этого места.</p>
+
+                    <p style="margin-bottom: 15px;">Отель не соответствует онлайн представлению. Множество зон все еще находятся в процессе строительства, что делает весь объект незаконченным и хаотичным.</p>
+
+                    <p style="margin-bottom: 15px;">Обслуживание значительно не оправдало ожиданий. Когда мы попросили поговорить с менеджером о множестве проблем, нам отправили человека, который позже признал, что он всего лишь менеджер ресторана без полномочий разбираться с серьезными проблемами.</p>
+
+                    <p style="margin-bottom: 15px;">Спа и спортзал далеки от 5-звездочных стандартов — устарелые, плохо обслуживаемые и явно заброшенные.</p>
+
+                    <p style="margin-bottom: 15px;">Местоположение очень удаленное. Если вы не готовы каждый день арендовать скутер или платить высокие ставки водителю, вы полностью изолированы от всего. И если вы хотите спланировать романтический сюрприз или вечер, даже не пытайтесь — отель не предоставляет никакой поддержки или гибкости.</p>
+
+                    <p style="margin-bottom: 15px;">Что еще хуже, как женщина я чувствовала себя некомфортно. Казалось, что признаются и уважают только мужчина в паре, просто потому что он платит. Мое мнение как гостя и моё присутствие были в значительной степени проигнорированы — непрофессиональное и архаичное поведение, недопустимое в индустрии гостеприимства.</p>
+
+                    <p style="margin-bottom: 15px;">Даже мелкие детали были упущены. Например, в комнате нет музыкальной системы, нет функции атмосферы, минимум развлекательных опций на телевизоре. Если вы хотите расслабиться с романтичным фильмом или мягкой музыкой по вечерам — вам не повезло.</p>
+
+                    <p style="margin-bottom: 15px;">Все это вместе сделало пребывание действительно разочаровывающим. Это не 5-звездочный курорт — ни по качеству, ни по обслуживанию, ни по атмосфере. Я никогда не вернусь сюда и настоятельно рекомендую другим поискать в другом месте.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Даты проживания:</strong> Август 2025 г.<br>
+                    <strong>Тип путешествия:</strong> Романтическое путешествие
+                </div>
+            </div>
+
+            <!-- Review 2: David -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">David</span>
+                    <span class="reviewer-badge">Местный гид</span>
+                    <span class="reviewer-stats">23 отзыва · 34 фото</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 из 5 звезд</span>
+                </div>
+                <div class="review-date">2 месяца назад в Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">Я провел 3 ночи в номере 122. Номер и ванная комната были отличными с собственным бассейном и потрясающим видом. Континентальный завтрак был отличным с разнообразным выбором — возможно, лучший, который я ел во время поездки в Бали.</p>
+
+                    <p style="margin-bottom: 10px;"><strong>Однако некоторые вещи испортили проживание:</strong></p>
+                    <ul>
+                        <li><strong>Строительство:</strong> Дом позади номера находился в процессе строительства с шумом с 7:50 утра до 5 вечера. О строительстве нас не предупредили, и несмотря на значительные неудобства, не было предложено никакого компенсационного жеста.</li>
+                        <li><strong>Цены:</strong> Мини-бар чрезмерно дорогой (пиво в 3 раза дороже рыночной цены), ресторан также дорогой по отношению к предложению.</li>
+                        <li><strong>Местоположение:</strong> Отель очень изолирован, добраться сложно и дорого. Нам предложили 350 000 индонезийских рупий за трансфер от порта. Мы также забронировали полудневный водительский тур к двум пляжам (600 000 индонезийских рупий), но машина пахла старым дымом табака, не было кондиционера, только вентилятор на максимум.</li>
+                        <li><strong>Ограниченные услуги:</strong> Нет настоящего фитнес-центра (только одна беговая дорожка, ржавый велосипед и сломанные тренажеры), нет настоящего спа (только два стола, установленные рядом с завтракной комнатой).</li>
+                        <li><strong>Непригодный частный пляж:</strong> Покрыт водорослями. Однако во время отлива можно в обуви пройти дальше и заняться сноркелингом, увидев множество тропических рыб.</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Итого:</strong> Великолепные окрестности и отличный завтрак, но слишком много неудобств, связанных с незадекларированным строительством, изоляцией и плохим соотношением цены и качества.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Номер:</strong> 5 · <strong>Обслуживание:</strong> 3 · <strong>Местоположение:</strong> 1
+                </div>
+            </div>
+
+            <!-- Review 3: Lorenz Linde -->
+            <div class="review-card">
+                <div class="reviewer-info">
+                    <span class="reviewer-name">Lorenz Linde</span>
+                    <span class="reviewer-badge">Местный гид</span>
+                    <span class="reviewer-stats">30 отзывов · 1 фото</span>
+                </div>
+                <div class="review-rating">
+                    <span class="review-stars">⭐⭐⭐</span>
+                    <span style="font-weight: bold;">3 из 5 звезд</span>
+                </div>
+                <div class="review-date">1 год назад в Google</div>
+                <div class="review-content">
+                    <p style="margin-bottom: 15px;">Для начала я редко пишу отзывы. Но в этом случае мне кажется, что нужно что-то сказать. Отель не оправдывает впечатление, которое дают фотографии.</p>
+
+                    <p style="margin-bottom: 15px;">Множество зданий полностью не завершены (строительная площадка), и пляж по сути непригоден для использования из-за кораллов, острых скал и волн, которые не позволяют плавать или ходить в воде.</p>
+
+                    <p style="margin-bottom: 15px;">К сожалению, обслуживание совершенно не обучено. Многие сотрудники не говорят по-английски. Это иногда делает заказ комнатного обслуживания невероятно трудным. Это приводит нас к следующему пункту: еда. Еда, к сожалению, в лучшем случае катастрофична. Я редко ел так плохо во время отпуска. Некоторые блюда были просто несъедобны (уже не свежие). Кроме того, многие блюда меню постоянно недоступны.</p>
+
+                    <p style="margin-bottom: 15px;">Еще одна проблема отеля - его местоположение. Все находится так далеко, что вам нужно арендовать скутер каждый день или нанимать водителя (дорого).</p>
+
+                    <p style="margin-bottom: 15px;">Наконец, я должен сказать, что номера и бассейн действительно красивы, и несколько сотрудников проделали отличную работу, чтобы сделать наше пребывание максимально приятным. Особая благодарность Путре, который позволил всему во время нашего проживания работать!</p>
+
+                    <p style="margin-bottom: 15px;">Однако отель далеко не оправдывает ожидания, и это должно быть ясно любому, кто рассматривает бронирование здесь.</p>
+                </div>
+                <div class="review-meta">
+                    <strong>Тип путешествия:</strong> Отпуск · <strong>Группа путешествия:</strong> Пара<br>
+                    <strong>Номер:</strong> 4 · <strong>Обслуживание:</strong> 2 · <strong>Местоположение:</strong> 1
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="section">
             <div class="info-box">
